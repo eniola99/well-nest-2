@@ -1,5 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css"; //Import bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import "@/styles/globals.css";
+import "@/styles/style.css";
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
