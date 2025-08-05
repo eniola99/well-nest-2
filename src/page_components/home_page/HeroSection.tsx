@@ -32,9 +32,11 @@ export const HeroSection = () => {
                     Live in care & <span>your family</span> will love
                   </h1>
                   <p data-animation="fadeInLeft" data-delay=".75s">
-                    There are many variations of passages orem psum available
-                    but the majority have suffered alteration in some form by
-                    injected humour.
+                    WellNest Home Health Care has been helping people live
+                    better at home, offering a full range of home health care
+                    services including personal care, homemaking, nursing,
+                    occupational therapy, physiotherapy, and many more care
+                    services.
                   </p>
                   <div
                     className="hero-btn"
@@ -43,9 +45,6 @@ export const HeroSection = () => {
                   >
                     <a href="about.html" className="theme-btn">
                       About More<i className="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="contact.html" className="theme-btn2">
-                      Learn More<i className="fas fa-arrow-right"></i>
                     </a>
                   </div>
                 </div>
