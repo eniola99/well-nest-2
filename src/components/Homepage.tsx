@@ -1,6 +1,11 @@
 import React from "react";
 
-import { HeaderTop, HeroSection, Navbar } from "../page_components/home_page";
+import {
+  About,
+  HeaderTop,
+  HeroSection,
+  Navbar,
+} from "../page_components/home_page";
 
 export const Homepage = () => {
   return (
@@ -8,6 +13,7 @@ export const Homepage = () => {
       <HeaderTop />
       <Navbar />
       <HeroSection />
+      <About />
     </div>
   );
 };
