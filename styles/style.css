@@ -1396,7 +1396,7 @@ label {
   }
 
   .navbar .offcanvas-header .btn-close {
-    background: var(--color-red);
+    background: var(--theme-color);
     width: 20px;
     height: 20px;
     line-height: 20px;

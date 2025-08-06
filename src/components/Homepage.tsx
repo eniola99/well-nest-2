@@ -2,18 +2,21 @@ import React from "react";
 
 import {
   About,
-  HeaderTop,
+  Assessment,
   HeroSection,
-  Navbar,
+  Testimonial,
 } from "../page_components/home_page";
+import { Footer, NavSection } from "./common";
 
 export const Homepage = () => {
   return (
     <div className="home-3">
-      <HeaderTop />
-      <Navbar />
+      <NavSection />
       <HeroSection />
       <About />
+      <Testimonial />
+      <Assessment />
+      <Footer />
     </div>
   );
 };
