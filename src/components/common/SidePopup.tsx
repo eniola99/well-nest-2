@@ -33,9 +33,9 @@ export const SidePopup = ({
             id="offcanvasNavbarLabel"
           >
             <Image
-              src="/assets/img/logo.png"
-              height={100}
-              width={100}
+              src="/assets/img/wellnest-logo-with-name.png"
+              height={500}
+              width={500}
               alt="logo"
             />
           </a>
@@ -57,10 +57,40 @@ export const SidePopup = ({
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/">
+              <li className="nav-item dropdown">
+                <Link
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
                   Home Care Services
                 </Link>
+                <ul className="dropdown-menu fade-down">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      href="/home_care_service/help_home"
+                    >
+                      Help at Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      href="/home_care_service/nurse_home"
+                    >
+                      Nurse at Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      href="/home_care_service/live_in"
+                    >
+                      Live-in Care
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/">

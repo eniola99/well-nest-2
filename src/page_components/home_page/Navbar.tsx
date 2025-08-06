@@ -14,9 +14,9 @@ export const Navbar = () => {
           <div className="container position-relative">
             <a className="navbar-brand">
               <Image
-                src="/assets/img/logo.png"
-                width={100}
-                height={100}
+                src="/assets/img/wellnest-logo-with-name.png"
+                width={500}
+                height={500}
                 alt="logo"
               />
             </a>
@@ -71,10 +71,40 @@ export const Navbar = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/">
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
                       Home Care Services
-                    </Link>
+                    </a>
+                    <ul className="dropdown-menu fade-down">
+                      <li>
+                        <Link
+                          className="dropdown-item"
+                          href="/home_care_service/help_home"
+                        >
+                          Help at Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item"
+                          href="/home_care_service/nurse_home"
+                        >
+                          Nurse at Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item"
+                          href="/home_care_service/live_in"
+                        >
+                          Live-in Care
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" href="/">
