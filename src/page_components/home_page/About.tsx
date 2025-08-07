@@ -23,14 +23,6 @@ export const About = () => {
                       </div>
                     </div>
                     <div className="col-6">
-                      <div className="img-2">
-                        <Image
-                          src="/assets/img/aboutImg02.jpg"
-                          width={400}
-                          height={400}
-                          alt="about img 2"
-                        />
-                      </div>
                       <div className="img-3">
                         <Image
                           src="/assets/img/aboutImg03.jpg"

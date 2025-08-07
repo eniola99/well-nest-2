@@ -7,6 +7,12 @@ import { SidePopup } from "@/src/components/common";
 export const Navbar = () => {
   const [ShowSlideOut, setShowSlideOut] = useState<boolean>(false);
 
+  const services = [
+    { name: "Help at Home", slug: "help-at-home" },
+    { name: "Nurse at Home", slug: "nurse-at-home" },
+    { name: "Live-in Care", slug: "live-in-care" },
+  ];
+
   return (
     <>
       <div className="main-navigation">
@@ -80,30 +86,16 @@ export const Navbar = () => {
                       Home Care Services
                     </a>
                     <ul className="dropdown-menu fade-down">
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          href="/home_care_service/help_home"
-                        >
-                          Help at Home
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          href="/home_care_service/nurse_home"
-                        >
-                          Nurse at Home
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          href="/home_care_service/live_in"
-                        >
-                          Live-in Care
-                        </Link>
-                      </li>
+                      {services.map((service) => (
+                        <li key={service.slug}>
+                          <Link
+                            className="dropdown-item"
+                            href={`/home_care_service/${service.slug}`}
+                          >
+                            {service.name}
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </li>
                   <li className="nav-item">
