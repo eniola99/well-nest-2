@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-export const HelpAtHomeHero = () => {
+interface HelpAtHomeProps {
+  title: string;
+}
+export const HelpAtHomeHero = ({ title }: HelpAtHomeProps) => {
   return (
     <>
       <div
@@ -9,14 +12,14 @@ export const HelpAtHomeHero = () => {
         // style="background: url(assets/img/breadcrumb/01.jpg)"
       >
         <div className="container">
-          <h2 className="breadcrumb-title">Help At Home</h2>
+          <h2 className="breadcrumb-title">{title}</h2>
           <ul className="breadcrumb-menu">
             <li>
               <Link href="/">Home</Link>
             </li>
             {/* <i className="fa fa-angle-double-right"></i> */}
 
-            <li className="active">Help At Home</li>
+            <li className="active">{title}</li>
           </ul>
         </div>
       </div>

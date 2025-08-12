@@ -1,9 +1,25 @@
 import React from "react";
+import { useRouter } from "next/router";
+import { Footer, NavSection } from "./common";
+import {
+  HelpAtHomeHero,
+  NurseHomeContent,
+} from "../page_components/HelpAtHome_service";
 
 export const NurseAtHome = () => {
+  const router = useRouter();
+
+  const title = router.query
+    .service!.split("-")
+    .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
   return (
     <>
-      <div>NurseAtHome</div>
+      <NavSection />
+      <HelpAtHomeHero title={title} />
+      <NurseHomeContent />
+      <Footer />
     </>
   );
 };
