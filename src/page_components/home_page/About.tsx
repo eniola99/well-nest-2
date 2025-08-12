@@ -87,7 +87,7 @@ export const About = () => {
                     </div>
                   </div>
                 </div>
-                <a href="about.html" className="theme-btn">
+                <a href="/about" className="theme-btn">
                   Discover More<i className="fas fa-arrow-right"></i>
                 </a>
               </div>
