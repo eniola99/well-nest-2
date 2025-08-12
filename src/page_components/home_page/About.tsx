@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const About = () => {
   return (
@@ -87,9 +88,9 @@ export const About = () => {
                     </div>
                   </div>
                 </div>
-                <a href="/about" className="theme-btn">
+                <Link href="/about" className="theme-btn">
                   Discover More<i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

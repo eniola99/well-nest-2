@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const TeamMembers = () => {
   return (
@@ -38,24 +39,24 @@ export const TeamMembers = () => {
                       </button>
                     </div>
                     <div className="team-social">
-                      <a href="#">
+                      <Link href="#">
                         <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-x-twitter"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-youtube"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="team-content">
                   <h4>
-                    <a href="team.html">Rodrigues Christy</a>
+                    <Link href="team.html">Rodrigues Christy</Link>
                   </h4>
                   <span>Volunteer</span>
                 </div>
@@ -77,24 +78,24 @@ export const TeamMembers = () => {
                       </button>
                     </div>
                     <div className="team-social">
-                      <a href="#">
+                      <Link href="#">
                         <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-x-twitter"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-youtube"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="team-content">
                   <h4>
-                    <a href="team.html">Matthew Hong</a>
+                    <Link href="team.html">Matthew Hong</Link>
                   </h4>
                   <span>CEO & Founder</span>
                 </div>
@@ -116,24 +117,24 @@ export const TeamMembers = () => {
                       </button>
                     </div>
                     <div className="team-social">
-                      <a href="#">
+                      <Link href="#">
                         <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-x-twitter"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-youtube"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="team-content">
                   <h4>
-                    <a href="team.html">Anita Bentley</a>
+                    <Link href="team.html">Anita Bentley</Link>
                   </h4>
                   <span>Volunteer</span>
                 </div>
@@ -155,24 +156,24 @@ export const TeamMembers = () => {
                       </button>
                     </div>
                     <div className="team-social">
-                      <a href="#">
+                      <Link href="#">
                         <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-x-twitter"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <i className="fab fa-youtube"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="team-content">
                   <h4>
-                    <a href="team.html">Beverly Dyer</a>
+                    <Link href="team.html">Beverly Dyer</Link>
                   </h4>
                   <span>Volunteer</span>
                 </div>

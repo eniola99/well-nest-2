@@ -43,9 +43,9 @@ export const HeroSection = () => {
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    <a href="about.html" className="theme-btn">
+                    <Link href="/about" className="theme-btn">
                       About More<i className="fas fa-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

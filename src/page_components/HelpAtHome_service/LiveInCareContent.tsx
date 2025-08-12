@@ -112,13 +112,13 @@ export const LiveInCareContent = () => {
                         <h5>Tags : </h5>
                         <ul>
                           <li>
-                            <a href="#">Senior</a>
+                            <Link href="#">Senior</Link>
                           </li>
                           <li>
-                            <a href="#">Elderly</a>
+                            <Link href="#">Elderly</Link>
                           </li>
                           <li>
-                            <a href="#">Care</a>
+                            <Link href="#">Care</Link>
                           </li>
                         </ul>
                       </div>

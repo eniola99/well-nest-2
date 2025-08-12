@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const Payment = () => {
@@ -31,9 +32,9 @@ export const Payment = () => {
                   <span className="pricing-amount-type">/Monthly</span>
                 </div>
                 <div className="pricing-btn">
-                  <a href="pricing.html" className="theme-btn">
+                  <Link href="#" className="theme-btn">
                     Purchase Now <i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="pricing-feature">
                   <ul>
@@ -76,9 +77,9 @@ export const Payment = () => {
                   <span className="pricing-amount-type">/Monthly</span>
                 </div>
                 <div className="pricing-btn">
-                  <a href="pricing.html" className="theme-btn">
+                  <Link href="#" className="theme-btn">
                     Purchase Now <i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="pricing-feature">
                   <ul>
@@ -117,9 +118,9 @@ export const Payment = () => {
                   <span className="pricing-amount-type">/Monthly</span>
                 </div>
                 <div className="pricing-btn">
-                  <a href="pricing.html" className="theme-btn">
+                  <Link href="#" className="theme-btn">
                     Purchase Now <i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="pricing-feature">
                   <ul>

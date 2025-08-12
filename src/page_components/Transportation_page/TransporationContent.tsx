@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const TransporationContent = () => {
   console.log("line 5");
@@ -117,9 +118,9 @@ export const TransporationContent = () => {
                           <i className="far fa-usd-circle"></i>150
                         </p>
                       </div>
-                      <a href="#" className="theme-btn">
+                      <Link href="#" className="theme-btn">
                         Book Now<i className="fas fa-arrow-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="widget">

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 export const Footer = () => {
   return (
     <>
@@ -11,14 +12,14 @@ export const Footer = () => {
               <div className="row g-4">
                 <div className="col-lg-5">
                   <div className="footer-widget-box about-us">
-                    <a href="#" className="footer-logo">
+                    <Link href="#" className="footer-logo">
                       <Image
                         src="/assets/img/wellnest-logo-with-name-WHITE.png"
                         height={500}
                         width={500}
                         alt="logo"
                       />
-                    </a>
+                    </Link>
                     <p className="mb-4">
                       We are many variations of passages available but the
                       majority have suffered alteration some form by injected
@@ -92,7 +93,7 @@ export const Footer = () => {
                         </div>
                         <div className="content">
                           <h6>Call Us</h6>
-                          <a href="tel:+21236547898">+2 123 654 7898</a>
+                          <Link href="tel:+21236547898">+2 123 654 7898</Link>
                         </div>
                       </li>
                       <li>
@@ -101,7 +102,9 @@ export const Footer = () => {
                         </div>
                         <div className="content">
                           <h6>Mail Us</h6>
-                          <a href="mailto:info@example.com">info@example.com</a>
+                          <Link href="mailto:info@example.com">
+                            info@example.com
+                          </Link>
                         </div>
                       </li>
                     </ul>
@@ -117,30 +120,30 @@ export const Footer = () => {
               <div className="col-md-6 align-self-center">
                 <p className="copyright-text">
                   &copy; Copyright <span id="date"></span>
-                  <a href="#"> WellNest </a> All Rights Reserved.
+                  <Link href="#"> WellNest </Link> All Rights Reserved.
                 </p>
               </div>
               <div className="col-md-6 align-self-center">
                 <ul className="footer-social">
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-x-twitter"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-linkedin-in"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-youtube"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
