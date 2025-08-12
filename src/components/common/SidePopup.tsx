@@ -81,18 +81,23 @@ export const SidePopup = ({
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/">
+                <Link className="nav-link" href="/transportation">
                   Transportation Services
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/">
+                <Link className="nav-link" href="/subscription">
                   Membership Plans
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/">
+                <Link className="nav-link" href="/about">
                   About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/contact">
+                  Contact Us
                 </Link>
               </li>
             </ul>
