@@ -22,7 +22,10 @@ export const HelpAtHomeForm = () => {
               started today for a better tomorrow.
             </p>
             <h4 className="title mt-5">Lets Get Started</h4>
-            <div className="d-flex flex-column justify-content-center align-items-center">
+            <div
+              className="d-flex flex-column p-2"
+              style={{ maxWidth: "500px" }}
+            >
               <div>
                 <h5>
                   Are you looking for home support for yourself or a loved one?

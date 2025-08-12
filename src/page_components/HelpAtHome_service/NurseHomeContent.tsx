@@ -1,10 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { HelpAtHomeForm } from "./HelpAtHomeForm";
 
-export const HelpHomeContent = () => {
+export const NurseHomeContent = () => {
   const router = useRouter();
   const { service } = router.query;
 
@@ -29,39 +28,6 @@ export const HelpHomeContent = () => {
         <div className="container">
           <div className="service-single-wrap">
             <div className="row">
-              <div className="col-xl-4 col-lg-4">
-                <div className="service-sidebar">
-                  <div className="widget">
-                    <h4 className="title">Home Care Services</h4>
-                    <div className="category">
-                      {services
-                        .filter((item) => item.slug !== service)
-                        .map((service) => (
-                          <>
-                            <Link href={`/home_care_service/${service.slug}`}>
-                              <i className="fa fa-angle-double-right"></i>
-                              {service.name}
-                            </Link>
-                          </>
-                        ))}
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="title">Ask A Question</h4>
-                    <div className="service-downloa">
-                      <span className="">
-                        Have a question about Personal Home Care? We are Here to
-                        help.
-                      </span>
-                      <h3 className="mb-3 mt-3">
-                        Call Us:
-                        <br />
-                        <a href="tel:+905470-4000">(905) 470-4000</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className="col-xl-8 col-lg-8">
                 <div className="service-details">
                   <div className="mb-30">
@@ -144,7 +110,39 @@ export const HelpHomeContent = () => {
                   </div>
                 </div>
               </div>
-              <HelpAtHomeForm />
+              <div className="col-xl-4 col-lg-4">
+                <div className="service-sidebar">
+                  <div className="widget">
+                    <h4 className="title">Home Care Services</h4>
+                    <div className="category">
+                      {services
+                        .filter((item) => item.slug !== service)
+                        .map((service) => (
+                          <>
+                            <Link href={`/home_care_service/${service.slug}`}>
+                              <i className="fa fa-angle-double-right"></i>
+                              {service.name}
+                            </Link>
+                          </>
+                        ))}
+                    </div>
+                  </div>
+                  <div className="widget">
+                    <h4 className="title">Ask A Question</h4>
+                    <div className="service-downloa">
+                      <span className="">
+                        Have a question about Personal Home Care? We are Here to
+                        help.
+                      </span>
+                      <h3 className="mb-3 mt-3">
+                        Call Us:
+                        <br />
+                        <a href="tel:+905470-4000">(905) 470-4000</a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

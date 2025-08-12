@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavSection } from "./common";
+import { Footer, NavSection } from "./common";
 import {
   HelpAtHomeHero,
   HelpHomeContent,
@@ -10,8 +10,9 @@ export const HelpAtHome = () => {
   return (
     <>
       <NavSection />
-      <HelpAtHomeHero />
+      <HelpAtHomeHero title="Help At Home" />
       <HelpHomeContent />
+      <Footer />
     </>
   );
 };
