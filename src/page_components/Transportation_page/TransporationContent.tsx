@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export const TransporationContent = () => {
+  console.log("line 5");
   return (
     <>
       <div className="event-single py-120">
