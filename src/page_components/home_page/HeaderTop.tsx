@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const HeaderTop = () => {
   return (
@@ -10,21 +11,21 @@ export const HeaderTop = () => {
               <div className="header-top-list">
                 <ul>
                   <li>
-                    <a href="mailto:info@example.com">
+                    <Link href="mailto:info@example.com">
                       <i className="far fa-envelopes"></i>
                       info@example.com
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="tel:+21236547898">
+                    <Link href="tel:+21236547898">
                       <i className="fa fa-phone-volume"></i> +2 123 654 7898
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="far fa-alarm-clock"></i> Sun - Fri (08AM -
                       10PM)
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -59,18 +60,18 @@ export const HeaderTop = () => {
 
               <div className="header-top-social">
                 <span>Follow Us: </span>
-                <a href="#">
+                <Link href="#">
                   <i className="fab fa-facebook"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <i className="fab fa-x-twitter"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <i className="fab fa-linkedin"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

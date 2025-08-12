@@ -33,18 +33,14 @@ export const SidePopup = ({
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div className="offcanvas-header">
-          <a
-            href="index.html"
-            className="offcanvas-brand"
-            id="offcanvasNavbarLabel"
-          >
+          <Link href="/" className="offcanvas-brand" id="offcanvasNavbarLabel">
             <Image
               src="/assets/img/wellnest-logo-with-name.png"
               height={500}
               width={500}
               alt="logo"
             />
-          </a>
+          </Link>
           <button
             type="button"
             className="btn-close"

@@ -99,17 +99,17 @@ export const Navbar = () => {
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/">
+                    <Link className="nav-link" href="/transportation">
                       Transportation Services
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/">
-                      Membership Plans
+                    <Link className="nav-link" href="/subscription">
+                      Subscription Plans
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/">
+                    <Link className="nav-link" href="/about">
                       About Us
                     </Link>
                   </li>
@@ -117,9 +117,9 @@ export const Navbar = () => {
 
                 <div className="nav-right">
                   <div className="nav-btn">
-                    <a href="contact.html" className="theme-btn">
+                    <Link href="/contact" className="theme-btn">
                       Lets Talk<i className="fas fa-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
