@@ -1,12 +1,10 @@
 import React from "react";
-import { ProjectCounter } from "./ProjectCounter";
-import { TeamMembers } from "./TeamMembers";
+import { AboutPageContent } from "./AboutPageContent";
 
 export const AboutUs = () => {
   return (
     <>
-      <ProjectCounter />
-      <TeamMembers />
+      <AboutPageContent />
     </>
   );
 };

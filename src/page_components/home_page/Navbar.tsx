@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
 import { SidePopup } from "@/src/components/common";
 
 export const Navbar = () => {
+  const router = useRouter();
   const [ShowSlideOut, setShowSlideOut] = useState<boolean>(false);
 
   const services = [
@@ -72,11 +74,13 @@ export const Navbar = () => {
               </div>
               <div className="offcanvas-body gap-xl-4">
                 <ul className="navbar-nav justify-content-end flex-grow-1">
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/">
-                      Home
-                    </Link>
-                  </li>
+                  {router.pathname !== "/" && (
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/">
+                        Home
+                      </Link>
+                    </li>
+                  )}
                   <li className="nav-item dropdown">
                     <a
                       className="nav-link dropdown-toggle"
