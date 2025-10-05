@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,6 +15,7 @@ export const SidePopup = ({
   setShowSlideOut,
 }: SidePopupProps) => {
   const { width } = useWindowSize();
+  const router = useRouter();
 
   const services = [
     { name: "Help at Home", slug: "help-at-home" },
@@ -55,9 +57,11 @@ export const SidePopup = ({
           <div className="offcanvas-body gap-xl-4">
             <ul className="navbar-nav justify-content-end flex-grow-1">
               <li className="nav-item">
-                <Link className="nav-link" href="/">
-                  Home
-                </Link>
+                {router.pathname !== "/" && (
+                  <Link className="nav-link" href="/">
+                    Home
+                  </Link>
+                )}
               </li>
               <li className="nav-item dropdown">
                 <Link

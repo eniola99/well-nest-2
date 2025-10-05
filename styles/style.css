@@ -2616,7 +2616,22 @@ label {
   border-bottom: 1px solid var(--border-info-color);
 }
 
+.service-sidebar .category .scroll_section {
+  display: block;
+  font-size: 16px;
+  color: var(--color-dark);
+  font-weight: 500;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid var(--border-info-color);
+  cursor: pointer;
+}
 .service-sidebar .category a:hover {
+  color: var(--theme-color);
+  padding-left: 5px;
+}
+
+.service-sidebar .category .scroll_section:hover {
   color: var(--theme-color);
   padding-left: 5px;
 }
@@ -2625,7 +2640,17 @@ label {
   margin-right: 5px;
 }
 
+.service-sidebar .category .scroll_section i {
+  margin-right: 5px;
+}
+
 .service-sidebar .category a:last-child {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+.service-sidebar .category .scroll_section:last-child {
   padding: 0;
   margin: 0;
   border-bottom: none;
