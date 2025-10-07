@@ -36,7 +36,7 @@ export const ContactPageContent = () => {
                 </div>
                 <div className="content">
                   <h5>Email Us</h5>
-                  <p>info@example.com</p>
+                  <p>info@wellwheels.org</p>
                 </div>
               </div>
             </div>
