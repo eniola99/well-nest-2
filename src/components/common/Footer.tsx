@@ -102,8 +102,8 @@ export const Footer = () => {
                         </div>
                         <div className="content">
                           <h6>Mail Us</h6>
-                          <Link href="mailto:info@example.com">
-                            info@example.com
+                          <Link href="mailto:info@wellwheels.org">
+                            info@wellwheels.org
                           </Link>
                         </div>
                       </li>

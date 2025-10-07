@@ -11,9 +11,9 @@ export const HeaderTop = () => {
               <div className="header-top-list">
                 <ul>
                   <li>
-                    <Link href="mailto:info@example.com">
+                    <Link href="mailto:info@wellwheels.org">
                       <i className="far fa-envelopes"></i>
-                      info@example.com
+                      info@wellwheels.org
                     </Link>
                   </li>
                   <li>
