@@ -60,18 +60,24 @@ export const HeaderTop = () => {
 
               <div className="header-top-social">
                 <span>Follow Us: </span>
-                <Link href="#">
+                <Link
+                  href="https://www.facebook.com/share/17EkQSCp1b/"
+                  target="_blank"
+                >
                   <i className="fab fa-facebook"></i>
                 </Link>
-                <Link href="#">
+                {/* <Link href="#">
                   <i className="fab fa-x-twitter"></i>
-                </Link>
-                <Link href="#">
+                </Link> */}
+                <Link
+                  href="https://www.instagram.com/wellnesthealthgroup?utm_source=qr&igsh=MTBtbXM0cnV4b29qaQ=="
+                  target="_blank"
+                >
                   <i className="fab fa-instagram"></i>
                 </Link>
-                <Link href="#">
+                {/* <Link href="#">
                   <i className="fab fa-linkedin"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
