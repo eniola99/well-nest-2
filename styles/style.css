@@ -92,7 +92,7 @@ Table of contents
   --theme-color2: #2b8198;
   --theme-bg-light: #f6f6f6;
   --theme-color-light: rgba(255, 122, 124, 0.1);
-  --body-text-color: #757f95;
+  --body-text-color: #000000;
   --color-white: #ffffff;
   --color-dark: #2c374b;
   --color-green: #15d4c9;
@@ -174,6 +174,10 @@ ul {
 
 li {
   list-style: none;
+}
+
+.wellNest_home_care_li li {
+  list-style: disc;
 }
 
 h1,
@@ -1249,6 +1253,13 @@ label {
 
   /* nav right */
   .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 45px;
+  }
+  .nav-right-sub-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6398,10 +6409,61 @@ label {
   border-radius: 40px;
 }
 
+.home-3 .hero-single .hero-img .hero-img-container {
+  /* background-color: #d3d3d3; */
+  border-radius: 50px;
+  width: 550px;
+}
+
+.home-3 .hero-single .hero-img .hero-img-container .hero-old-img {
+  margin-right: 50px;
+  margin-bottom: 2px;
+}
+
 @media all and (max-width: 991px) {
   .home-3 .hero-single .hero-img {
     margin-top: 40px;
   }
+}
+
+@media all and (max-width: 425px) {
+  .home-3 .hero-single .hero-img {
+    margin-top: 10px;
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .home-3 .hero-single .hero-img {
+    margin-top: 10px;
+    display: none;
+  }
+  .section-link {
+    background-color: #d3d3d3;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-link {
+  background-color: #d3d3d3;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-link-button {
+  background-color: var(--theme-color);
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  font-weight: 700;
+  border-radius: 10px;
 }
 
 /* ================= end ================== */

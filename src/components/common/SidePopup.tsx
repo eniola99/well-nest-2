@@ -17,12 +17,6 @@ export const SidePopup = ({
   const { width } = useWindowSize();
   const router = useRouter();
 
-  const services = [
-    { name: "Help at Home", slug: "help-at-home" },
-    { name: "Nurse at Home", slug: "nurse-at-home" },
-    { name: "Live-in Care", slug: "live-in-care" },
-  ];
-
   return (
     <>
       <div
@@ -63,45 +57,19 @@ export const SidePopup = ({
                   </Link>
                 )}
               </li>
-              <li className="nav-item dropdown">
-                <Link
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Home Care Services
-                </Link>
-                <ul className="dropdown-menu fade-down">
-                  {services.map((service) => (
-                    <li key={service.slug}>
-                      <Link
-                        className="dropdown-item"
-                        href={`/home_care_service/${service.slug}`}
-                      >
-                        {service.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/transportation">
-                  Transportation Services
+                <Link href="#" className="nav-link">
+                  WellNest Home Care
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/subscription">
-                  Membership Plans
+                <Link className="nav-link" href="/wellWhells">
+                  WellWheels
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/about">
                   About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/contact">
-                  Contact Us
                 </Link>
               </li>
             </ul>

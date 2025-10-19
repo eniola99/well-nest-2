@@ -1,7 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-import { HelpAtHome, NurseAtHome, LiveInCare } from "@/src/components";
+import {
+  PersonalCareServicePage,
+  SeasonalHomeSupportPage,
+  LiveInCare,
+} from "@/src/components";
 
 const HomeServicePage = () => {
   const router = useRouter();
@@ -10,13 +14,12 @@ const HomeServicePage = () => {
   let PageComponent: React.ElementType;
 
   switch (true) {
-    case service === "help-at-home":
-      PageComponent = HelpAtHome;
+    case service === "personal-care-services":
+      PageComponent = PersonalCareServicePage;
       break;
-    case service === "nurse-at-home":
-      PageComponent = NurseAtHome;
+    case service === "seasonal-home-support":
+      PageComponent = SeasonalHomeSupportPage;
       break;
-    case service === "live-in-care":
     default:
       PageComponent = LiveInCare;
       break;

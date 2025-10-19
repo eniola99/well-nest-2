@@ -3,7 +3,7 @@ import React from "react";
 import { Footer, NavSection } from "./common";
 import {
   HelpAtHomeHero,
-  LiveInCareContent,
+  WellNestHomeCareContent,
 } from "../page_components/HelpAtHome_service";
 
 export const LiveInCare = () => {
@@ -11,7 +11,7 @@ export const LiveInCare = () => {
     <>
       <NavSection />
       <HelpAtHomeHero title="Live In Care" />
-      <LiveInCareContent />
+      <WellNestHomeCareContent />
       <Footer />
     </>
   );

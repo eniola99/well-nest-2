@@ -51,19 +51,22 @@ export const HeroSection = () => {
               </div>
               <div className="col-md-12 col-lg-6">
                 <div className="hero-img">
-                  <Link
+                  {/* <Link
                     className="play-btn popup-youtube"
                     href="https://www.youtube.com/"
                     target="_blank"
                   >
                     <i className="fas fa-play"></i>
-                  </Link>
-                  <Image
-                    src="/assets/img/01.jpg"
-                    width={550}
-                    height={600}
-                    alt="hero imgage"
-                  />
+                  </Link> */}
+                  <div className="hero-img-container">
+                    <Image
+                      className="hero-old-img"
+                      src="/assets/img/old-woman.png"
+                      width={550}
+                      height={600}
+                      alt="hero imgage"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -2,15 +2,15 @@ import React from "react";
 import { Footer, NavSection } from "./common";
 import {
   HelpAtHomeHero,
-  NurseHomeContent,
+  SeasonalHomeSupport,
 } from "../page_components/HelpAtHome_service";
 
-export const NurseAtHome = () => {
+export const SeasonalHomeSupportPage = () => {
   return (
     <>
       <NavSection />
-      <HelpAtHomeHero title="Nurse At Home" />
-      <NurseHomeContent />
+      <HelpAtHomeHero title="Seasonal Home Support" />
+      <SeasonalHomeSupport />
       <Footer />
     </>
   );
