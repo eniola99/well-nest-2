@@ -9,12 +9,6 @@ export const Navbar = () => {
   const router = useRouter();
   const [ShowSlideOut, setShowSlideOut] = useState<boolean>(false);
 
-  const services = [
-    { name: "Help at Home", slug: "help-at-home" },
-    { name: "Nurse at Home", slug: "nurse-at-home" },
-    { name: "Live-in Care", slug: "live-in-care" },
-  ];
-
   return (
     <>
       <div className="main-navigation">
@@ -54,26 +48,8 @@ export const Navbar = () => {
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
-              <div className="offcanvas-header">
-                <a className="offcanvas-brand" id="offcanvasNavbarLabel">
-                  <Image
-                    src="/assets/img/logo.png"
-                    width={100}
-                    height={100}
-                    alt="logo"
-                  />
-                </a>
-                <button
-                  type="button"
-                  className="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
-                  <i className="far fa-xmark"></i>
-                </button>
-              </div>
               <div className="offcanvas-body gap-xl-4">
-                <ul className="navbar-nav justify-content-end flex-grow-1">
+                <ul className="navbar-nav justify-content-center flex-grow-1">
                   {router.pathname !== "/" && (
                     <li className="nav-item">
                       <Link className="nav-link" href="/">
@@ -81,15 +57,12 @@ export const Navbar = () => {
                       </Link>
                     </li>
                   )}
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                    >
-                      Home Care Services
-                    </a>
-                    <ul className="dropdown-menu fade-down">
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/home_care_service">
+                      WellNest Home Care
+                    </Link>
+                  </li>
+                  {/* <ul className="dropdown-menu fade-down">
                       {services.map((service) => (
                         <li key={service.slug}>
                           <Link
@@ -100,18 +73,17 @@ export const Navbar = () => {
                           </Link>
                         </li>
                       ))}
-                    </ul>
-                  </li>
+                    </ul> */}
                   <li className="nav-item">
-                    <Link className="nav-link" href="/transportation">
-                      Transportation Services
+                    <Link className="nav-link" href="/well-wheels">
+                      WellWheels
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link className="nav-link" href="/subscription">
                       Subscription Plans
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link" href="/about">
                       About Us
@@ -122,7 +94,8 @@ export const Navbar = () => {
                 <div className="nav-right">
                   <div className="nav-btn">
                     <Link href="/contact" className="theme-btn">
-                      Lets Talk<i className="fas fa-arrow-right"></i>
+                      {`Let's Talk`}
+                      <i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
