@@ -3129,7 +3129,7 @@ label {
 }
 
 .pricing-amount strong {
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 900;
   color: var(--color-dark);
   line-height: 1;
@@ -3149,6 +3149,7 @@ label {
 
 .pricing-feature {
   padding: 40px 0 0 0;
+  min-height: 400px;
 }
 
 .pricing-feature li {
@@ -3180,7 +3181,7 @@ label {
 
 @media all and (max-width: 991px) {
   .pricing-amount strong {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 
@@ -6464,6 +6465,10 @@ label {
   padding: 10px 20px 10px 20px;
   font-weight: 700;
   border-radius: 10px;
+}
+
+.home-care-packages {
+  margin-top: 100px;
 }
 
 /* ================= end ================== */

@@ -102,13 +102,13 @@ export const SeasonalHomeSupport = () => {
               {/* <HelpAtHomeForm /> */}
             </div>
           </div>
-        </div>
-        <SubSection
-          text="Ready to get started?"
-          subText="Call us today or fill out our contact form to book a free in-home consultation and discover how
+          <SubSection
+            text="Ready to get started?"
+            subText="Call us today or fill out our contact form to book a free in-home consultation and discover how
 WellNest can help you or your loved one live well — at home."
-          actionText="Start My Care Plan"
-        />
+            actionText="Start My Care Plan"
+          />
+        </div>
       </div>
     </>
   );

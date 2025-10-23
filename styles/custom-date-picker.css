@@ -1,0 +1,10 @@
+/* Target the popper element containing the calendar */
+.react-datepicker-popper {
+  background-color: #fff; /* or any other solid color */
+}
+
+/* Target the main datepicker container to ensure it's not transparent */
+.react-datepicker {
+  background-color: #fff; /* Set the background of the calendar itself */
+  border: 1px solid #ccc; /* Add a border if you wish */
+}
