@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { PricingPackages } from "./PricingPackages";
+
+import { homeCarePackages } from "@/src/utils/utils";
 
 export const WellNestHomeCareContent = () => {
   const router = useRouter();
@@ -95,6 +98,12 @@ export const WellNestHomeCareContent = () => {
               </div>
             </div>
           </div>
+          <PricingPackages
+            packages={homeCarePackages}
+            title="WellNest Home Care"
+            subTitle="Care Packages/Membership"
+            actionText="Book Now"
+          />
         </div>
       </div>
     </>

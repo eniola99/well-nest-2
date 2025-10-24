@@ -5,8 +5,14 @@ import Link from "next/link";
 
 import { NavSection, Footer } from "./common";
 import { HelpAtHomeHero } from "../page_components/HelpAtHome_service";
+import { PricingPackages } from "../page_components/HelpAtHome_service";
+import { BookRide } from "./BookRide";
 
-import { dailyLivingSupportList, wellWheelServices } from "../utils/utils";
+import {
+  dailyLivingSupportList,
+  wellWheelServices,
+  wellWheelPackages,
+} from "../utils/utils";
 
 export const DailyLivingSupport = () => {
   const router = useRouter();
@@ -14,11 +20,38 @@ export const DailyLivingSupport = () => {
   return (
     <>
       <NavSection />
-      <HelpAtHomeHero title="Non Emergency Medical Transport" />
+      <HelpAtHomeHero title="Daily Living Support" />
       <div className="event-single py-120">
         <div className="container">
           <div className="event-single-wrap">
-            <div className="row g-4">
+            <div className="row g-5">
+              <div className="col-lg-4">
+                <div className="service-sidebar">
+                  <div className="widget">
+                    <div className="header">
+                      <h4 className="title">WellWheels Service</h4>
+                      <div className="category">
+                        {wellWheelServices
+                          .filter((item) => item.slug !== slug)
+                          .map((service) => (
+                            <>
+                              <Link href={`/well-wheels/${service.slug}`}>
+                                <i className="fa fa-angle-double-right"></i>
+                                {service.name}
+                              </Link>
+                            </>
+                          ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="widget">
+                    <h4 className="title">Book a Ride</h4>
+                    <div className="event-single-author">
+                      <BookRide />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="col-lg-8">
                 <div className="event-details">
                   <div className="my-4">
@@ -67,29 +100,14 @@ export const DailyLivingSupport = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
-                <div className="service-sidebar">
-                  <div className="widget">
-                    <div className="header">
-                      <h4 className="title">WellWheels Service</h4>
-                      <div className="category">
-                        {wellWheelServices
-                          .filter((item) => item.slug !== slug)
-                          .map((service) => (
-                            <>
-                              <Link href={`/well-wheels/${service.slug}`}>
-                                <i className="fa fa-angle-double-right"></i>
-                                {service.name}
-                              </Link>
-                            </>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
+          <PricingPackages
+            packages={wellWheelPackages}
+            title="WellWheels"
+            subTitle="Care Packages/Membership"
+            actionText="Book Now"
+          />
         </div>
       </div>
       <Footer />

@@ -8,3 +8,4 @@ export * from "./NonEmergencyMedicalTransport";
 export * from "./HealthWellnessSupport";
 export * from "./DailyLivingSupport";
 export * from "./RespiteGroupTransport";
+export * from "./BookRide";

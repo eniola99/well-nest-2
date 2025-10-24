@@ -120,3 +120,73 @@ export const respiteGroupTransportList = [
   "Seamless coordination with WellNest Home Care for bundled care and transport services.",
   "Transparent pricing and flexible membership options to fit every lifestyle.",
 ];
+
+export const homeCarePackages = [
+  {
+    text: [
+      "Companion Care Plan",
+      "Essential Care Plan",
+      "Comprehensive Care Plan",
+    ],
+    tooltip: ["Companion", "Essential", "Comprehensive"],
+    benefits: [
+      {
+        companion: [
+          "8-12 hours of care/week",
+          "Companionship, light housekeeping, meal prep, errands",
+          "Wellness check-in updates for family after each visit",
+          "Access to scheduling portal",
+        ],
+        essential: [
+          "15-20 hours of care/week",
+          "Includes personal care (bathing, grooming, mobility support)",
+          "Homemaking + companionship included",
+          "Monthly care plan review and family updates",
+          "Priority caregiver matching",
+        ],
+        comprehensive: [
+          "30-40 hours of care/week",
+          "Personal care + companionship + homemaking",
+          "Respite care for family caregivers",
+          "Quarterly care coordinator home visits",
+          "Dedicated phone support for scheduling",
+          "Family caregiver support resources (guides, group sessions, check-ins)",
+        ],
+      },
+    ],
+  },
+];
+
+export const wellWheelPackages = [
+  {
+    text: [
+      "Basic Care Mobility Plan",
+      "Essential Wellness Plan",
+      "Independence Plan",
+    ],
+    tooltip: ["Basic", "Essential", "Independence"],
+    benefits: [
+      {
+        basic: [
+          "2-4 rides per week (within 20km radius)",
+          "Door-to-door assistance (driver helps in/out of vehicle)",
+          "Standard booking (48 hrs notice required)",
+          "Access to caregiver/family booking portal",
+        ],
+        essential: [
+          "6-8 rides per week (within 20km radius)",
+          "Priority booking (same-day availability when possible)",
+          "2 deliveries per month",
+          "Family notification when transport is completed",
+        ],
+        independence: [
+          "12–14 rides per week (within 20km radius)",
+          "8 deliveries per month",
+          "Accompanied transport option (driver waits up to 1 hour at appointment)",
+          "Dedicated booking hotline (phone support, priority scheduling)",
+          "Monthly wellness check-in report shared with family",
+        ],
+      },
+    ],
+  },
+];

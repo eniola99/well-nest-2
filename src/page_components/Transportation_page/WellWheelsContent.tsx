@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { wellWheelServices } from "@/src/utils/utils";
+import { PricingPackages } from "../HelpAtHome_service";
+
+import { wellWheelPackages } from "@/src/utils/utils";
+import { BookRide } from "@/src/components";
 
 export const WellWheelsContent = () => {
   return (
@@ -10,6 +14,31 @@ export const WellWheelsContent = () => {
         <div className="container">
           <div className="event-single-wrap">
             <div className="row g-4">
+              <div className="col-lg-4">
+                <div className="service-sidebar">
+                  <div className="widget">
+                    <div className="header">
+                      <h4 className="title">WellWheels Service</h4>
+                      <div className="category">
+                        {wellWheelServices.map((service) => (
+                          <>
+                            <Link href={`/well-wheels/${service.slug}`}>
+                              <i className="fa fa-angle-double-right"></i>
+                              {service.name}
+                            </Link>
+                          </>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="widget">
+                    <h4 className="title">Book a Ride</h4>
+                    <div className="event-single-author">
+                      <BookRide />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="col-lg-8">
                 <div className="event-details">
                   <div className="my-4">
@@ -99,75 +128,14 @@ export const WellWheelsContent = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
-                <div className="service-sidebar">
-                  <div className="widget">
-                    <div className="header">
-                      <h4 className="title">WellWheels Service</h4>
-                      <div className="category">
-                        {wellWheelServices.map((service) => (
-                          <>
-                            <Link href={`/well-wheels/${service.slug}`}>
-                              <i className="fa fa-angle-double-right"></i>
-                              {service.name}
-                            </Link>
-                          </>
-                        ))}
-                      </div>
-                      {/* </div>
-                    <div className="event-single-info">
-                      <div className="event-single-item">
-                        <h5>Event Date</h5>
-                        <p>
-                          <i className="far fa-calendar-alt"></i>19 January 2025
-                        </p>
-                      </div>
-                      <div className="event-single-item">
-                        <h5>Event Time</h5>
-                        <p>
-                          <i className="far fa-clock"></i>08: 00 AM - 04:00 PM
-                        </p>
-                      </div>
-                      <div className="event-single-item">
-                        <h5>Event Location</h5>
-                        <p>
-                          <i className="far fa-map-marker-alt"></i>New York, USA
-                        </p>
-                      </div>
-                      <div className="event-single-item">
-                        <h5>Event Cost</h5>
-                        <p>
-                          <i className="far fa-usd-circle"></i>150
-                        </p>
-                      </div>
-                      <Link href="#" className="theme-btn">
-                        Book Now<i className="fas fa-arrow-right"></i>
-                      </Link> */}
-                    </div>
-                  </div>
-                  {/* <div className="widget">
-                    <h4 className="title">Event Organizer</h4>
-                    <div className="event-single-author">
-                      <div className="author-info">
-                        <Image
-                          src="/assets/img/event/author.jpg"
-                          width={200}
-                          height={200}
-                          alt=""
-                        />
-                        <h5>Richard M Bell</h5>
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when
-                          looking at its layout.
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
-                </div>
-              </div>
             </div>
           </div>
+          <PricingPackages
+            packages={wellWheelPackages}
+            title="WellWheels"
+            subTitle="Care Packages/Membership"
+            actionText="Book Now"
+          />
         </div>
       </div>
     </>

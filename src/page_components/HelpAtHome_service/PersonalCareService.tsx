@@ -5,6 +5,9 @@ import Link from "next/link";
 
 import { PersonalCareServiceList } from "@/src/utils/utils";
 import { SubSection } from "@/src/components/common";
+import { PricingPackages } from "./PricingPackages";
+
+import { homeCarePackages } from "@/src/utils/utils";
 
 export const PersonalCareService = () => {
   const router = useRouter();
@@ -93,29 +96,25 @@ export const PersonalCareService = () => {
                           </>
                         ))}
                       </div>
-                      {/* <div className="mt-4">
-                      <h3 className="mb-3">Remarkable Moments</h3>
-                      <p>
-                        Good things are happening everyday at ParaMed. Whether
-                        it’s a brief encounter or a life changing event, we do
-                        everything we can to bring a remarkable moment into the
-                        homes of Canadians across the country daily.
-                      </p>
-                    </div> */}
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <HelpAtHomeForm /> */}
             </div>
           </div>
-        </div>
-        <SubSection
-          text="Need help deciding what’s right for you?"
-          subText="Our team will guide you through available services and membership
+          <PricingPackages
+            packages={homeCarePackages}
+            title="WellNest Home Care"
+            subTitle="Care Packages/Membership"
+            actionText="Book Now"
+          />
+          <SubSection
+            text="Need help deciding what’s right for you?"
+            subText="Our team will guide you through available services and membership
           plans, ensuring you get the right level of support at the right time."
-          actionText="Start My Care Plan"
-        />
+            actionText="Start My Care Plan"
+          />
+        </div>
       </div>
     </>
   );

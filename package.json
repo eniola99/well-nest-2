@@ -14,8 +14,10 @@
     "bootstrap": "^5.3.7",
     "next": "15.4.5",
     "react": "19.1.0",
+    "react-datepicker": "^8.8.0",
     "react-dom": "19.1.0",
-    "react-redux": "^9.2.0"
+    "react-redux": "^9.2.0",
+    "reactstrap": "^9.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
