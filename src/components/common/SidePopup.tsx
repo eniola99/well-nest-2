@@ -58,12 +58,12 @@ export const SidePopup = ({
                 )}
               </li>
               <li className="nav-item">
-                <Link href="#" className="nav-link">
+                <Link href="/home_care_service" className="nav-link">
                   WellNest Home Care
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/wellWhells">
+                <Link className="nav-link" href="/well-wheels">
                   WellWheels
                 </Link>
               </li>
