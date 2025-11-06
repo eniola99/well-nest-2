@@ -49,7 +49,7 @@ export const SidePopup = ({
         </div>
         {ShowSlideOut && width <= 768 && (
           <div className="offcanvas-body gap-xl-4">
-            <ul className="navbar-nav justify-content-end flex-grow-1">
+            <ul className="navbar-nav justify-content-end grow">
               <li className="nav-item">
                 {router.pathname !== "/" && (
                   <Link className="nav-link" href="/">

@@ -49,7 +49,7 @@ export const Navbar = () => {
               aria-labelledby="offcanvasNavbarLabel"
             >
               <div className="offcanvas-body gap-xl-4">
-                <ul className="navbar-nav justify-content-center flex-grow-1">
+                <ul className="navbar-nav justify-content-center grow">
                   {router.pathname !== "/" && (
                     <li className="nav-item">
                       <Link className="nav-link" href="/">

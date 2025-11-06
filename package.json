@@ -12,15 +12,20 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@reduxjs/toolkit": "^2.8.2",
     "bootstrap": "^5.3.7",
+    "date-fns": "^4.1.0",
+    "mailgun-js": "^0.22.0",
     "next": "15.4.5",
     "react": "19.1.0",
     "react-datepicker": "^8.8.0",
     "react-dom": "19.1.0",
     "react-redux": "^9.2.0",
-    "reactstrap": "^9.2.3"
+    "react-toastify": "^11.0.5",
+    "reactstrap": "^9.2.3",
+    "validator": "^13.15.20"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/mailgun-js": "^0.22.19",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
