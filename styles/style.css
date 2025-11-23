@@ -6471,4 +6471,30 @@ label {
   margin-top: 100px;
 }
 
+.benefit-card {
+  padding: 80px;
+  margin: 10px;
+  background-color: var(--color-dark);
+  text-align: center;
+  font-size: 18px;
+}
+
+.career-opennings {
+  text-decoration: underline;
+  position: relative;
+  text-underline-offset: 0.8em;
+  text-decoration-style: solid;
+  text-decoration-thickness: 6px;
+}
+
+.application_button:focus {
+  border: 0;
+  outline: none;
+}
+
+.contact-information input:focus {
+  border: none;
+  outline: none;
+}
+
 /* ================= end ================== */

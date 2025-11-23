@@ -79,11 +79,11 @@ export const Navbar = () => {
                       WellWheels
                     </Link>
                   </li>
-                  {/* <li className="nav-item">
-                    <Link className="nav-link" href="/subscription">
-                      Subscription Plans
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/career">
+                      Careers
                     </Link>
-                  </li> */}
+                  </li>
                   <li className="nav-item">
                     <Link className="nav-link" href="/about">
                       About Us

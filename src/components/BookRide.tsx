@@ -37,6 +37,7 @@ export const BookRide = () => {
     attr: keyof BookRideType
   ) => {
     const form = { ...formData };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (form as any)[attr] = value;
     setFormData(form);
   };
@@ -100,7 +101,7 @@ export const BookRide = () => {
         initiateBookRide(formData);
       }
     }
-  }, [isSubmitting, error, formData, initiateBookRide]);
+  }, [isSubmitting, error, initiateBookRide]);
 
   return (
     <>
