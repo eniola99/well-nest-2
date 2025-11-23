@@ -125,7 +125,8 @@ export default async function handler(
       status: 200,
     });
     return;
-  } catch (error: unknown) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
     console.log(error);
     res.status(500).json({ message: error.message });
   }
