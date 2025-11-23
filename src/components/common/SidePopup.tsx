@@ -68,6 +68,11 @@ export const SidePopup = ({
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" href="/career">
+                  Careers
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" href="/about">
                   About Us
                 </Link>

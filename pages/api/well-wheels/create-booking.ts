@@ -115,19 +115,18 @@ export default async function handler(
       pickUpAddress
     );
     await sendEmail({
-      to: email,
+      to: [email, "info@wellwheels.org"],
       from: "Excited User <mailgun@sandboxf25fe5bd655642f6bcfc11377c890587.mailgun.org>",
       subject: "Well Wheels Transportation Service",
       html: emailTemplate,
     });
-    res
-      .status(201)
-      .json({
-        message: `Appointment Booked, Check your mail for confirmation`,
-        status: 200,
-      });
+    res.status(201).json({
+      message: `Appointment Booked, Check your mail for confirmation`,
+      status: 200,
+    });
     return;
-  } catch (error: unknown) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
     console.log(error);
     res.status(500).json({ message: error.message });
   }

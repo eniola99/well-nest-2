@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect } from "react";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 
+import { store, persistor } from "@/src/slice/store";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import "@/styles/globals.css";
 import "@/styles/style.css";
@@ -15,5 +18,11 @@ export default function App({ Component, pageProps }: AppProps) {
     // @ts-expect-error
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Component {...pageProps} />
+      </PersistGate>
+    </Provider>
+  );
 }

@@ -1,7 +1,7 @@
 import mailgun from "mailgun-js";
 
 type SendMailTypes = {
-  to: string;
+  to: string[];
   from: string;
   subject: string;
   html: string;
