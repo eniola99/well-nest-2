@@ -6,6 +6,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "@/src/slice/store";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import "@/styles/globals.css";
+import "@/styles/admin.css";
 import "@/styles/style.css";
 import "@/styles/owl.carousel.min.css";
 // import "@/styles/nice-select.min.css";
