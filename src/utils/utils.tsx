@@ -472,3 +472,15 @@ export interface RoleProps {
 export interface ApplicationPageProps {
   role: RoleProps;
 }
+
+export type IJobTemplate = {
+  title?: string | undefined;
+  type?: string | undefined;
+  salary?: string | undefined;
+  lineManager?: string | undefined;
+  role?: string | undefined;
+  keyResponsibilities?: string[] | undefined;
+  jobRequirement?: string[] | undefined;
+  additionalTraining?: string[] | undefined;
+  joinUs?: string[] | undefined;
+};

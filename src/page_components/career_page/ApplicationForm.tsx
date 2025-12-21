@@ -12,6 +12,7 @@ import {
   Spinner,
 } from "reactstrap";
 import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 import { RootState } from "@/src/slice/store";
 import {
@@ -76,24 +77,18 @@ export const ApplicationForm = () => {
     name: validateText(fields?.name || "", "Name"),
     contact: validateText(fields?.contact || "", "Contact"),
     email: validateEmail(fields?.email || ""),
-    status: validateBoolean(fields?.status, "Eligibility status"),
+    status: validateBoolean(fields?.status, "Valid response"),
     cprCertification: validateBoolean(
       fields?.cprCertification,
-      "CPR certificate"
+      "Valid response"
     ),
     foodCertification: validateBoolean(
       fields?.foodCertification,
-      "Food certificate"
+      "Valid response"
     ),
-    validVulnerable: validateBoolean(
-      fields?.validVulnerable,
-      "Valid Vulnerability"
-    ),
-    accessVehicle: validateBoolean(fields?.accessVehicle, "Access to vehicle"),
-    infractionFree: validateBoolean(
-      fields?.infractionFree,
-      "Infraction Free status"
-    ),
+    validVulnerable: validateBoolean(fields?.validVulnerable, "Valid response"),
+    accessVehicle: validateBoolean(fields?.accessVehicle, "Valid response"),
+    infractionFree: validateBoolean(fields?.infractionFree, "Valid response"),
     resume: !fields?.resume ? "Please upload your resume" : undefined,
   });
 
@@ -104,13 +99,30 @@ export const ApplicationForm = () => {
 
   const sendApplication = useCallback(async (form: FormType) => {
     setIsloading(true);
+    const formData = new FormData();
+
+    // Append text fields
+    formData.append("name", form.name);
+    formData.append("contact", form.contact);
+    formData.append("email", form.email);
+    formData.append("position", form.position);
+    formData.append("status", form.status);
+    formData.append("cprCertification", form.cprCertification);
+    formData.append("foodCertification", form.foodCertification);
+    formData.append("validVulnerable", form.validVulnerable);
+    formData.append("accessVehicle", form.accessVehicle);
+    formData.append("infractionFree", form.infractionFree);
+    if (form.resume instanceof File) {
+      formData.append("resume", form.resume, form.resume.name);
+    }
 
     const response = await fetch("/api/careers/jobs/apply", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
+      // body: JSON.stringify(form),
+      body: formData,
     });
 
     const initData = await response.json();

@@ -9,12 +9,14 @@ interface RoleRequirementsProps {
 }
 export const RoleRequirements = ({ role, title }: RoleRequirementsProps) => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 mx-2">
       <h5 className="mb-3">{title} :</h5>
-      <ul className="list-group">
+      <ul className="" style={{ listStyleType: "disc", color: "black" }}>
         {role.map((item, index) => (
           <div key={index}>
-            <li className="list-group-item">{item.value}</li>
+            <li className="" style={{ listStyleType: "disc", color: "black" }}>
+              {item.value}
+            </li>
           </div>
         ))}
       </ul>

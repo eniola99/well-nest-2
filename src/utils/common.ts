@@ -15,6 +15,14 @@ export const validateText = (text: string, fieldName: string) => {
   return undefined;
 };
 
+export const validateArrayFields = (value: string[], fieldName: string) => {
+  if (value.length === 0) {
+    return `${fieldName} is required`;
+  }
+
+  return undefined;
+};
+
 export const validateEmail = (email: string) => {
   if (validator.isEmpty(email)) {
     return "Email is Required";
