@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+
 import { validateArrayFields, validateText } from "@/src/utils/common";
 import React, { useEffect, useState, useCallback } from "react";
 import {

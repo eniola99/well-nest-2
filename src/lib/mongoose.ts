@@ -15,18 +15,14 @@ interface CachedMongoose {
 }
 
 declare global {
-  namespace NodeJS {
-    interface Global {
-      mongoose: CachedMongoose;
-    }
-  }
+  var mongoose: CachedMongoose | undefined;
 }
 
-let cached = global.mongoose;
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
+if (!global.mongoose) {
+  global.mongoose = { conn: null, promise: null };
 }
+
+const cached: CachedMongoose = global.mongoose;
 
 export const dbConnect = async () => {
   if (cached.conn) {
