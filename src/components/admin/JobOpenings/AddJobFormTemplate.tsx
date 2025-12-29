@@ -40,6 +40,7 @@ const JobTemplateForm = {
 };
 export const AddJobFormTemplate = () => {
   const [isLoading, setIsloading] = useState<boolean>(false);
+  console.log("Render AddJobFormTemplate");
   // const [count, setCount] = useState<number>(1);
   const [keyResponsibilitiesInput, setkeyResponsibilitiesInput] =
     useState<string>();
