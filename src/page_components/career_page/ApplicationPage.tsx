@@ -9,29 +9,33 @@ import { ApplicationForm } from "./ApplicationForm";
 
 export const ApplicationPage = () => {
   const { role } = useSelector((state: RootState) => state.jobs);
+  console.log({ role });
   return (
     <>
-      <ApplicationHero title={role.title} />
+      <ApplicationHero title={role.title!} />
       <div className="container mt-5 mb-5">
-        <p className="mt-5 mb-5">{role.berief}</p>
+        <p className="mt-5 mb-5">
+          At WellWheels, we do more than drive — we care. As the transportation
+          arm of WellNest Health Group, our focus is helping clients get where
+          they need to go safely, comfortably, and with dignity. We provide
+          non-emergency medical transportation for seniors, people with
+          disabilities, and individuals needing support for appointments,
+          errands, or community outings. We’re looking for Driver Companions who
+          take pride in providing safe, reliable, and compassionate service.
+        </p>
         <h4 className="mb-2">
-          {role.title} - {role.job_type}
+          {role.title} - {role.type}
         </h4>
         <p className="">
-          <strong>Line Manager :</strong> {role.reports_to}
+          <strong>Line Manager :</strong> {role.lineManager}
         </p>
         <p className="">{role.salary}</p>
-        <p className="mt-5">{role.your_role}</p>
+        <p className="mt-5">{role.role}</p>
         <RoleRequirements
-          role={role.key_responsibilities}
+          role={role.keyResponsibilities!}
           title="Key Responsibilities"
         />
-        <RoleRequirements role={role.what_you_bring} title="Qualifications" />
-        <RoleRequirements role={role.why_join_us} title="Why Join Us" />
-        <RoleRequirements
-          role={role.additional_training_provided}
-          title="Additional Training"
-        />
+        <RoleRequirements role={role.jobRequirement!} title="Qualifications" />
       </div>
       <ApplicationForm />
     </>

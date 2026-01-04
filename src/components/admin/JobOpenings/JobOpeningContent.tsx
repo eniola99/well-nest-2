@@ -3,17 +3,22 @@ import { JobOpeningCard } from "./JobOpeningCard";
 import { AddJob } from "./AddJob";
 import { AddJobContent } from "./AddJobContent";
 import { JobOpeningList } from "./JobOpeningList";
+import { IJobTemplate } from "@/src/utils/utils";
 
 interface JobOpeningContentProps {
   activeTab?: {
     name: string;
   };
+  jobList: IJobTemplate[] | undefined;
 }
 type IAddJob = {
   handleCreate: () => void;
 };
 
-export const JobOpeningContent = ({ activeTab }: JobOpeningContentProps) => {
+export const JobOpeningContent = ({
+  activeTab,
+  jobList,
+}: JobOpeningContentProps) => {
   const [add, setAdd] = useState<boolean>(false);
   const handleCreate = () => {
     setAdd(true);
@@ -24,7 +29,7 @@ export const JobOpeningContent = ({ activeTab }: JobOpeningContentProps) => {
       <>
         <div className="d-flex flex-column">
           <div className="d-flex flex-row">
-            <JobOpeningCard activeTab={activeTab} />
+            <JobOpeningCard activeTab={activeTab} jobList={jobList} />
             <AddJob handleCreate={handleCreate} />
           </div>
           <div className="mt-5">

@@ -4,3 +4,5 @@ export * from "./AddJob";
 export * from "./AddJobContent";
 export * from "./AddJobFormTemplate";
 export * from "./JobOpeningList";
+export * from "./JobList";
+export * from "./EditJobPost";

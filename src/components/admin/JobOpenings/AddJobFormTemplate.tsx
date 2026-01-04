@@ -12,20 +12,15 @@ import {
   Label,
   Button,
 } from "reactstrap";
-
 import { ToastContainer, toast } from "react-toastify";
 
-type IJobTemplate = {
-  title?: string | undefined;
-  type?: string | undefined;
-  salary?: string | undefined;
-  lineManager?: string | undefined;
-  role?: string | undefined;
-  keyResponsibilities?: string[] | undefined;
-  jobRequirement?: string[] | undefined;
-  additionalTraining?: string[] | undefined;
-  joinUs?: string[] | undefined;
-};
+import { IJobTemplate } from "@/src/utils/utils";
+
+interface IJobTemplateProps {
+  jobEntity?: IJobTemplate | null;
+  toggleModal?: () => void;
+  isEdit?: boolean;
+}
 
 const JobTemplateForm = {
   title: "",
@@ -35,23 +30,26 @@ const JobTemplateForm = {
   role: "",
   keyResponsibilities: [],
   jobRequirement: [],
-  additionalTraining: [],
-  joinUs: [],
 };
-export const AddJobFormTemplate = () => {
+export const AddJobFormTemplate = ({
+  jobEntity,
+  toggleModal,
+  isEdit,
+}: IJobTemplateProps) => {
+  useEffect(() => {
+    if (jobEntity && Object.keys(jobEntity).length > 0) {
+      setFormData(jobEntity);
+    }
+  }, [jobEntity]);
   const [isLoading, setIsloading] = useState<boolean>(false);
-  console.log("Render AddJobFormTemplate");
-  // const [count, setCount] = useState<number>(1);
   const [keyResponsibilitiesInput, setkeyResponsibilitiesInput] =
     useState<string>();
   const [jobRequirementInput, setJobRequirementInput] = useState<string>();
-  const [additionalTrainingInput, setAdditionalTrainingInput] =
-    useState<string>();
-  const [joinUsInput, setJoinUsInput] = useState<string>();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const [errors, setErrors] = useState<IJobTemplate>(JobTemplateForm);
   const [formData, setFormData] = useState<IJobTemplate>(JobTemplateForm);
+  const [index, setIndex] = useState<number>(0);
 
   const handleChange = (value: string, attr: keyof IJobTemplate) => {
     const form = { ...formData };
@@ -63,16 +61,15 @@ export const AddJobFormTemplate = () => {
   const handleListChange = (value: string, attr: keyof IJobTemplate) => {
     setFormData((prevFormData) => {
       const currentArray = prevFormData[attr] as string[];
-      const updatedArray = [...currentArray, value];
+      const updatedArray = [...currentArray, { id: index + 1, value: value }];
       return {
         ...prevFormData,
         [attr]: updatedArray,
       };
     });
+    setIndex(index + 1);
     setkeyResponsibilitiesInput("");
     setJobRequirementInput("");
-    setAdditionalTrainingInput("");
-    setJoinUsInput("");
   };
 
   const handleDelete = (value: string, attr: keyof IJobTemplate) => {
@@ -101,11 +98,6 @@ export const AddJobFormTemplate = () => {
       field.keyResponsibilities || [],
       "Job Key Responsibilities"
     ),
-    additionalTraining: validateArrayFields(
-      field.additionalTraining || [],
-      "Job Additional Training"
-    ),
-    joinUs: validateArrayFields(field.joinUs || [], "Join Us"),
   });
 
   const handleSubmit = () => {
@@ -124,11 +116,14 @@ export const AddJobFormTemplate = () => {
     });
 
     const initData = await response.json();
-    console.log({ initData });
     if (initData.status === 200) {
       toast.success(initData.message);
       setIsloading(false);
       setFormData(JobTemplateForm);
+      setIsSubmitting(false);
+      if (isEdit) {
+        toggleModal();
+      }
     } else {
       toast.error("Failed to create job posting, Try again");
       setIsloading(false);
@@ -143,6 +138,8 @@ export const AddJobFormTemplate = () => {
       initiateAddJobPosition(formData);
     }
   }, [errors, formData, initiateAddJobPosition, isSubmitting]);
+
+  console.log({ formData });
 
   return (
     <div className="mt-5">
@@ -230,7 +227,8 @@ export const AddJobFormTemplate = () => {
                 onChange={(e) => handleChange(e.target.value, "role")}
               />
               <FormFeedback className="mb-3">{errors?.role}</FormFeedback>
-
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="mt-3">
                 <Label className="mt-3">Job Key Responsibilities</Label>
                 {formData?.keyResponsibilities &&
@@ -239,7 +237,7 @@ export const AddJobFormTemplate = () => {
                       {(formData.keyResponsibilities || []).map(
                         (item, index) => (
                           <div key={index}>
-                            <span className="">{item}</span>
+                            <span className="">{item.value}</span>
                             <i
                               className="fa-solid fa-ban cursor_pointer"
                               onClick={() =>
@@ -284,8 +282,6 @@ export const AddJobFormTemplate = () => {
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="">
                 <Label className="">Job Requirement</Label>
                 {formData?.jobRequirement &&
@@ -293,7 +289,7 @@ export const AddJobFormTemplate = () => {
                     <div className="border border-dotted ">
                       {(formData.jobRequirement || []).map((item, index) => (
                         <div key={index}>
-                          <span className="me-3">{item}</span>
+                          <span className="me-3">{item.value}</span>
                           <i
                             className="fa-solid fa-ban cursor_pointer"
                             onClick={() => handleDelete(item, "jobRequirement")}
@@ -327,102 +323,6 @@ export const AddJobFormTemplate = () => {
                     onClick={() =>
                       handleListChange(jobRequirementInput!, "jobRequirement")
                     }
-                  >
-                    Add More
-                  </Button>
-                </div>
-              </div>
-
-              <div className="mt-5">
-                <Label className="">Job Additional Training</Label>
-                {formData?.additionalTraining &&
-                  formData?.additionalTraining?.length > 0 && (
-                    <div className="border border-dotted ">
-                      {(formData.additionalTraining || []).map(
-                        (item, index) => (
-                          <div key={index}>
-                            <span className="me-3">{item}</span>
-                            <i
-                              className="fa-solid fa-ban cursor_pointer"
-                              onClick={() =>
-                                handleDelete(item, "additionalTraining")
-                              }
-                            ></i>
-                          </div>
-                        )
-                      )}
-                    </div>
-                  )}
-                <div className="d-flex flex-column">
-                  <Input
-                    className={
-                      errors?.additionalTraining
-                        ? "shadow-none border"
-                        : "shadow-none border"
-                    }
-                    invalid={!!errors?.additionalTraining}
-                    name="role"
-                    type="textarea"
-                    style={{ minWidth: "350px", padding: "10px" }}
-                    value={additionalTrainingInput}
-                    onChange={(e) => setAdditionalTrainingInput(e.target.value)}
-                  />
-                  <FormFeedback className="mb-3">
-                    {errors?.additionalTraining}
-                  </FormFeedback>
-                  <Button
-                    color="success"
-                    size="sm"
-                    className="mt-2"
-                    disabled={!additionalTrainingInput}
-                    onClick={() =>
-                      handleListChange(
-                        additionalTrainingInput!,
-                        "additionalTraining"
-                      )
-                    }
-                  >
-                    Add More
-                  </Button>
-                </div>
-              </div>
-
-              <div className="mt-5">
-                <Label className="">Why Join Us</Label>
-                {formData?.joinUs && formData?.joinUs?.length > 0 && (
-                  <div className="border border-dotted ">
-                    {(formData.joinUs || []).map((item, index) => (
-                      <div key={index}>
-                        <span className="me-3">{item}</span>
-                        <i
-                          className="fa-solid fa-ban cursor_pointer"
-                          onClick={() => handleDelete(item, "joinUs")}
-                        ></i>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                <div className="d-flex flex-column">
-                  <Input
-                    className={
-                      errors?.joinUs
-                        ? "shadow-none border"
-                        : "shadow-none border"
-                    }
-                    invalid={!!errors?.joinUs}
-                    name="role"
-                    type="textarea"
-                    style={{ minWidth: "350px", padding: "10px" }}
-                    value={joinUsInput}
-                    onChange={(e) => setJoinUsInput(e.target.value)}
-                  />
-                  <FormFeedback className="mb-3">{errors?.joinUs}</FormFeedback>
-                  <Button
-                    color="success"
-                    size="sm"
-                    className="mt-2"
-                    disabled={!joinUsInput}
-                    onClick={() => handleListChange(joinUsInput!, "joinUs")}
                   >
                     Add More
                   </Button>
