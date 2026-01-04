@@ -9,9 +9,16 @@ interface IDashboardIndex {
 
 interface IAdminContainer {
   activeTab: IDashboardIndex | undefined;
+  isFetching?: boolean;
+  error?: string | null;
   jobList: IJobTemplate[] | undefined;
 }
-export const AdminContainer = ({ activeTab, jobList }: IAdminContainer) => {
+export const AdminContainer = ({
+  activeTab,
+  jobList,
+  isFetching,
+  error,
+}: IAdminContainer) => {
   let PageComponent: React.ElementType;
 
   switch (true) {
@@ -54,7 +61,12 @@ export const AdminContainer = ({ activeTab, jobList }: IAdminContainer) => {
             </button> */}
           </div>
         </div>
-        <PageComponent jobList={jobList} activeTab={activeTab} />
+        <PageComponent
+          jobList={jobList}
+          activeTab={activeTab}
+          isFetching={isFetching}
+          error={error}
+        />
       </main>
     </>
   );

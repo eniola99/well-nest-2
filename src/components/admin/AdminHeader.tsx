@@ -4,7 +4,7 @@ export const AdminHeader = () => {
   return (
     <>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a className="navbar-brand me-0 px-3" href="#">
+        <a className="navbar-brand-admin me-0 px-3" href="#">
           <strong>WellNest Health Group</strong>
         </a>
         <button

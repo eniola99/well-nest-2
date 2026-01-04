@@ -6,12 +6,24 @@ export interface IJobs extends Document {
   salary: string;
   lineManager: string;
   role: string;
-  keyResponsibilities: string[];
-  jobRequirement: string[];
-  additionalTraining: string[];
-  joinUs: string[];
+  keyResponsibilities: {
+    id: number;
+    value: string;
+  }[];
+  jobRequirement: {
+    id: number;
+    value: string;
+  }[];
   createdAt: Date;
 }
+
+const ItemSchema = new Schema(
+  {
+    id: { type: Number, required: true },
+    value: { type: String, required: true },
+  },
+  { _id: false }
+);
 
 const PositionSchema = new Schema<IJobs>({
   title: {
@@ -36,19 +48,11 @@ const PositionSchema = new Schema<IJobs>({
     required: true,
   },
   keyResponsibilities: {
-    type: [String],
+    type: [ItemSchema],
     required: true,
   },
   jobRequirement: {
-    type: [String],
-    required: true,
-  },
-  additionalTraining: {
-    type: [String],
-    required: true,
-  },
-  joinUs: {
-    type: [String],
+    type: [ItemSchema],
     required: true,
   },
   createdAt: {

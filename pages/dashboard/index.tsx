@@ -12,17 +12,29 @@ interface IDashboardIndex {
 const DashboardIndex = () => {
   const [activeTab, setActveTab] = useState<IDashboardIndex>();
   const [jobList, setJobList] = useState<IJobTemplate[]>();
+  const [isFetching, setIsFetching] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchJobs = async () => {
+      setIsFetching(true);
       try {
         const response = await fetch("/api/well-wheels/create-job-posting");
         const result = await response.json();
 
         if (result.success) {
+          setIsFetching(false);
           setJobList(result.data);
+          return;
+        }
+        if (!result.success) {
+          setIsFetching(false);
+          setError(
+            result.message || "Failed to fetch open jobs, Try again later."
+          );
         }
       } catch (error) {
+        setIsFetching(false);
         console.error("Failed to fetch jobs:", error);
       }
     };
@@ -35,8 +47,18 @@ const DashboardIndex = () => {
         <AdminHeader />
         <div className="container-fluid">
           <div className="row">
-            <AdminSidePanel setActiveTab={setActveTab} activeTab={activeTab} />
-            <AdminContainer activeTab={activeTab} jobList={jobList} />
+            <>
+              <AdminSidePanel
+                setActiveTab={setActveTab}
+                activeTab={activeTab}
+              />
+            </>
+            <AdminContainer
+              activeTab={activeTab}
+              jobList={jobList}
+              isFetching={isFetching}
+              error={error}
+            />
           </div>
         </div>
       </div>

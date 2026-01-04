@@ -469,18 +469,27 @@ export interface RoleProps {
   what_you_bring: { id: number; value: string }[];
   why_join_us: { id: number; value: string }[];
 }
-export interface ApplicationPageProps {
-  role: RoleProps;
-}
 
 export type IJobTemplate = {
+  _id?: string;
   title?: string | undefined;
   type?: string | undefined;
   salary?: string | undefined;
   lineManager?: string | undefined;
   role?: string | undefined;
-  keyResponsibilities?: string[] | undefined;
-  jobRequirement?: string[] | undefined;
-  additionalTraining?: string[] | undefined;
-  joinUs?: string[] | undefined;
+  keyResponsibilities?:
+    | {
+        id: number;
+        value: string;
+      }[]
+    | undefined;
+  jobRequirement?:
+    | {
+        id: number;
+        value: string;
+      }[]
+    | undefined;
 };
+export interface ApplicationPageProps {
+  role: IJobTemplate;
+}
