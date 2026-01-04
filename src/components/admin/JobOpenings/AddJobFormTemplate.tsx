@@ -18,7 +18,7 @@ import { IJobTemplate } from "@/src/utils/utils";
 
 interface IJobTemplateProps {
   jobEntity?: IJobTemplate | null;
-  toggleModal: () => void;
+  toggleModal?: () => void;
   isEdit?: boolean;
 }
 
