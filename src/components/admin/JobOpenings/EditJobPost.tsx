@@ -7,7 +7,7 @@ import { IJobTemplate } from "@/src/utils/utils";
 interface EditJobPostProps {
   toggleModal: () => void;
   modal?: boolean;
-  selectedJob?: IJobTemplate | null;
+  selectedJob?: IJobTemplate | undefined;
 }
 export const EditJobPost = ({
   toggleModal,

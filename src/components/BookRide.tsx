@@ -69,9 +69,6 @@ export const BookRide = () => {
     setIsloading(true);
     const response = await fetch("/api/well-wheels/create-booking", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify(formData),
     });
 
@@ -81,6 +78,7 @@ export const BookRide = () => {
       toast.success(initData.message);
       setIsloading(false);
       setFormData(bookRideForm);
+      setIsSubmitting(false);
     } else {
       toast.error("Failed to book an appointment, Try again");
       setIsloading(false);
@@ -101,7 +99,9 @@ export const BookRide = () => {
         initiateBookRide(formData);
       }
     }
-  }, [isSubmitting, error, initiateBookRide]);
+  }, [isSubmitting, error, initiateBookRide, formData]);
+
+  console.log({ formData });
 
   return (
     <>
