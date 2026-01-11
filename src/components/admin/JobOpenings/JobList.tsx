@@ -10,9 +10,11 @@ interface JobOpeningCardProps {
 }
 export const JobList = ({ jobList }: JobOpeningCardProps) => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [selectedJob, setSelectedJob] = useState<IJobTemplate | null>(null);
+  const [selectedJob, setSelectedJob] = useState<IJobTemplate | undefined>(
+    undefined
+  );
   const handleClick = (id: string, action: string) => {
-    const selected = jobList?.find((job) => job._id === id) || null;
+    const selected = jobList?.find((job) => job._id === id) || undefined;
     if (action === "edit") {
       setModalOpen(true);
       setSelectedJob(selected);
@@ -36,7 +38,7 @@ export const JobList = ({ jobList }: JobOpeningCardProps) => {
   };
   const toggleModal = () => {
     setModalOpen(!modalOpen);
-    setSelectedJob(null);
+    setSelectedJob(undefined);
   };
   return (
     <>
