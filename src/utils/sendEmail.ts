@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import mailgun from "mailgun-js";
 
 type SendMailTypes = {
@@ -5,6 +6,7 @@ type SendMailTypes = {
   from: string;
   subject: string;
   html: string;
+  attachment?: any;
 };
 
 const mailgunClient = mailgun({
@@ -12,17 +14,23 @@ const mailgunClient = mailgun({
   domain: process.env.NEXT_PUBLIC_MAILGUN_DOMAIN!,
 });
 
-export const sendEmail = async ({ to, from, subject, html }: SendMailTypes) => {
+export const sendEmail = async ({
+  to,
+  from,
+  subject,
+  html,
+  attachment,
+}: SendMailTypes) => {
   const emailData = {
     from,
     to,
     subject,
     html,
+    attachment,
   };
 
   try {
     const result = await mailgunClient.messages().send(emailData);
-    console.log("Email sent successfully!");
     return result;
   } catch (error) {
     console.error("Error sending email:", error);

@@ -96,6 +96,7 @@ export const ApplicationForm = () => {
     setFormErrors(validateFields(form));
     setIsSubmitting(true);
   };
+  console.log({ form, uploadedFile });
 
   const sendApplication = useCallback(async (form: FormType) => {
     setIsloading(true);
@@ -105,7 +106,7 @@ export const ApplicationForm = () => {
     formData.append("name", form.name);
     formData.append("contact", form.contact);
     formData.append("email", form.email);
-    formData.append("position", form.position);
+    formData.append("position", role.title);
     formData.append("status", form.status);
     formData.append("cprCertification", form.cprCertification);
     formData.append("foodCertification", form.foodCertification);
@@ -118,10 +119,6 @@ export const ApplicationForm = () => {
 
     const response = await fetch("/api/careers/jobs/apply", {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
-      // body: JSON.stringify(form),
       body: formData,
     });
 
