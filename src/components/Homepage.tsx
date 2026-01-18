@@ -10,7 +10,7 @@ import { Footer, NavSection } from "./common";
 
 export const Homepage = () => {
   return (
-    <div className="home-3">
+    <div className="home-2">
       <NavSection />
       <HeroSection />
       <About />

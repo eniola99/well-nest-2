@@ -1,11 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export const About = () => {
   return (
     <>
-      <div className="about-area py-100">
+      {/* <div className="about-area py-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -90,6 +89,45 @@ export const About = () => {
                 </div>
                 <Link href="/about" className="theme-btn">
                   Discover More<i className="fas fa-arrow-right"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      {/* <div className="service-area2 py-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <div className="site-heading text-center">
+                <span className="site-title-tagline">
+                  <i className="fa fa-heart-circle-plus"></i>About Us
+                </span>
+                <h2 className="site-title">
+                  We Believe Everyone Deserves <span> Quality Care</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="cta-area py-100 ">
+        <div className="container">
+          <div className="cta-wrap rounded-5 w-100">
+            <div className="col-lg-7 mx-auto">
+              <div className="cta-content">
+                <h2 className="site-title-center">
+                  We Believe Everyone Deserves <span> Quality Care</span>
+                </h2>
+                <p>
+                  We’ve been in the rooms where support was needed but not
+                  found. We build a circle of support that understands your
+                  values and speaks the &apos;language of your
+                  home&apos;—through empathy, respect, and reliability
+                </p>
+                <Link href="/about" className="theme-btn">
+                  Book a Free Consultation
+                  <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>

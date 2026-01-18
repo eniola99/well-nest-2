@@ -9,6 +9,7 @@ import "@/styles/globals.css";
 import "@/styles/admin.css";
 import "@/styles/style.css";
 import "@/styles/owl.carousel.min.css";
+import "react-multi-carousel/lib/styles.css";
 // import "@/styles/nice-select.min.css";
 // import "@/styles/magnific-popup.min.css";
 // import "@/styles/animate.min.css";
