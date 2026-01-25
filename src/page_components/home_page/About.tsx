@@ -126,7 +126,7 @@ export const About = () => {
                   home&apos;—through empathy, respect, and reliability
                 </p>
                 <Link href="/about" className="theme-btn">
-                  Book a Free Consultation
+                  learn more about our story
                   <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>

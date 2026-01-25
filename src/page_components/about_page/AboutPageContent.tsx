@@ -41,11 +41,127 @@ export const AboutPageContent = () => {
 
   return (
     <>
-      <div className="service-single py-120">
+      <div className="service-single py-80">
         <div className="container">
           <div className="service-single-wrap">
-            <div className="row">
-              <div className="col-xl-4 col-lg-4">
+            <div className="container">
+              <h3 className="title-about-story">Our Story</h3>
+              <div className="align-items-center">
+                <p
+                  className="text-secondary pb-100"
+                  style={{ fontSize: "16px" }}
+                >
+                  I’ve seen firsthand how the complexities of the healthcare
+                  system—long waitlists, language barriers, and impersonal
+                  services—can leave families feeling invisible. After years of
+                  working in Social Services, and now navigating the journey of
+                  aging parents within my own family, I realized that
+                  &#39;home&#39; is more than just a place; it is a connection
+                  to our roots and traditions. I founded WellNest to be a
+                  bridge. Having called Ontario home for nearly a decade, I am
+                  committed to ensuring that our neighbors in Hamilton,
+                  Haldimand, and Niagara have access to care that doesn&#39;t
+                  just manage a schedule—but honors a life story.
+                </p>
+              </div>
+            </div>
+            <div className="service-area2">
+              <div className="site-heading text-center">
+                <h2 className="site-title">The WellNest Difference</h2>
+              </div>
+              <div className="row g-4">
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="service-item wow fadeInUp"
+                    data-wow-delay=".25s"
+                  >
+                    <div className="service-img">
+                      <Image
+                        src="/assets/img/honecare.jpg"
+                        width={600}
+                        height={600}
+                        alt=""
+                      />
+                    </div>
+                    <div className="service-info">
+                      <div className="service-content">
+                        <h4 className="service-title">
+                          <a href="service-single.html">
+                            Relationship-Based Care
+                          </a>
+                        </h4>
+                        <p className="service-text">
+                          We don’t just send a provider, we introduce a
+                          companion. Our caregivers are trained to understand
+                          the cultural nuances and traditions that make your
+                          house a home, building trust that feels like an
+                          extension of your family.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="service-item wow fadeInUp"
+                    data-wow-delay=".50s"
+                  >
+                    <div className="service-img">
+                      <Image
+                        src="/assets/img/wellnest-comp.jpg"
+                        width={600}
+                        height={600}
+                        alt=""
+                      />
+                    </div>
+                    <div className="service-info">
+                      <div className="service-content">
+                        <h4 className="service-title">
+                          <a href="service-single.html">
+                            Seamless Coordination with WellWheels
+                          </a>
+                        </h4>
+                        <p className="service-text">
+                          We’ve integrated transport and care into one holistic
+                          model. By reducing the stress of coordinating multiple
+                          providers, families benefit from a single, reliable
+                          point of contact for both mobility and daily support.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="service-item wow fadeInUp"
+                    data-wow-delay=".75s"
+                  >
+                    <div className="service-img">
+                      <Image
+                        src="/assets/img/homecare-image.jpg"
+                        width={600}
+                        height={600}
+                        alt=""
+                      />
+                    </div>
+                    <div className="service-info">
+                      <div className="service-content">
+                        <h4 className="service-title">
+                          <a href="service-single.html">
+                            A Personal, Dignified Connection
+                          </a>
+                        </h4>
+                        <p className="service-text">
+                          We prioritize language- matching and inclusive values.
+                          By pairing clients with caregivers who respect their
+                          cultural preferences, we ensure care remains
+                          reassuring and deeply personal.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="col-xl-4 col-lg-4">
                 <div className="service-sidebar">
                   <div className="widget">
                     <h4 className="title">About Us</h4>
@@ -58,10 +174,9 @@ export const AboutPageContent = () => {
                               className="scroll_section"
                               onClick={() => setToSection(service.slug)}
                             >
-                              {/* <Link href={`about/${service.slug}`}> */}
                               <i className="fa fa-angle-double-right"></i>
                               {service.name}
-                              {/* </Link> */}
+                             
                             </div>
                           </>
                         ))}
@@ -97,6 +212,7 @@ export const AboutPageContent = () => {
                     <PageComponent activeSection={activeSection} />
                   </div>
                 </div>
+              </div> */}
               </div>
             </div>
           </div>

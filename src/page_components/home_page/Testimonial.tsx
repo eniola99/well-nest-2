@@ -3,19 +3,19 @@ import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <div className="container py-50">
-      <h2 className="site-title text-center">
+    <div className="container py-80">
+      {/* <h2 className="site-title text-center">
         We strive for quality and <span> continuous improvement.</span>
-      </h2>
-      <h5 className="text-center mt-5">
+      </h2> */}
+      <h2 className="text-center mt-5">
         Our Value Statement (The CARE Standard){" "}
-      </h5>
+      </h2>
 
       <div className="feature-area pt-5">
         <div className="container">
           <div className="feature-wrapper">
             <div className="row g-4">
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-3">
                 <div
                   className="feature-item bg-1 wow fadeInUp"
                   data-wow-delay=".25s"
@@ -35,7 +35,7 @@ export const Testimonial = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-3">
                 <div
                   className="feature-item bg-2 wow fadeInUp"
                   data-wow-delay=".50s"
@@ -55,7 +55,7 @@ export const Testimonial = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-3">
                 <div
                   className="feature-item bg-3 wow fadeInUp"
                   data-wow-delay=".75s"
@@ -72,6 +72,25 @@ export const Testimonial = () => {
                   <div className="feature-content">
                     <h4>Respect</h4>
                     <p>We honor dignity, diversity, and independence.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-3">
+                <div
+                  className="feature-item bg-4 wow fadeInUp"
+                  data-wow-delay="1s"
+                >
+                  <div className="feature-icon">
+                    <Image
+                      src="/assets/img/icon/support.svg"
+                      width={50}
+                      height={50}
+                      alt="support icon"
+                    />
+                  </div>
+                  <div className="feature-content">
+                    <h4>Emergency Support</h4>
+                    <p>We strive for quality and continuous improvement.</p>
                   </div>
                 </div>
               </div>

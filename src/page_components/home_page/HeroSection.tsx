@@ -49,14 +49,14 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h6
+                        {/* <h6
                           className="hero-sub-title"
                           data-animation="fadeInUp"
                           data-delay=".25s"
                         >
                           <i className="fa fa-heart-circle-plus"></i> Best
                           Elderly Care
-                        </h6>
+                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"
@@ -75,21 +75,10 @@ export const HeroSection = () => {
                           data-animation="fadeInUp"
                           data-delay="1s"
                         >
-                          {/* <a href="about.html" className="theme-btn">
-                        Book a Free Consultation<i className="fas fa-arrow-right"></i>
-                      </a> */}
-                          {/* <Link href="/contact" className="theme-btn2">
-                            Book a Free Consultation
-                            <i className="fas fa-arrow-right"></i>
-                          </Link> */}
-                          <Link href="/contact" className="theme-btn">
-                            Book a Free Consultation
+                          <Link href="/about" className="theme-btn">
+                            Learn More About our Story
                             <i className="fas fa-arrow-right"></i>
                           </Link>
-                          {/* <a href="contact.html" className="theme-btn2">
-                        Book a Free Consultation
-                        <i className="fas fa-arrow-right"></i>
-                      </a> */}
                         </div>
                       </div>
                     </div>
@@ -112,34 +101,35 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h6
+                        {/* <h6
                           className="hero-sub-title"
                           data-animation="fadeInUp"
                           data-delay=".25s"
                         >
                           <i className="fa fa-heart-circle-plus"></i> Best
                           Elderly Care
-                        </h6>
+                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"
                           data-delay=".50s"
                         >
-                          Care That <span>Understands. Support</span> That
-                          Empowers.
+                          Our Mission
                         </h1>
                         <p data-animation="fadeInLeft" data-delay=".75s">
-                          At WellNest Health Group, we provide more than a
-                          service—we provide a circle of support grounded in
-                          cultural respect and lived experience.
+                          To transform the aging experience in Ontario by
+                          providing integrated, culturally-attuned care that
+                          honors individual heritage, fosters belonging, and
+                          empowers seniors to live with dignity on their own
+                          terms.
                         </p>
                         <div
                           className="hero-btn"
                           data-animation="fadeInUp"
                           data-delay="1s"
                         >
-                          <Link href="/contact" className="theme-btn">
-                            Book a Free Consultation
+                          <Link href="/about" className="theme-btn">
+                            learn more about our story
                             <i className="fas fa-arrow-right"></i>
                           </Link>
                         </div>
@@ -164,34 +154,33 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h6
+                        {/* <h6
                           className="hero-sub-title"
                           data-animation="fadeInUp"
                           data-delay=".25s"
                         >
                           <i className="fa fa-heart-circle-plus"></i> Best
                           Elderly Care
-                        </h6>
+                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"
                           data-delay=".50s"
                         >
-                          Care That <span>Understands. Support</span> That
-                          Empowers.
+                          Our Vision
                         </h1>
                         <p data-animation="fadeInLeft" data-delay=".75s">
-                          At WellNest Health Group, we provide more than a
-                          service—we provide a circle of support grounded in
-                          cultural respect and lived experience.
+                          A future where aging feels supported, familiar, and
+                          respected—so people can live fully, safely, and on
+                          their own terms.
                         </p>
                         <div
                           className="hero-btn"
                           data-animation="fadeInUp"
                           data-delay="1s"
                         >
-                          <Link href="/contact" className="theme-btn">
-                            Book a Free Consultation
+                          <Link href="/about" className="theme-btn">
+                            learn more about our story
                             <i className="fas fa-arrow-right"></i>
                           </Link>
                         </div>

@@ -20,92 +20,101 @@ export const Footer = () => {
                         alt="logo"
                       />
                     </Link>
-                    <p className="mb-4">
-                      We are many variations of passages available but the
-                      majority have suffered alteration some form by injected
-                      humour words believable.
-                    </p>
-                    {/* <div className="footer-newsletter">
-                      <h6>Subscribe Our Newsletter</h6>
-                      <div className="newsletter-form">
-                        <form action="#">
-                          <div className="form-group">
-                            <div className="form-icon">
-                              <i className="far fa-envelopes"></i>
-                              <input
-                                type="email"
-                                className="form-control"
-                                placeholder="Your Email"
-                              />
-                              <button className="theme-btn" type="submit">
-                                Subscribe{" "}
-                                <span className="far fa-paper-plane"></span>
-                              </button>
-                            </div>
+                    <div className="mt-3">
+                      <ul className="footer-contact">
+                        <li>
+                          <div className="icon">
+                            <i className="fa-solid fa-location-dot"></i>
                           </div>
-                        </form>
-                      </div>
-                    </div> */}
+                          <div className="content">
+                            <h6>Our Address</h6>
+                            <p>25/AB Milford Road, New York, USA</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="icon">
+                            <i className="fa-solid fa-phone"></i>
+                          </div>
+                          <div className="content">
+                            <h6>Call Us</h6>
+                            <Link href="tel:+21236547898">+2 123 654 7898</Link>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="icon">
+                            <i className="fa-solid fa-envelope"></i>
+                          </div>
+                          <div className="content">
+                            <h6>Mail Us</h6>
+                            <Link href="mailto:info@wellwheels.org">
+                              info@wellwheels.org
+                            </Link>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-lg-2"></div>
+                <div className="col-lg-3">
+                  <div className="footer-widget-box">
+                    <h4 className="footer-widget-title">Quick Links</h4>
+                  </div>
+                  <ul className="footer-list" style={{ listStyle: "none" }}>
+                    <li>
+                      <Link href="/about">
+                        <i className="fa-solid fa-caret-right"></i>About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/home_care_service/help_home">
+                        <i className="fa-solid fa-caret-right"></i>WellNest Home
+                        Care
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/well-wheels">
+                        <i className="fa-solid fa-caret-right"></i>WellWheels
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/career">
+                        <i className="fa-solid fa-caret-right"></i>Careers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <i className="fa-solid fa-caret-right"></i>Land
+                        Acknowledgement
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
                 <div className="col-6 col-lg-2">
                   <div className="footer-widget-box list">
-                    <h4 className="footer-widget-title">Services</h4>
-                    <ul className="footer-list">
+                    <ul className="footer-list" style={{ listStyle: "none" }}>
                       <li>
-                        <Link href="/home_care_service/help_home">
-                          <i className="fa-solid fa-caret-right"></i>Help at
-                          Home
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/home_care_service/nurse_home">
-                          <i className="fa-solid fa-caret-right"></i>Nurse at
-                          Home
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/home_care_service/live_in">
-                          <i className="fa-solid fa-caret-right"></i>Live-In
+                        <Link href="/contact">
+                          <i className="fa-solid fa-caret-right"></i>Contact Us
                           Care
                         </Link>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="footer-widget-box">
-                    <h4 className="footer-widget-title">Get In Touch</h4>
-                    <ul className="footer-contact">
                       <li>
-                        <div className="icon">
-                          <i className="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div className="content">
-                          <h6>Our Address</h6>
-                          <p>25/AB Milford Road, New York, USA</p>
-                        </div>
+                        <Link href="/">
+                          <i className="fa-solid fa-caret-right"></i>Privacy
+                          Policy
+                        </Link>
                       </li>
                       <li>
-                        <div className="icon">
-                          <i className="fa-solid fa-phone"></i>
-                        </div>
-                        <div className="content">
-                          <h6>Call Us</h6>
-                          <Link href="tel:+21236547898">+2 123 654 7898</Link>
-                        </div>
+                        <Link href="/">
+                          <i className="fa-solid fa-caret-right"></i>Disclaimers
+                        </Link>
                       </li>
                       <li>
-                        <div className="icon">
-                          <i className="fa-solid fa-envelope"></i>
-                        </div>
-                        <div className="content">
-                          <h6>Mail Us</h6>
-                          <Link href="mailto:info@wellwheels.org">
-                            info@wellwheels.org
-                          </Link>
-                        </div>
+                        <Link href="/">
+                          <i className="fa-solid fa-caret-right"></i>Terms of
+                          Use
+                        </Link>
                       </li>
                     </ul>
                   </div>
