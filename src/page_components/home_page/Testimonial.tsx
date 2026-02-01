@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <div className="container py-80">
+    <div className="container pb-80">
       {/* <h2 className="site-title text-center">
         We strive for quality and <span> continuous improvement.</span>
       </h2> */}

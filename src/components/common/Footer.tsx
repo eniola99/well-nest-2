@@ -6,6 +6,10 @@ export const Footer = () => {
   return (
     <>
       <footer className="footer-area">
+        <div
+          className="footer-shape"
+          style={{ backgroundImage: "url(../public/assets/img/shape/01.png)" }}
+        ></div>
         <div className="footer-widget">
           <div className="container">
             <div className="footer-widget-wrap pt-100 pb-80">
@@ -107,7 +111,8 @@ export const Footer = () => {
                       </li>
                       <li>
                         <Link href="/">
-                          <i className="fa-solid fa-caret-right"></i>Disclaimers
+                          <i className="fa-solid fa-caret-right"></i>
+                          Disclaimers
                         </Link>
                       </li>
                       <li>

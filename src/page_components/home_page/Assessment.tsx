@@ -5,39 +5,39 @@ import Image from "next/image";
 export const Assessment = () => {
   return (
     <>
-      <h2 className="site-title text-center  pt-100">Our Service</h2>
-      <div className="mt-5 pb-100">
+      <div className="center-image-background mt-5 pb-50">
+        <h2 className="site-title text-center  pt-80">Our Service</h2>
+
         <div className="choose-area">
           <div className="container">
             <div
               className="row g-4 align-items-center justify-content-between wow fadeInDown"
               data-wow-delay=".25s"
             >
-              <div className="col-lg-6">
-                <div className="site-heading mb-3">
-                  <h2 className="site-title">
+              <div className="container">
+                <div className="title-about-story mt-3 mb-3">
+                  <h3 className="">
                     WellNest <span>Home Care </span>
-                  </h2>
+                  </h3>
                 </div>
-                <span className="choose-subtitle">
+                <span className="">
                   Home is where dignity lives. Dependable, person-centered
                   support that feels like family.
                 </span>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <div
-                  className="choose-content wow fadeInUp"
-                  data-wow-delay=".25s"
-                >
-                  <div className="choose-content-wrap">
-                    <div className="row g-4">
-                      <div className="col-md-6">
-                        <div className="choose-item">
-                          {/* <span className="count">01</span> */}
-                          <div className="choose-item-icon">
-                            {/* <i
+            <div className="">
+              <div
+                className="choose-content wow fadeInUp"
+                data-wow-delay=".25s"
+              >
+                <div className="choose-content-wrap">
+                  <div className="row g-4">
+                    <div className="col-md-6">
+                      <div className="choose-item">
+                        {/* <span className="count">01</span> */}
+                        <div className="choose-item-icon">
+                          {/* <i
                               className="fa-solid fa-hospital"
                               style={{
                                 fontSize: "25px",
@@ -45,100 +45,99 @@ export const Assessment = () => {
                                 paddingTop: "5px",
                               }}
                             ></i> */}
-                            <Image
-                              src="assets/img/icon/money.svg"
-                              alt=""
-                              width={200}
-                              height={200}
-                            />
-                          </div>
-                          <div className="choose-item-info">
-                            <h4>Personal support</h4>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
-                            </p>
-                          </div>
+                          <Image
+                            src="assets/img/icon/money.svg"
+                            alt=""
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                        <div className="choose-item-info">
+                          <h4>Personal support</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
                         </div>
                       </div>
-                      <div className="col-md-6">
-                        <div className="choose-item">
-                          {/* <span className="count">02</span> */}
-                          <div className="choose-item-icon">
-                            <Image
-                              src="assets/img/icon/money.svg"
-                              alt=""
-                              width={200}
-                              height={200}
-                            />
-                          </div>
-                          <div className="choose-item-info">
-                            <h4>Respite Care</h4>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="choose-item">
+                        {/* <span className="count">02</span> */}
+                        <div className="choose-item-icon">
+                          <Image
+                            src="assets/img/icon/money.svg"
+                            alt=""
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                        <div className="choose-item-info">
+                          <h4>Respite Care</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
                         </div>
                       </div>
-                      <div className="col-md-6">
-                        <div className="choose-item">
-                          {/* <span className="count">03</span> */}
-                          <div className="choose-item-icon">
-                            <Image
-                              src="assets/img/icon/money.svg"
-                              alt=""
-                              width={200}
-                              height={200}
-                            />
-                          </div>
-                          <div className="choose-item-info">
-                            <h4>Companionship</h4>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="choose-item">
+                        {/* <span className="count">03</span> */}
+                        <div className="choose-item-icon">
+                          <Image
+                            src="assets/img/icon/money.svg"
+                            alt=""
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                        <div className="choose-item-info">
+                          <h4>Companionship</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
                         </div>
                       </div>
-                      <div className="col-md-6">
-                        <div className="choose-item">
-                          {/* <span className="count">04</span> */}
-                          <div className="choose-item-icon">
-                            <Image
-                              src="assets/img/icon/money.svg"
-                              alt=""
-                              width={200}
-                              height={200}
-                            />
-                          </div>
-                          <div className="choose-item-info">
-                            <h4>Housekeeping</h4>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="choose-item">
+                        {/* <span className="count">04</span> */}
+                        <div className="choose-item-icon">
+                          <Image
+                            src="assets/img/icon/money.svg"
+                            alt=""
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                        <div className="choose-item-info">
+                          <h4>Housekeeping</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
                         </div>
                       </div>
-                      <div className="col-md-6">
-                        <div className="choose-item">
-                          {/* <span className="count">05</span> */}
-                          <div className="choose-item-icon">
-                            <Image
-                              src="assets/img/icon/money.svg"
-                              alt=""
-                              width={200}
-                              height={200}
-                            />
-                          </div>
-                          <div className="choose-item-info">
-                            <h4>Seasonal Support</h4>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="choose-item">
+                        {/* <span className="count">05</span> */}
+                        <div className="choose-item-icon">
+                          <Image
+                            src="assets/img/icon/money.svg"
+                            alt=""
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                        <div className="choose-item-info">
+                          <h4>Seasonal Support</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -148,7 +147,7 @@ export const Assessment = () => {
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    <Link href="/about" className="theme-btn">
+                    <Link href="/about" className="theme-btn mt-5">
                       learn more
                       <i className="fas fa-arrow-right"></i>
                     </Link>
@@ -156,7 +155,7 @@ export const Assessment = () => {
                 </div>
               </div>
               {/* <div className="col-lg-2"></div> */}
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div
                   className="skill-img wow fadeInRight"
                   data-wow-delay=".25s"
@@ -168,7 +167,7 @@ export const Assessment = () => {
                     alt="about img 1"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -232,8 +231,8 @@ export const Assessment = () => {
           </div>
         </div> */}
       </div>
-      <div className="video-area pt-50 mb-5">
-        <div className="container py-100">
+      <div className="video-area mb-5" style={{ background: "#f6f6f6" }}>
+        <div className="container py-80">
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="video-info wow fadeInUp" data-wow-delay=".25s">

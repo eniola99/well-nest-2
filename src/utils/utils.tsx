@@ -123,35 +123,31 @@ export const respiteGroupTransportList = [
 
 export const homeCarePackages = [
   {
-    text: [
-      "Companion Care Plan",
-      "Essential Care Plan",
-      "Comprehensive Care Plan",
-    ],
-    tooltip: ["Companion", "Essential", "Comprehensive"],
+    text: ["Essential Care", "Enhanced Support", "Comprehensive Care"],
+    tooltip: ["Essential", "Enhanced", "Comprehensive"],
     benefits: [
       {
-        companion: [
-          "8-12 hours of care/week",
-          "Companionship, light housekeeping, meal prep, errands",
-          "Wellness check-in updates for family after each visit",
-          "Access to scheduling portal",
-        ],
         essential: [
-          "15-20 hours of care/week",
-          "Includes personal care (bathing, grooming, mobility support)",
-          "Homemaking + companionship included",
-          "Monthly care plan review and family updates",
-          "Priority caregiver matching",
+          "Personal care or companionship",
+          "Weekly or bi-weekly visits",
+        ],
+        enhanced: [
+          "Personal care",
+          "Meal prep and housekeeping",
+          "Respite support",
         ],
         comprehensive: [
-          "30-40 hours of care/week",
-          "Personal care + companionship + homemaking",
-          "Respite care for family caregivers",
-          "Quarterly care coordinator home visits",
-          "Dedicated phone support for scheduling",
-          "Family caregiver support resources (guides, group sessions, check-ins)",
+          "Integrated home care",
+          "Coordinated scheduling",
+          "Optional transport coordination with WellWheels",
         ],
+      },
+    ],
+    packagesSubText: [
+      {
+        essential: ["Ideal for light, consistent support"],
+        enhanced: ["For ongoing daily assistance"],
+        comprehensive: ["For complex or evolving needs"],
       },
     ],
   },

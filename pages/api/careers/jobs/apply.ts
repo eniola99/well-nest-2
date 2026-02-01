@@ -18,7 +18,7 @@ const mg = mailgun.client({
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
     return res.status(405).end();
@@ -168,7 +168,7 @@ export default async function handler(
       };
       await mg.messages.create(
         process.env.NEXT_PUBLIC_MAILGUN_DOMAIN!,
-        messageData
+        messageData,
       );
       res.status(200).json({
         success: true,
