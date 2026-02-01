@@ -1,43 +1,44 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
+import Link from "next/link";
 
-import { History } from "./History";
-import { CompanyOverview } from "./CompanyOverview";
-import { MissionAbout } from "./MissionAbout";
+// import { History } from "./History";
+// import { CompanyOverview } from "./CompanyOverview";
+// import { MissionAbout } from "./MissionAbout";
 
 export const AboutPageContent = () => {
-  const router = useRouter();
-  const { service } = router.query;
+  // const router = useRouter();
+  // const { service } = router.query;
 
-  const [activeSection, setActiveSection] = useState("company-overview");
+  // const [activeSection, setActiveSection] = useState("company-overview");
 
-  const categories = [
-    { name: "Company Overview", slug: "company-overview" },
-    { name: "Vision, Mission and Values", slug: "mission-about" },
-    { name: "History", slug: "history" },
-  ];
+  // const categories = [
+  //   { name: "Company Overview", slug: "company-overview" },
+  //   { name: "Vision, Mission and Values", slug: "mission-about" },
+  //   { name: "History", slug: "history" },
+  // ];
 
-  const setToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
-  };
+  // const setToSection = (sectionId: string) => {
+  //   setActiveSection(sectionId);
+  // };
 
-  let PageComponent: React.ElementType;
+  // let PageComponent: React.ElementType;
 
-  switch (true) {
-    case activeSection === "company-overview":
-      PageComponent = CompanyOverview;
-      break;
-    case activeSection === "mission-about":
-      PageComponent = MissionAbout;
-      break;
-    case activeSection === "history":
-      PageComponent = History;
-      break;
-    default:
-      PageComponent = CompanyOverview;
-      break;
-  }
+  // switch (true) {
+  //   case activeSection === "company-overview":
+  //     PageComponent = CompanyOverview;
+  //     break;
+  //   case activeSection === "mission-about":
+  //     PageComponent = MissionAbout;
+  //     break;
+  //   case activeSection === "history":
+  //     PageComponent = History;
+  //     break;
+  //   default:
+  //     PageComponent = CompanyOverview;
+  //     break;
+  // }
 
   return (
     <>
@@ -213,6 +214,61 @@ export const AboutPageContent = () => {
                   </div>
                 </div>
               </div> */}
+              </div>
+            </div>
+            <div className="pt-50">
+              <h3 className="mt-5">
+                Community Impact: Strengthening Our Region
+              </h3>
+              <div className="row">
+                <div className="col-lg-6 col-md-6 col-sm-12">
+                  <p className=" pt-3">
+                    <strong>
+                      A Partner to the Niagara, Hamilton, and Haldimand
+                      Healthcare System.
+                    </strong>{" "}
+                    <br /> WellNest is a local business invested in the
+                    resilience of our community. We go beyond home visits to
+                    support the regional health network by:
+                  </p>
+                  <div className="mt-5">
+                    <ul className="" style={{ listStyle: "none" }}>
+                      <li>
+                        <strong>Relieving Hospital Pressure:</strong> Our
+                        proactive care helps seniors stay safe at home, reducing
+                        readmissions at local hospitals.
+                      </li>
+                      <li className="mt-3">
+                        <strong>Bridging System Gaps:</strong> We act as a
+                        critical link for families who find traditional systems
+                        difficult to navigate.
+                      </li>
+                      <li className="mt-3">
+                        <strong>Supporting the Local Economy:</strong> We are
+                        proud to create specialized healthcare jobs for
+                        passionate caregivers across our region.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-12">
+                  <p className="text-secondary text-center">
+                    <strong>Map</strong>
+                  </p>
+                </div>
+              </div>
+              <div className="">
+                <h4 className="pt-5">
+                  Experience Care That Feels Like Family. Serving Hamilton,
+                  Stoney Creek, Caledonia, Cayuga, St. Catharines, and across
+                  the Niagara Peninsula.
+                </h4>
+                <div className="mt-3">
+                  <Link href="/about" className="theme-btn">
+                    Book a Consultation
+                    <i className="fas fa-arrow-right"></i>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

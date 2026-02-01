@@ -106,7 +106,7 @@ export const PersonalCareService = () => {
             packages={homeCarePackages}
             title="WellNest Home Care"
             subTitle="Care Packages/Membership"
-            actionText="Book Now"
+            // actionText="Book Now"
           />
           <SubSection
             text="Need help deciding what’s right for you?"
