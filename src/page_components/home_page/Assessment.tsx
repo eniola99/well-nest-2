@@ -233,9 +233,12 @@ export const Assessment = () => {
       </div>
       <div className="video-area mb-5" style={{ background: "#f6f6f6" }}>
         <div className="container py-80">
-          <div className="row align-items-center">
-            <div className="col-lg-5">
-              <div className="video-info wow fadeInUp" data-wow-delay=".25s">
+          <div className="row align-items-center container">
+            <div className=" col-lg-5">
+              <div
+                className="container video-info wow fadeInUp"
+                data-wow-delay=".25s"
+              >
                 <div className="site-heading mb-0">
                   <h2 className="site-title">Wellwheels</h2>
                   <p>
