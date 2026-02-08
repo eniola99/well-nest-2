@@ -36,20 +36,21 @@ export const CareerJobListing = () => {
   }, []);
 
   return (
-    <div className="terms-area py-120">
-      <div className="mx-5">
+    <div className="terms-area py-80">
+      <div className="">
         <h4 className="text-center career-opennings">Current Opportunities</h4>
+        <p className="text-center mt-5">
+          We are currently seeking passionate individuals for the following
+          role:
+        </p>
         <div className=" mt-5">
           <div className="container">
             <div className="row">
               {jobList &&
                 jobList.map((item, index) => (
                   <>
-                    <div
-                      className="col-lg-6 col-md-6 col-sm-12 mt-5"
-                      key={index}
-                    >
-                      <div className="" style={{ margin: "30px" }}>
+                    <div className="col-lg-6 mt-5" key={index}>
+                      <div className="contact-form-wrap">
                         <div className="d-flex">
                           <h4 className="">
                             {item.title}

@@ -3,58 +3,49 @@ import React from "react";
 export const CareerBenefits = () => {
   const benefitsText = [
     {
-      text: "Scolarships",
-      subText: "",
+      text: "Flexible Scheduling",
+      subText: "We offer schedules that respect your work-life balance.",
       icon: "fa-brands fa-google-scholar",
     },
     {
-      text: "Employee Discounts",
-      subText: "",
+      text: "Supportive Culture",
+      subText:
+        "We value, celebrate, and support our caregivers every step of the way.",
       icon: "fa-solid fa-percent",
     },
     {
-      text: "Benefits",
-      subText: "",
-      icon: "fa-solid fa-handshake-angle",
-    },
-    {
-      text: "Paid Orientation",
-      subText: "",
+      text: "Growth Opportunities",
+      subText:
+        "Benefit from unique cross-training opportunities with our sister company, WellWheels (non-emergency medical transport).",
       icon: "fa-solid fa-money-bill",
     },
     {
-      text: "Training and Development Opportinuties",
-      subText: "",
+      text: "Purpose-Driven Work",
+      subText:
+        "Engage in meaningful work that truly makes a difference in the lives of our neighbors.",
       icon: "fa-solid fa-database",
     },
     {
-      text: "Employee Assistance Program",
-      subText: "",
-      icon: "fa-solid fa-clipboard-question",
-    },
-    {
-      text: "Mobile Devices (for field staff)",
-      subText: "",
-      icon: "fa-solid fa-mobile-retro",
-    },
-    {
-      text: "Mileage compensation (for staff field)",
-      subText: "",
-      icon: "fa-solid fa-car",
+      text: "Paid Training",
+      subText:
+        "Access to paid orientation and ongoing professional development.",
+      icon: "fa-solid fa-handshake-angle",
     },
   ];
   return (
     <>
       <div className="terms-area py-50 cursor-pointer">
         <div className="mx-5">
-          <h4 className="text-center">Benefits of Working at WellNest</h4>
           <div className=" mt-5">
             <div className="row">
               {benefitsText.map((item, index) => (
-                <div className="col-lg-3 col-md-6 col-sm-12" key={index}>
+                <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
                   <div className="benefit-card">
                     <i className={`${item.icon} text-white me-2`}></i>
                     <span className="text-white">{item.text}</span>
+                    <div className="reveal-content">
+                      <p>{item.subText}</p>
+                    </div>
                   </div>
                 </div>
               ))}

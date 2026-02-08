@@ -2660,6 +2660,16 @@ label {
   border-radius: 50px;
 }
 
+.career-opennings {
+  text-decoration: underline;
+  position: relative;
+  text-underline-offset: 0.6em;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--theme-color);
+  /* background: var(--theme-color); */
+}
+
 .title-about-story {
   position: relative;
   padding-bottom: 10px;
@@ -2673,6 +2683,23 @@ label {
   bottom: 0;
   height: 3px;
   width: 50px;
+  background: var(--theme-color);
+  border-radius: 50px;
+}
+
+.title-about-story-wellwheels {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.title-about-story-wellwheels::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100px;
   background: var(--theme-color);
   border-radius: 50px;
 }
@@ -6587,19 +6614,33 @@ label {
 }
 
 .benefit-card {
-  padding: 80px;
+  padding: 50px;
+  border-radius: 10px;
   margin: 10px;
   background-color: var(--color-dark);
   text-align: center;
   font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.career-opennings {
-  text-decoration: underline;
-  position: relative;
-  text-underline-offset: 0.8em;
-  text-decoration-style: solid;
-  text-decoration-thickness: 6px;
+.reveal-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  margin-top: 0;
+  color: #fff;
+}
+
+.benefit-card:hover .reveal-content {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
 }
 
 .application_button:focus {
