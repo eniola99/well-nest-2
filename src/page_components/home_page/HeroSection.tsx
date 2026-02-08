@@ -42,7 +42,7 @@ export const HeroSection = () => {
               <div
                 className="hero-single"
                 style={{
-                  backgroundImage: "url('/assets/img/hero-slider-1.jpg')",
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-1_ooagwq.jpg)`,
                 }}
               >
                 <div className="container">
@@ -94,7 +94,7 @@ export const HeroSection = () => {
               <div
                 className="hero-single"
                 style={{
-                  backgroundImage: "url('/assets/img/hero-slider-3.jpg')",
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-2_hnnhh7.jpg)`,
                 }}
               >
                 <div className="container">
@@ -147,7 +147,7 @@ export const HeroSection = () => {
               <div
                 className="hero-single"
                 style={{
-                  backgroundImage: "url('/assets/img/hero-slider-2.jpg')",
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-3_pzcfxv.jpg)`,
                 }}
               >
                 <div className="container">

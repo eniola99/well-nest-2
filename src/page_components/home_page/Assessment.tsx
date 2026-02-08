@@ -274,7 +274,7 @@ export const Assessment = () => {
             <div className="col-lg-5">
               <div className="image-content">
                 <Image
-                  src="/assets/img/wellwheels-1.jpg"
+                  src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels-1_qk22eo.jpg`}
                   width={800}
                   height={450}
                   alt="wellwheels vehicle"

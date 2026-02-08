@@ -50,19 +50,52 @@ export const AboutPageContent = () => {
               <div className="align-items-center">
                 <p
                   className="text-secondary pb-100"
-                  style={{ fontSize: "16px" }}
+                  style={{ fontSize: "16px", fontStyle: "italic" }}
                 >
-                  I’ve seen firsthand how the complexities of the healthcare
-                  system—long waitlists, language barriers, and impersonal
-                  services—can leave families feeling invisible. After years of
-                  working in Social Services, and now navigating the journey of
-                  aging parents within my own family, I realized that
-                  &#39;home&#39; is more than just a place; it is a connection
-                  to our roots and traditions. I founded WellNest to be a
-                  bridge. Having called Ontario home for nearly a decade, I am
-                  committed to ensuring that our neighbors in Hamilton,
-                  Haldimand, and Niagara have access to care that doesn&#39;t
-                  just manage a schedule—but honors a life story.
+                  <p className="pb-3">
+                    I’ve seen firsthand how navigating Ontario’s healthcare
+                    system can feel overwhelming and impersonal. Long waitlists,
+                    language barriers, and fragmented services often leave
+                    families feeling unseen—caught between appointments,
+                    providers, and processes that don’t always speak to who they
+                    are or what truly matters to them. Through years of working
+                    in Social Services, I witnessed how these gaps can deeply
+                    affect seniors and their families, particularly when care
+                    lacks cultural understanding or continuity.
+                  </p>
+                  <p className="pb-3">
+                    That perspective became personal as I began supporting my
+                    own aging parents. I came to understand that home is more
+                    than a physical space. Home is familiarity, language, faith,
+                    food, routines, and the traditions that ground us. When care
+                    overlooks these elements, even the best services can feel
+                    distant and disruptive.
+                  </p>
+                  <p className="pb-3">
+                    WellNest was founded to be a bridge—between systems and
+                    people, between care plans and lived experiences. We provide
+                    support that goes beyond task lists, taking time to
+                    understand each individual’s story, values, and preferences.
+                    Our approach is relationship-driven and culturally attuned,
+                    ensuring care feels coordinated, respectful, and rooted in
+                    dignity rather than fragmented or transactional.
+                  </p>
+                  <p className="pb-3">
+                    As a new and growing organization, WellNest is guided by
+                    professional standards, ongoing caregiver training, and a
+                    strong commitment to ethical, person-centered care. We work
+                    collaboratively with families, caregivers, and community
+                    partners so support feels consistent and aligned—never
+                    rushed or impersonal.
+                  </p>
+                  <p>
+                    Having proudly called Ontario home for nearly a decade, I am
+                    deeply committed to serving our local communities. WellNest
+                    supports families across Hamilton, Haldimand, and Niagara
+                    with care that doesn’t simply manage schedules, but honors
+                    life stories, preserves independence, and helps people age
+                    in ways that feel familiar, connected, and whole.
+                  </p>
                 </p>
               </div>
             </div>
