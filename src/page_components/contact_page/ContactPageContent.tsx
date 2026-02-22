@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { FormGroup, Input, Label } from "reactstrap";
+import Link from "next/link";
+import { FormGroup, Input, Label, Table, Spinner } from "reactstrap";
+import Carousel from "react-multi-carousel";
+
 import { toast } from "react-toastify";
-import { Spinner, List } from "reactstrap";
 
 import { validateText, validateEmail } from "@/src/utils/common";
 
@@ -96,10 +98,73 @@ export const ContactPageContent = () => {
     }
   }, [errors, sendRequest, isChecked, formData]);
 
-  console.log({ formData, isChecked, errors });
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
-    <div className="contact-area py-120">
+    <div className="contact-area">
+      <div className="mb-5">
+        <Carousel
+          responsive={responsive}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div className="main">
+            <div className="hero-section">
+              <div className="hero-slider">
+                <div
+                  className="about-hero-single"
+                  style={{
+                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/about_us_hero_page_nfkx9y.jpg')`,
+                    minHeight: "700px",
+                  }}
+                >
+                  <div className="container">
+                    <div className="row align-items-center">
+                      <div className="col-md-12 col-lg-6">
+                        <div className="hero-content">
+                          <h1 className="hero-title text-white">
+                            <strong>Not Sure What You Need?</strong> That’s
+                            completely okay
+                          </h1>
+                          <p className="text-white mb-5 mt-3">
+                            Care planning can feel complicated — but you don’t
+                            have to figure it out alone.
+                          </p>
+                          {/* <div className="hero-btn">
+                            <Link href="/about" className="theme-btn">
+                              Book a free Consultation
+                              <i className="fas fa-arrow-right"></i>
+                            </Link>
+                          </div> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+      </div>
       <div className="container">
         <div className="contact-content">
           <div className="row">
@@ -150,7 +215,7 @@ export const ContactPageContent = () => {
           </div>
         </div>
         <div className="row g-4">
-          <div className="col-lg-8">
+          <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="g-4">
                 <div className="">
@@ -348,44 +413,37 @@ export const ContactPageContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-6">
             <div
               className="contact-form-wrap"
               style={{ minHeight: "400px", paddingTop: "40px" }}
             >
               <h4>Our Community Roots:</h4>
-              <List type="unstyled">
-                <li style={{ padding: "20px 0px" }}>
-                  <strong>Hamilton</strong>
-                  <ul style={{ marginLeft: "30px", listStyleType: "disc" }}>
-                    <li>Ancaster</li>
-                    <li>Dundas</li>
-                    <li>Stoney Creek</li>
-                    <li>Waterdown</li>
-                    <li>Glanbrook</li>
-                  </ul>
-                </li>
-                <li style={{ padding: "20px 0px" }}>
-                  <strong>Haldimand</strong>
-                  <ul style={{ marginLeft: "30px", listStyleType: "disc" }}>
-                    <li>Caledonia</li>
-                    <li>Cayuga</li>
-                    <li>Dunnville</li>
-                    <li>Hagersville</li>
-                    <li>Jarvis</li>
-                  </ul>
-                </li>
-                <li style={{ padding: "20px 0px" }}>
-                  <strong>Niagara</strong>
-                  <ul style={{ marginLeft: "30px", listStyleType: "disc" }}>
-                    <li>Grimsby</li>
-                    <li>Smithville</li>
-                    <li>St. Catharines</li>
-                    <li>Welland</li>
-                    <li>Niagara Falls</li>
-                  </ul>
-                </li>
-              </List>
+              <div className="pt-4">
+                <Table bordered hover responsive size="sm">
+                  <tbody>
+                    <tr>
+                      <td className="p-3">Hamilton</td>
+                      <td className="p-3">
+                        Ancaster, Dundas, Stoney Creek, Waterdown, Glanbrook
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-3">Haldimand</td>
+                      <td className="p-3">
+                        Caledonia, Cayuga, Dunnville, Hagersville, Jarvis
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-3">Niagara</td>
+                      <td className="p-3">
+                        Grimsby, Smithville, St. Catharines, Welland, Niagara
+                        Falls
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </div>
             </div>
           </div>
         </div>

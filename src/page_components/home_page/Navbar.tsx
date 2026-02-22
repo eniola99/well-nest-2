@@ -62,18 +62,6 @@ export const Navbar = () => {
                       WellNest Home Care
                     </Link>
                   </li>
-                  {/* <ul className="dropdown-menu fade-down">
-                      {services.map((service) => (
-                        <li key={service.slug}>
-                          <Link
-                            className="dropdown-item"
-                            href={`/home_care_service/${service.slug}`}
-                          >
-                            {service.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul> */}
                   <li className="nav-item">
                     <Link className="nav-link" href="/well-wheels">
                       WellWheels
@@ -89,16 +77,12 @@ export const Navbar = () => {
                       About Us
                     </Link>
                   </li>
-                </ul>
-
-                <div className="nav-right">
-                  <div className="nav-btn">
-                    <Link href="/contact" className="theme-btn">
-                      {`Let's Talk`}
-                      <i className="fas fa-arrow-right"></i>
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/contact">
+                      Contact Us
                     </Link>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

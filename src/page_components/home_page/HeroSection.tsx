@@ -49,14 +49,6 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"
@@ -76,7 +68,7 @@ export const HeroSection = () => {
                           data-delay="1s"
                         >
                           <Link href="/about" className="theme-btn">
-                            Learn More About our Story
+                            Book a free Consultation
                             <i className="fas fa-arrow-right"></i>
                           </Link>
                         </div>
@@ -101,14 +93,6 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"
@@ -154,14 +138,6 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                         <h1
                           className="hero-title"
                           data-animation="fadeInRight"

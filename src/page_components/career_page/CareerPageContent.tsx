@@ -30,12 +30,6 @@ export const CareerPageContent = () => {
     <>
       <Carousel
         responsive={responsive}
-        // infinite={true}
-        // autoPlay={true}
-        // autoPlaySpeed={3000}
-        // keyBoardControl={true}
-        // showDots={true}
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="carousel-container"
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
@@ -46,23 +40,14 @@ export const CareerPageContent = () => {
               <div
                 className="about-hero-single"
                 style={{
-                  backgroundImage:
-                    "url('https://res.cloudinary.com/eniola99/image/upload/v1762510182/wellnest/hero-slider-1_ooagwq.jpg')",
-                  minHeight: "500px",
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/career_hero_page_sdmjkx.jpg)`,
+                  minHeight: "700px",
                 }}
               >
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                         <h1
                           className="hero-title text-white"
                           data-animation="fadeInRight"
@@ -79,16 +64,6 @@ export const CareerPageContent = () => {
                           professionals collaborating in a supportive
                           environment.
                         </p>
-                        {/* <div
-                          className="hero-btn"
-                          data-animation="fadeInUp"
-                          data-delay="1s"
-                        >
-                          <Link href="/about" className="theme-btn">
-                            Book a Ride
-                            <i className="fas fa-arrow-right"></i>
-                          </Link>
-                        </div> */}
                       </div>
                     </div>
                   </div>

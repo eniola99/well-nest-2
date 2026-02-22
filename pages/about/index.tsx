@@ -31,12 +31,6 @@ const index = () => {
         <NavSection />
         <Carousel
           responsive={responsive}
-          // infinite={true}
-          // autoPlay={true}
-          // autoPlaySpeed={3000}
-          // keyBoardControl={true}
-          // showDots={true}
-          // removeArrowOnDeviceType={["tablet", "mobile"]}
           containerClass="carousel-container"
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
@@ -47,21 +41,14 @@ const index = () => {
                 <div
                   className="about-hero-single"
                   style={{
-                    backgroundImage: "url('/assets/img/honecare.jpg')",
+                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/about_us_hero_page_nfkx9y.jpg')`,
+                    minHeight: "700px",
                   }}
                 >
                   <div className="container">
                     <div className="row align-items-center">
                       <div className="col-md-12 col-lg-6">
                         <div className="hero-content">
-                          {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                           <h1
                             className="hero-title text-white"
                             data-animation="fadeInRight"
@@ -78,13 +65,9 @@ const index = () => {
                             Niagara through culturally- attuned care and
                             integrated mobility.
                           </p>
-                          <div
-                            className="hero-btn"
-                            data-animation="fadeInUp"
-                            data-delay="1s"
-                          >
+                          <div className="hero-btn">
                             <Link href="/about" className="theme-btn">
-                              Book a Consultation
+                              Book a free Consultation
                               <i className="fas fa-arrow-right"></i>
                             </Link>
                           </div>

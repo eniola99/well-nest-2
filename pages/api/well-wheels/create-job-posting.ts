@@ -5,7 +5,7 @@ import { Position } from "@/src/models/position";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   await dbConnect();
 
@@ -28,7 +28,7 @@ export default async function handler(
         const updatePosition = await Position.findOneAndUpdate(
           { _id: req.body?._id },
           newPosition,
-          { new: true }
+          { new: true },
         );
         res.status(200).json({
           success: true,
@@ -59,6 +59,7 @@ export default async function handler(
     case "GET":
       try {
         const list = await Position.find({});
+        console.log({ list });
 
         res.status(200).json({
           success: true,
