@@ -22,6 +22,7 @@ export const CareerJobListing = () => {
       try {
         const response = await fetch("/api/well-wheels/create-job-posting");
         const result = await response.json();
+        console.log({ result });
 
         if (result.success) {
           setJobList(result.data);

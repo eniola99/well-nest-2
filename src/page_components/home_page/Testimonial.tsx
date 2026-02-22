@@ -3,10 +3,7 @@ import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <div className="container pb-80">
-      {/* <h2 className="site-title text-center">
-        We strive for quality and <span> continuous improvement.</span>
-      </h2> */}
+    <div className="container pt-5">
       <h2 className="text-center mt-5">
         Our Value Statement (The CARE Standard){" "}
       </h2>
@@ -89,7 +86,7 @@ export const Testimonial = () => {
                     />
                   </div>
                   <div className="feature-content">
-                    <h4>Emergency Support</h4>
+                    <h4>Excellence</h4>
                     <p>We strive for quality and continuous improvement.</p>
                   </div>
                 </div>

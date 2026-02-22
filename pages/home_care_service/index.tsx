@@ -3,10 +3,7 @@ import Carousel from "react-multi-carousel";
 import Link from "next/link";
 
 import { NavSection, Footer } from "@/src/components/common";
-import {
-  // HelpAtHomeHero,
-  WellNestHomeCareContent,
-} from "@/src/page_components/HelpAtHome_service";
+import { WellNestHomeCareContent } from "@/src/page_components/HelpAtHome_service";
 
 const index = () => {
   const responsive = {
@@ -33,12 +30,6 @@ const index = () => {
       <NavSection />
       <Carousel
         responsive={responsive}
-        // infinite={true}
-        // autoPlay={true}
-        // autoPlaySpeed={3000}
-        // keyBoardControl={true}
-        // showDots={true}
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="carousel-container"
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
@@ -49,7 +40,7 @@ const index = () => {
               <div
                 className="about-hero-single"
                 style={{
-                  backgroundImage: "url('/assets/img/honecare.jpg')",
+                  backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/homepage_homecare_services_yyr1n6.jpg')`,
                   minHeight: "700px",
                 }}
               >
@@ -65,15 +56,6 @@ const index = () => {
                           Dependable, person-centered support that feels like
                           family.
                         </h1>
-                        {/* <p
-                          className="text-white mb-5 mt-3"
-                          data-animation="fadeInLeft"
-                          data-delay=".75s"
-                        >
-                          Redefining home support in Hamilton, Haldimand, and
-                          Niagara through culturally- attuned care and
-                          integrated mobility.
-                        </p> */}
                         <div
                           className="hero-btn mt-5"
                           data-animation="fadeInUp"

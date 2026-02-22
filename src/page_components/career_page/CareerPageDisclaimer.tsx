@@ -8,7 +8,7 @@ export const CareerPageDisclaimer = () => {
       <div className="terms-area py-120">
         <div className="container">
           <div className="mb-5">
-            <h3 className="text-center">Why work us</h3>
+            <h3 className="text-center">Why work with us</h3>
             <p className="text-center mt-3">
               We believe that to provide the best care for our community, we
               must first care for our team

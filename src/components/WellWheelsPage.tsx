@@ -30,12 +30,6 @@ export const WellWheelsPage = () => {
       <NavSection />
       <Carousel
         responsive={responsive}
-        // infinite={true}
-        // autoPlay={true}
-        // autoPlaySpeed={3000}
-        // keyBoardControl={true}
-        // showDots={true}
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="carousel-container"
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
@@ -46,7 +40,7 @@ export const WellWheelsPage = () => {
               <div
                 className="about-hero-single"
                 style={{
-                  backgroundImage: "url('/assets/img/honecare.jpg')",
+                  backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels_heropage_efqdyu.jpg')`,
                   minHeight: "700px",
                 }}
               >
@@ -54,14 +48,6 @@ export const WellWheelsPage = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        {/* <h6
-                          className="hero-sub-title"
-                          data-animation="fadeInUp"
-                          data-delay=".25s"
-                        >
-                          <i className="fa fa-heart-circle-plus"></i> Best
-                          Elderly Care
-                        </h6> */}
                         <h1
                           className="hero-title text-white"
                           data-animation="fadeInRight"

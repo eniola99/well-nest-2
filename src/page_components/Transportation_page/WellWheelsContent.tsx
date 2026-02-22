@@ -1,11 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { wellWheelServices } from "@/src/utils/utils";
-import { PricingPackages } from "../HelpAtHome_service";
-
-import { wellWheelPackages } from "@/src/utils/utils";
-import { BookRide } from "@/src/components";
 import { Table } from "reactstrap";
 
 export const WellWheelsContent = () => {
@@ -14,37 +8,46 @@ export const WellWheelsContent = () => {
       <div className="event-single py-120">
         <div className="container">
           <div className="event-single-wrap">
-            <div className="">
-              <h3 className="title-about-story-wellwheels">
-                The WellWheels Difference: &quot;Hand-to-Hand&quot; Support
-              </h3>
-              <div className="align-items-center">
-                <p
-                  className="text-secondary p-3"
-                  style={{ fontStyle: "italic" }}
-                >
-                  Standard transit often leaves seniors at the curb. We believe
-                  mobility should be dignified and stress-free.
-                  <ul className="mx-4 mt-2" style={{ listStyle: "none" }}>
-                    <li>
-                      <i className="fas fa-check-circle me-2"></i>
-                      Trained with Empathy: Our drivers are trained in the same
-                      cultural respect and empathy as our caregivers, ensuring
-                      you never feel rushed.
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle me-2"></i>
-                      Cultural Nuance: We understand the &quot;language of your
-                      home&quot; and bring that respect into every trip.
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle me-2"></i>
-                      Safe &amp; Reliable: We provide a seamless transition,
-                      ensuring you are supported from your front door to your
-                      final destination.
-                    </li>
-                  </ul>
-                </p>
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="">
+                  <h3 className="title-about-story-wellwheels">
+                    The WellWheels Difference: &quot;Hand-to-Hand&quot; Support
+                  </h3>
+                  <div className="align-items-center">
+                    <p
+                      className="text-secondary p-3"
+                      style={{ fontStyle: "italic" }}
+                    >
+                      Standard transit often leaves seniors at the curb. We
+                      believe mobility should be dignified and stress-free.
+                      <ul className="mx-4 mt-2" style={{ listStyle: "none" }}>
+                        <li>
+                          <i className="fas fa-check-circle me-2"></i>
+                          Trained with Empathy: Our drivers are trained in the
+                          same cultural respect and empathy as our caregivers,
+                          ensuring you never feel rushed.
+                        </li>
+                        <li>
+                          <i className="fas fa-check-circle me-2"></i>
+                          Cultural Nuance: We understand the &quot;language of
+                          your home&quot; and bring that respect into every
+                          trip.
+                        </li>
+                        <li>
+                          <i className="fas fa-check-circle me-2"></i>
+                          Safe &amp; Reliable: We provide a seamless transition,
+                          ensuring you are supported from your front door to
+                          your final destination.
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2"></div>
+              <div className="col-lg-4">
+                <span>image</span>
               </div>
             </div>
             <div className="py-80">
@@ -98,20 +101,46 @@ export const WellWheelsContent = () => {
               </div>
             </div>
             <div className="row g-3">
-              <div className="col-lg-4">
+              <div className="col-lg-6">
                 <div className="contact-form-wrap">
                   <h3 className="">
-                    Integrated Care: The WellNest &amp; WellWheels Synergy
+                    Transportation packages can be scheduled weekly, monthly, or
+                    as needed
                   </h3>
-                  <p className=" mt-4">
-                    We’ve integrated transport and care into one holistic model.
-                    By reducing the stress of coordinating multiple providers,
-                    families benefit from a single, reliable point of contact
-                    for both mobility and daily support.
-                  </p>
+                  <p className=" mt-4">Our bundled packages allow you to</p>
+                  <div className="pt-3">
+                    <Table bordered hover responsive size="sm">
+                      <tbody>
+                        <tr>
+                          <td className="p-3">
+                            Coordinate caregiver visits with medical
+                            appointments
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-3">
+                            Ensure someone is present before and after transport
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-3">Reduce missed appointments</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3">
+                            Maintain routine and stability
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-3">
+                            Simplify billing and scheduling
+                          </td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-6">
                 <div className="contact-form-wrap">
                   <h3 className="">Where We Drive</h3>
                   <p className=" mt-2 mb-3">
@@ -150,7 +179,48 @@ export const WellWheelsContent = () => {
                 </div>
               </div>
             </div>
-            <div className="cta-area pt-80">
+            <div className="pt-5">
+              <h4 className="text-center">Example of Bundled Scenarios </h4>
+              <div className="row g-2 gap-2 pt-5">
+                <div className="col-lg-4 service-item-bud">
+                  <h4 className="">Recovery Support Package</h4>
+                  <div className="pt-3">
+                    <span className="">
+                      Home care during recovery + scheduled follow-up transport.
+                    </span>
+                  </div>
+                </div>
+                <div className="col-lg-4 service-item-bud">
+                  <h4 className="">
+                    Aging in Place <br />
+                    Package
+                  </h4>
+                  <div className="pt-3">
+                    <span>
+                      Weekly personal care + recurring medical transport.
+                    </span>
+                  </div>
+                </div>
+                <div className="col-lg-3 service-item-bud">
+                  <h4 className="">
+                    Family Relief <br />
+                    Package
+                  </h4>
+                  <div className="pt-3">
+                    <span>Respite care + social outing transportation</span>
+                  </div>
+                </div>
+                <div className="col-lg-3">
+                  <div className="hero-btn">
+                    <Link href="/contact" className="theme-btn2">
+                      Book a free Consultation
+                      <i className="fas fa-arrow-right"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div className="cta-area pt-80">
               <div className="container">
                 <div className="cta-wrap rounded-5 w-100">
                   <div className="col-lg-7 mx-auto">
@@ -162,115 +232,13 @@ export const WellWheelsContent = () => {
                       </p>
                       <Link href="/contact" className="theme-btn">
                         Request a WellWheels Consultation
-                        {/* <i className="fas fa-arrow-right"></i> */}
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            {/* <div className="row g-4">
-              <div className="col-lg-4">
-                <div className="service-sidebar">
-                  <div className="widget">
-                    <div className="header">
-                      <h4 className="title">WellWheels Service</h4>
-                      <div className="category">
-                        {wellWheelServices.map((service) => (
-                          <>
-                            <Link href={`/well-wheels/${service.slug}`}>
-                              <i className="fa fa-angle-double-right"></i>
-                              {service.name}
-                            </Link>
-                          </>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="title">Book a Ride</h4>
-                    <div className="event-single-author">
-                      <BookRide />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-8">
-                <div className="event-details">
-                  <div className="my-4">
-                    <h3 className="mb-2">Welcome to WellWheels</h3>
-                    <p>
-                      <b>
-                        At WellWheels, we believe independence begins with
-                        access{" "}
-                      </b>
-                      and everyone deserves access to safe, reliable, and
-                      compassionate transportation— especially when mobility,
-                      health, or age make travel more challenging.
-                    </p>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6 mb-4">
-                      <Image
-                        src="/assets/img/event/01.jpg"
-                        width={600}
-                        height={600}
-                        alt=""
-                      />
-                    </div>
-                    <div className="col-md-6 mb-4">
-                      <Image
-                        src="/assets/img/event/02.jpg"
-                        width={600}
-                        height={600}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="mb-4">
-                    <p>
-                      We provide{" "}
-                      <b>
-                        non-emergency medical and wellness transport services
-                      </b>{" "}
-                      that help individuals stay independent, active, and
-                      connected to their communities. Whether you’re heading to
-                      a medical appointment, visiting family, or running
-                      errands, <b>WellWheels</b> ensures that every trip is
-                      backed by professionalism, empathy, and a commitment to
-                      client safety.
-                    </p>
-                  </div>
-                  <div className="my-4">
-                    <h3 className="mb-20 mt-5">Need Help Choosing a Plan?</h3>
-                    <p>
-                      If you’re unsure which service or membership plan fits
-                      your needs, we’re here to help. Our team can create a{" "}
-                      <b>customized package</b> that combines rides, deliveries,
-                      and personal support — all designed around your schedule
-                      and goals.
-                    </p>
-                    <p className="mb-3 mt-3">
-                      Call or message us to book your next trip.
-                    </p>
-                    <p className="mb-3">
-                      Let WellWheels take you where you need to go — safely,
-                      comfortably, and with care.
-                    </p>
-                    <p>
-                      <i>WellWheels — Because every journey deserves dignity</i>
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div> */}
           </div>
-          {/* <PricingPackages
-            packages={wellWheelPackages}
-            title="WellWheels"
-            subTitle="Care Packages/Membership"
-            // actionText="Book Now"
-          /> */}
         </div>
       </div>
     </>

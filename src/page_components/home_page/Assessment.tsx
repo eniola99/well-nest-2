@@ -6,241 +6,96 @@ export const Assessment = () => {
   return (
     <>
       <div className="center-image-background mt-5 pb-50">
-        <h2 className="site-title text-center  pt-80">Our Service</h2>
+        <h2 className="text-center pt-5">Our Service</h2>
 
-        <div className="choose-area">
-          <div className="container">
-            <div
-              className="row g-4 align-items-center justify-content-between wow fadeInDown"
-              data-wow-delay=".25s"
-            >
-              <div className="container">
-                <div className="title-about-story mt-3 mb-3">
-                  <h3 className="">
-                    WellNest <span>Home Care </span>
-                  </h3>
-                </div>
-                <span className="">
-                  Home is where dignity lives. Dependable, person-centered
-                  support that feels like family.
-                </span>
-              </div>
-            </div>
-            <div className="">
-              <div
-                className="choose-content wow fadeInUp"
-                data-wow-delay=".25s"
-              >
-                <div className="choose-content-wrap">
-                  <div className="row g-4">
-                    <div className="col-md-6">
-                      <div className="choose-item">
-                        {/* <span className="count">01</span> */}
-                        <div className="choose-item-icon">
-                          {/* <i
-                              className="fa-solid fa-hospital"
-                              style={{
-                                fontSize: "25px",
-                                color: "white",
-                                paddingTop: "5px",
-                              }}
-                            ></i> */}
-                          <Image
-                            src="assets/img/icon/money.svg"
-                            alt=""
-                            width={200}
-                            height={200}
-                          />
-                        </div>
-                        <div className="choose-item-info">
-                          <h4>Personal support</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="choose-item">
-                        {/* <span className="count">02</span> */}
-                        <div className="choose-item-icon">
-                          <Image
-                            src="assets/img/icon/money.svg"
-                            alt=""
-                            width={200}
-                            height={200}
-                          />
-                        </div>
-                        <div className="choose-item-info">
-                          <h4>Respite Care</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="choose-item">
-                        {/* <span className="count">03</span> */}
-                        <div className="choose-item-icon">
-                          <Image
-                            src="assets/img/icon/money.svg"
-                            alt=""
-                            width={200}
-                            height={200}
-                          />
-                        </div>
-                        <div className="choose-item-info">
-                          <h4>Companionship</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="choose-item">
-                        {/* <span className="count">04</span> */}
-                        <div className="choose-item-icon">
-                          <Image
-                            src="assets/img/icon/money.svg"
-                            alt=""
-                            width={200}
-                            height={200}
-                          />
-                        </div>
-                        <div className="choose-item-info">
-                          <h4>Housekeeping</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="choose-item">
-                        {/* <span className="count">05</span> */}
-                        <div className="choose-item-icon">
-                          <Image
-                            src="assets/img/icon/money.svg"
-                            alt=""
-                            width={200}
-                            height={200}
-                          />
-                        </div>
-                        <div className="choose-item-info">
-                          <h4>Seasonal Support</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                      </div>
+        <div className="container mt-5">
+          <div className="row g-3">
+            <div className="col-lg-5 col-md-12 col-sm-12">
+              <div className="service-area2">
+                <div className="service-item">
+                  <div className="service-info">
+                    <div className="service-content">
+                      <h4 className=" mb-3">WellNest Home Care</h4>
+                      <span className="">
+                        Home is where dignity lives. Dependable, person-centered
+                        support that feels like family.
+                      </span>
                     </div>
                   </div>
-                  <div
-                    className="hero-btn mt-3"
-                    data-animation="fadeInUp"
-                    data-delay="1s"
-                  >
-                    <Link href="/about" className="theme-btn mt-5">
-                      learn more
-                      <i className="fas fa-arrow-right"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              {/* <div className="col-lg-2"></div> */}
-              {/* <div className="col-lg-6">
-                <div
-                  className="skill-img wow fadeInRight"
-                  data-wow-delay=".25s"
-                >
-                  <Image
-                    src="/assets/img/wellnest-home-care2.jpg"
-                    width={800}
-                    height={300}
-                    alt="about img 1"
-                  />
-                </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
-        {/* <div className="skill-area py-100">
-          <div className="container">
-            <div className="skill-wrap">
-              <div className="row g-4 align-items-center">
-                <div className="col-lg-6">
-                  <div
-                    className="skill-content wow fadeInUp"
-                    data-wow-delay=".25s"
-                  >
-                    <h2 className="site-title">
-                      WellNest <span>Home</span> Care
-                    </h2>
-                    <p className="skill-text">
-                      Home is where dignity lives. Dependable, person-centered
-                      support that feels like family.
-                    </p>
-                    <div className="skill-progress">
-                      <div className="progress-item">
-                        <h5>Personal support </h5>
-                      </div>
-                      <div className="progress-item">
-                        <h5>Respite Care</h5>
-                      </div>
-                      <div className="progress-item">
-                        <h5>Companionship</h5>
-                      </div>
-                      <div className="progress-item">
-                        <h5>Housekeeping</h5>
-                      </div>
-                      <div className="progress-item">
-                        <h5>Seasonal Support</h5>
-                      </div>
-                    </div>
-                    <Link
-                      href="/home_care_service/live_in"
-                      className="theme-btn mt-5"
-                    >
-                      Learn More<i className="fas fa-arrow-right"></i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div
-                    className="skill-img wow fadeInRight"
-                    data-wow-delay=".25s"
-                    style={{ width: "500px", height: "600px" }}
-                  >
+                  <div className="service-img mt-3 mb-3">
                     <Image
-                      src="/assets/img/wellnest-home-care2.jpg"
-                      width={500}
-                      height={600}
-                      alt="about img 1"
+                      src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/homepage_homecare_services_yyr1n6.jpg`}
+                      width={650}
+                      height={350}
+                      alt="wellwheels vehicle"
                     />
                   </div>
+                  <div className="choose-content wow fadeInUp">
+                    <div className="choose-content-wrap">
+                      <div className="row g-4">
+                        <div className="col-md-6">
+                          <div className="choose-item">
+                            <div className="d-flex align-items-center">
+                              <i className="me-2 fa-solid fa-check"></i>
+                              <h5>Personal support</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="choose-item">
+                            <div className="d-flex align-items-center">
+                              <i className="me-2 fa-solid fa-check"></i>
+                              <h5>Respite Care</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="choose-item">
+                            <div className="d-flex align-items-center">
+                              <i className="me-2 fa-solid fa-check"></i>
+                              <h5>Companionship</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="choose-item">
+                            <div className="d-flex align-items-center">
+                              <i className="me-2 fa-solid fa-check"></i>
+                              <h5>Housekeeping</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="choose-item">
+                            <div className="d-flex align-items-center">
+                              <i className="me-2 fa-solid fa-check"></i>
+                              <h5>Seasonal Support</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="hero-btn mb-3">
+                        <Link
+                          href="/home_care_service"
+                          className="theme-btn mt-5"
+                        >
+                          learn more
+                          <i className="fas fa-arrow-right"></i>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div> */}
-      </div>
-      <div className="video-area mb-5" style={{ background: "#f6f6f6" }}>
-        <div className="container py-80">
-          <div className="row align-items-center container">
-            <div className=" col-lg-5">
-              <div
-                className="container video-info wow fadeInUp"
-                data-wow-delay=".25s"
-              >
-                <div className="site-heading mb-0">
-                  <h2 className="site-title">Wellwheels</h2>
+            <div className="col-lg-7 col-md-12 col-sm-12">
+              <div className="service-area2">
+                <div className="service-item">
+                  <div className="service-info">
+                    <div className="service-content">
+                      <h4 className="mb-3">Wellwheels</h4>
+                    </div>
+                  </div>
                   <p>
                     We provide a seamless transition from home to community.
                     Unlike standard transit, WellWheels offers &quot;Hand-to-
@@ -248,37 +103,100 @@ export const Assessment = () => {
                     empathy and cultural respect as our caregivers, ensuring you
                     never feel rushed or unsupported.
                   </p>
-                  <ul className="mt-2" style={{ listStyle: "disc inside" }}>
-                    <li>Non emergency medical transportation</li>
-                    <li>Health and Wellness Support</li>
-                    <li>Respite or Group transportation</li>
-                    <li>
-                      <strong>Coordinated Care:</strong> If you have a WellNest
-                      caregiver, we sync with WellWheels for a stress-free day
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className="hero-btn mt-5"
-                  data-animation="fadeInUp"
-                  data-delay="1s"
-                >
-                  <Link href="/about" className="theme-btn">
-                    Book Your Journey
-                    <i className="fas fa-arrow-right"></i>
-                  </Link>
+                  <div className="service-img mt-3 mb-3">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels_heropage_efqdyu.jpg`}
+                      width={650}
+                      height={350}
+                      alt="wellwheels vehicle"
+                    />
+                  </div>
+                  <div className="d-flex flex-column mb-5">
+                    <div className="d-flex align-items-center">
+                      <i className="me-3 fa-solid fa-check"></i>
+                      <p>Non emergency medical transportation</p>
+                    </div>
+                    <div className="d-flex align-items-center">
+                      <i className="me-3 fa-solid fa-check"></i>
+                      <p>Health and Wellness Support</p>
+                    </div>
+                    <div className="d-flex align-items-center">
+                      <i className="me-3 fa-solid fa-check"></i>
+                      <p>Respite or Group transportation</p>
+                    </div>
+                    <div className="d-flex align-items-center">
+                      <i className="me-3 fa-solid fa-check"></i>
+                      <p>
+                        <strong>Coordinated Care:</strong> If you have a
+                        WellNest caregiver, we sync with WellWheels for a
+                        stress-free day
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hero-btn mb-3">
+                    <Link href="/well-wheels" className="theme-btn">
+                      Book Your Journey
+                      <i className="fas fa-arrow-right"></i>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-2"></div>
-            <div className="col-lg-5">
-              <div className="image-content">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels-1_qk22eo.jpg`}
-                  width={800}
-                  height={450}
-                  alt="wellwheels vehicle"
-                />
+          </div>
+          <div className="mt-5">
+            <div className="row">
+              <div className="col-lg-4">
+                <div className="service-area2">
+                  <div className="service-item">
+                    <h3 className="text-center">
+                      Flexible Care. Seamlessly Connected.
+                    </h3>
+                    <p className="mt-3 p-3">
+                      Whether you need support at home, reliable transportation,
+                      or both — our care packages are designed around your life,
+                      not a fixed template. Managing care can feel overwhelming
+                      — especially when coordinating multiple services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <div className="service-area2">
+                  <div className="service-item">
+                    <h5>
+                      Our bundled care options combine: WellNest Home Care and
+                      WellWheels.
+                    </h5>
+                    <div className=" package-home">
+                      <div className="d-flex align-items-center pt-3">
+                        <i className="me-2 fa-solid fa-check"></i>
+                        <p>One coordinated plan</p>
+                      </div>
+                      <div className="d-flex align-items-center pt-3">
+                        <i className="me-2 fa-solid fa-check"></i>
+                        <p>Consistent communication</p>
+                      </div>
+                      <div className="d-flex align-items-center pt-3">
+                        <i className="me-2 fa-solid fa-check"></i>
+                        <p>Fewer providers to manage</p>
+                      </div>
+                      <div className="d-flex align-items-center pt-3">
+                        <i className="me-2 fa-solid fa-check"></i>
+                        <p>Greater independence</p>
+                      </div>
+                      <div className="d-flex align-items-center pt-3 pb-3">
+                        <i className="me-2 fa-solid fa-check"></i>
+                        <p>Peace of mind for families</p>
+                      </div>
+                    </div>
+                    <div className="hero-btn mb-3">
+                      <Link href="/about" className="theme-btn">
+                        Book A Free consultation
+                        <i className="fas fa-arrow-right"></i>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

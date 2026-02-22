@@ -1,45 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-// import { useRouter } from "next/router";
 import Link from "next/link";
 
-// import { History } from "./History";
-// import { CompanyOverview } from "./CompanyOverview";
-// import { MissionAbout } from "./MissionAbout";
-
 export const AboutPageContent = () => {
-  // const router = useRouter();
-  // const { service } = router.query;
-
-  // const [activeSection, setActiveSection] = useState("company-overview");
-
-  // const categories = [
-  //   { name: "Company Overview", slug: "company-overview" },
-  //   { name: "Vision, Mission and Values", slug: "mission-about" },
-  //   { name: "History", slug: "history" },
-  // ];
-
-  // const setToSection = (sectionId: string) => {
-  //   setActiveSection(sectionId);
-  // };
-
-  // let PageComponent: React.ElementType;
-
-  // switch (true) {
-  //   case activeSection === "company-overview":
-  //     PageComponent = CompanyOverview;
-  //     break;
-  //   case activeSection === "mission-about":
-  //     PageComponent = MissionAbout;
-  //     break;
-  //   case activeSection === "history":
-  //     PageComponent = History;
-  //     break;
-  //   default:
-  //     PageComponent = CompanyOverview;
-  //     break;
-  // }
-
   return (
     <>
       <div className="service-single py-80">
@@ -50,7 +13,7 @@ export const AboutPageContent = () => {
               <div className="align-items-center">
                 <p
                   className="text-secondary pb-100"
-                  style={{ fontSize: "16px", fontStyle: "italic" }}
+                  style={{ fontSize: "16px" }}
                 >
                   <p className="pb-3">
                     I’ve seen firsthand how navigating Ontario’s healthcare
@@ -105,10 +68,7 @@ export const AboutPageContent = () => {
               </div>
               <div className="row g-4">
                 <div className="col-md-6 col-lg-4">
-                  <div
-                    className="service-item wow fadeInUp"
-                    data-wow-delay=".25s"
-                  >
+                  <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
                         src="/assets/img/honecare.jpg"
@@ -136,10 +96,7 @@ export const AboutPageContent = () => {
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div
-                    className="service-item wow fadeInUp"
-                    data-wow-delay=".50s"
-                  >
+                  <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
                         src="/assets/img/wellnest-comp.jpg"
@@ -166,10 +123,7 @@ export const AboutPageContent = () => {
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div
-                    className="service-item wow fadeInUp"
-                    data-wow-delay=".75s"
-                  >
+                  <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
                         src="/assets/img/homecare-image.jpg"
@@ -195,64 +149,11 @@ export const AboutPageContent = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="col-xl-4 col-lg-4">
-                <div className="service-sidebar">
-                  <div className="widget">
-                    <h4 className="title">About Us</h4>
-                    <div className="category">
-                      {categories
-                        .filter((item) => item.slug !== service)
-                        .map((service) => (
-                          <>
-                            <div
-                              className="scroll_section"
-                              onClick={() => setToSection(service.slug)}
-                            >
-                              <i className="fa fa-angle-double-right"></i>
-                              {service.name}
-                             
-                            </div>
-                          </>
-                        ))}
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="title">Ask A Question</h4>
-                    <div className="service-downloa">
-                      <span className="">
-                        Have a question about Personal Home Care? We are Here to
-                        help.
-                      </span>
-                      <h3 className="mb-3 mt-3">
-                        Call Us:
-                        <br />
-                        <a href="tel:+905470-4000">(905) 470-4000</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-8 col-lg-8">
-                <div className="service-details">
-                  <div className="mb-30">
-                    <Image
-                      src="/assets/img/about/about-us.png"
-                      height={600}
-                      width={900}
-                      alt="thumb"
-                    />
-                  </div>
-                  <div className="content">
-                    <PageComponent activeSection={activeSection} />
-                  </div>
-                </div>
-              </div> */}
               </div>
             </div>
-            <div className="pt-50">
-              <h3 className="mt-5">
-                Community Impact: Strengthening Our Region
-              </h3>
+            <div className="pt-100">
+              <h4 className="text-center site-title">Community Impact</h4>
+              <h3 className="mt-5">Strengthening Our Region</h3>
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <p className=" pt-3">
@@ -286,21 +187,33 @@ export const AboutPageContent = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <p className="text-secondary text-center">
-                    <strong>Map</strong>
+                    <div className="">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/service_area_map_akbxzt.png`}
+                        width={550}
+                        height={550}
+                        alt="map"
+                      />
+                    </div>
                   </p>
                 </div>
               </div>
-              <div className="">
-                <h4 className="pt-5">
-                  Experience Care That Feels Like Family. Serving Hamilton,
-                  Stoney Creek, Caledonia, Cayuga, St. Catharines, and across
-                  the Niagara Peninsula.
-                </h4>
-                <div className="mt-3">
-                  <Link href="/about" className="theme-btn">
-                    Book a Consultation
-                    <i className="fas fa-arrow-right"></i>
-                  </Link>
+              <div className="cta-area pt-80">
+                <div className="container">
+                  <div className="cta-wrap rounded-5 w-100">
+                    <div className="col-lg-7 mx-auto">
+                      <div className="cta-content">
+                        <h1>Experience Care That Feels Like Family</h1>
+                        <p>
+                          Serving Hamilton, Stoney Creek, Caledonia, Cayuga, St.
+                          Catharines, and across the Niagara Peninsula.
+                        </p>
+                        <Link href="/contact" className="theme-btn">
+                          Book a Free Consultation
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
