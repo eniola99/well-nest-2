@@ -286,7 +286,7 @@ export const WellNestHomeCareContent = () => {
           <PricingPackages
             packages={homeCarePackages}
             title="Our CARE Packages"
-            subTitle="Flexible options that grow with your needs"
+            subTitle="Need help deciding what is right for you?"
             actionText={[
               { essential: "Ideal for light, consistent support" },
               { enhanced: "For ongoing daily assistance" },
@@ -297,7 +297,7 @@ export const WellNestHomeCareContent = () => {
             <div className="site-heading text-center wow fadeInDown">
               <h2 className="site-title">
                 Serving Our Local <br />
-                <span>Communitiess</span>
+                <span>Communities</span>
               </h2>
             </div>
             <div className="mt-4 text-center">

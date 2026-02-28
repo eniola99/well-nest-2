@@ -133,7 +133,7 @@ export const ContactPageContent = () => {
                 <div
                   className="about-hero-single"
                   style={{
-                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/about_us_hero_page_nfkx9y.jpg')`,
+                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/contact_us_2_moygnp.jpg')`,
                     minHeight: "700px",
                   }}
                 >
@@ -214,7 +214,7 @@ export const ContactPageContent = () => {
             </div>
           </div>
         </div>
-        <div className="row g-4">
+        <div className="row g-4 mb-5">
           <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="g-4">
@@ -416,7 +416,7 @@ export const ContactPageContent = () => {
           <div className="col-lg-6">
             <div
               className="contact-form-wrap"
-              style={{ minHeight: "400px", paddingTop: "40px" }}
+              style={{ minHeight: "760px", paddingTop: "40px" }}
             >
               <h4>Our Community Roots:</h4>
               <div className="pt-4">

@@ -9,6 +9,15 @@ export const Navbar = () => {
   const router = useRouter();
   const [ShowSlideOut, setShowSlideOut] = useState<boolean>(false);
 
+  const routes = [
+    { name: "Home", path: "/" },
+    { name: "WellNest Home Care", path: "/home_care_service" },
+    { name: "WellWheels", path: "/well-wheels" },
+    { name: "Careers", path: "/career" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
+  ];
+
   return (
     <>
       <div className="main-navigation">
@@ -52,36 +61,28 @@ export const Navbar = () => {
                 <ul className="navbar-nav justify-content-center grow">
                   {router.pathname !== "/" && (
                     <li className="nav-item">
-                      <Link className="nav-link" href="/">
+                      <Link
+                        className={`nav-link ${router.pathname === "/" ? "active" : ""}`}
+                        href="/"
+                      >
                         Home
                       </Link>
                     </li>
                   )}
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/home_care_service">
-                      WellNest Home Care
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/well-wheels">
-                      WellWheels
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/career">
-                      Careers
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/about">
-                      About Us
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/contact">
-                      Contact Us
-                    </Link>
-                  </li>
+                  {routes
+                    .filter((route) => route.path !== "/")
+                    .map((route) => (
+                      <>
+                        <li className="nav-item" key={route.path}>
+                          <Link
+                            className={`nav-link ${router.pathname === route.path ? "active" : ""}`}
+                            href={route.path}
+                          >
+                            {route.name}
+                          </Link>
+                        </li>
+                      </>
+                    ))}
                 </ul>
               </div>
             </div>

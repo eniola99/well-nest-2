@@ -40,7 +40,14 @@ export const About = () => {
                   backgroundColor: "var(--theme-color)",
                 }}
               >
-                Mail
+                <strong>
+                  <Link
+                    href="mailto:support@wellnestgroup.org"
+                    style={{ color: "white" }}
+                  >
+                    support@wellnestgroup.org
+                  </Link>
+                </strong>
               </p>
             </div>
           </div>
