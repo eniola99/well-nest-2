@@ -42,7 +42,7 @@ export const PricingPackages = ({
           <div className="col-lg-4">
             <div className="service-area2">
               <div className="service-item-sub">
-                <h1 className="text-white">{subTitle}</h1>
+                <h2 className="text-white">{subTitle}</h2>
               </div>
             </div>
           </div>

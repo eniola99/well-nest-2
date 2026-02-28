@@ -10,15 +10,22 @@ export const Assessment = () => {
 
         <div className="container mt-5">
           <div className="row g-3">
-            <div className="col-lg-5 col-md-12 col-sm-12">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="service-area2">
                 <div className="service-item">
                   <div className="service-info">
                     <div className="service-content">
                       <h4 className=" mb-3">WellNest Home Care</h4>
                       <span className="">
-                        Home is where dignity lives. Dependable, person-centered
-                        support that feels like family.
+                        Home is more than a place — it’s where comfort, dignity,
+                        and independence live. At{" "}
+                        <strong>WellNest Home Care</strong>, we believe that
+                        everyone deserves to feel safe, comfortable, and cared
+                        for — right in the place they call home. Whether you or
+                        a loved one needs daily support, companionship, or
+                        short-term assistance, our trusted caregivers are here
+                        to help you live with dignity, independence, and peace
+                        of mind
                       </span>
                     </div>
                   </div>
@@ -29,6 +36,13 @@ export const Assessment = () => {
                       height={350}
                       alt="wellwheels vehicle"
                     />
+                  </div>
+                  <div className="service-content">
+                    <span className="">
+                      Whether you need daily care or occasional help, our team
+                      provides dependable, person-centered support that feels
+                      like family.
+                    </span>
                   </div>
                   <div className="choose-content wow fadeInUp">
                     <div className="choose-content-wrap">
@@ -88,7 +102,7 @@ export const Assessment = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-md-12 col-sm-12">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="service-area2">
                 <div className="service-item">
                   <div className="service-info">
@@ -103,7 +117,7 @@ export const Assessment = () => {
                     empathy and cultural respect as our caregivers, ensuring you
                     never feel rushed or unsupported.
                   </p>
-                  <div className="service-img mt-3 mb-3">
+                  <div className="service-img mt-3 mb-4">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels_heropage_efqdyu.jpg`}
                       width={650}
@@ -133,7 +147,7 @@ export const Assessment = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="hero-btn mb-3">
+                  <div className="hero-btn mb-4">
                     <Link href="/well-wheels" className="theme-btn">
                       Book Your Journey
                       <i className="fas fa-arrow-right"></i>
@@ -147,7 +161,7 @@ export const Assessment = () => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="service-area2">
-                  <div className="service-item">
+                  <div className="service-item" style={{ minHeight: "400px" }}>
                     <h3 className="text-center">
                       Flexible Care. Seamlessly Connected.
                     </h3>

@@ -71,7 +71,7 @@ export const AboutPageContent = () => {
                   <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
-                        src="/assets/img/honecare.jpg"
+                        src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/pillar_1_nb19sj.jpg`}
                         width={600}
                         height={600}
                         alt=""

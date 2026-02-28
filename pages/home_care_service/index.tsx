@@ -62,7 +62,7 @@ const index = () => {
                           data-delay="1s"
                         >
                           <Link href="/contact" className="theme-btn">
-                            Book a Consultation
+                            Book a Free Consultation
                             <i className="fas fa-arrow-right"></i>
                           </Link>
                         </div>

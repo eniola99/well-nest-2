@@ -3,6 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "WellNest Home Care", path: "/home_care_service/help_home" },
+    { name: "WellWheels", path: "/well-wheels" },
+    { name: "Careers", path: "/career" },
+    { name: "Contact Us Care", path: "/contact" },
+  ];
   return (
     <>
       <footer className="footer-area">
@@ -49,9 +57,9 @@ export const Footer = () => {
                             <i className="fa-solid fa-envelope"></i>
                           </div>
                           <div className="content">
-                            <h6>Mail Us</h6>
-                            <Link href="mailto:info@wellwheels.org">
-                              info@wellwheels.org
+                            <h6>Email Us</h6>
+                            <Link href="mailto:support@wellnestgroup.org">
+                              support@wellnestgroup.org
                             </Link>
                           </div>
                         </li>
@@ -59,70 +67,21 @@ export const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 col-lg-2"></div>
+                <div className="col-lg-4"></div>
                 <div className="col-lg-3">
                   <div className="footer-widget-box">
                     <h4 className="footer-widget-title">Quick Links</h4>
                   </div>
                   <ul className="footer-list" style={{ listStyle: "none" }}>
-                    <li>
-                      <Link href="/about">
-                        <i className="fa-solid fa-caret-right"></i>About Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/home_care_service/help_home">
-                        <i className="fa-solid fa-caret-right"></i>WellNest Home
-                        Care
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/well-wheels">
-                        <i className="fa-solid fa-caret-right"></i>WellWheels
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/career">
-                        <i className="fa-solid fa-caret-right"></i>Careers
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <i className="fa-solid fa-caret-right"></i>Land
-                        Acknowledgement
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6 col-lg-2">
-                  <div className="footer-widget-box list">
-                    <ul className="footer-list" style={{ listStyle: "none" }}>
-                      <li>
-                        <Link href="/contact">
-                          <i className="fa-solid fa-caret-right"></i>Contact Us
-                          Care
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/">
-                          <i className="fa-solid fa-caret-right"></i>Privacy
-                          Policy
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/">
+                    {links.map((link) => (
+                      <li key={link.path}>
+                        <Link href={link.path}>
                           <i className="fa-solid fa-caret-right"></i>
-                          Disclaimers
+                          {link.name}
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/">
-                          <i className="fa-solid fa-caret-right"></i>Terms of
-                          Use
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -152,11 +111,6 @@ export const Footer = () => {
                   <li>
                     <Link href="#">
                       <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="fab fa-youtube"></i>
                     </Link>
                   </li>
                 </ul>
