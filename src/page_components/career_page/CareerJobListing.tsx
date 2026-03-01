@@ -37,7 +37,7 @@ export const CareerJobListing = () => {
   }, []);
 
   return (
-    <div className="terms-area py-80">
+    <div className="terms-area">
       <div className="">
         <h4 className="text-center career-opennings">Current Opportunities</h4>
         <p className="text-center mt-5">

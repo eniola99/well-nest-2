@@ -1983,7 +1983,7 @@ label {
   justify-content: center;
   position: relative;
   z-index: 1;
-  height: 800px;
+  height: 500px;
 }
 
 .hero-single::before {

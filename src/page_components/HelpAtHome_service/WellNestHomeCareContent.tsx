@@ -115,8 +115,8 @@ export const WellNestHomeCareContent = () => {
                                 listStyleType: "disc",
                               }}
                             >
-                              <li>Short-term or ongoing respite</li>
                               <li>In-home support while caregivers recharge</li>
+                              <li>Short-term or ongoing respite</li>
                               <li>Flexible scheduling</li>
                             </ul>
                           </List>
@@ -311,14 +311,18 @@ export const WellNestHomeCareContent = () => {
                 <thead>
                   <tr>
                     <th className="p-3">Region</th>
-                    <th className="p-3">Communities Served</th>
+                    <th className="p-3">
+                      {" "}
+                      Communities we serve include but not limited to
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="p-3">Hamilton</td>
                     <td className="p-3">
-                      Ancaster, Dundas, Stoney Creek, Waterdown, Glanbrook
+                      Ancaster, Hamilton Mountain, Hamilton Downtown, Dundas,
+                      Stoney Creek, Waterdown, Glanbrook
                     </td>
                   </tr>
                   <tr>

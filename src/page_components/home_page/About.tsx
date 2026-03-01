@@ -7,7 +7,7 @@ export const About = () => {
       <div className="container mt-100">
         <div className="container g-4 row">
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <h3 className="mb-3">A Circle of Empthy</h3>
+            <h3 className="mb-3">A Circle of Care</h3>
             <p className="" style={{ fontSize: "18px" }}>
               We’ve been in the rooms where support was needed but not found. We
               build a circle of support that understands your values and speaks
@@ -34,7 +34,7 @@ export const About = () => {
                 }}
               >
                 <i className="fa-solid fa-phone-volume mx-2"></i>
-                Number
+                <strong>(+289)-523-0738</strong>
               </p>
               <p
                 className="text-center text-white mt-3"
@@ -47,10 +47,10 @@ export const About = () => {
                 <i className="fa-solid fa-envelope mx-2"></i>
                 <strong>
                   <Link
-                    href="mailto:support@wellnestgroup.org"
+                    href="mailto:care@wellnestgroup.org"
                     style={{ color: "white" }}
                   >
-                    support@wellnestgroup.org
+                    care@wellnestgroup.org
                   </Link>
                 </strong>
               </p>

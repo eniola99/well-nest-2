@@ -11,10 +11,10 @@ export const Navbar = () => {
 
   const routes = [
     { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
     { name: "WellNest Home Care", path: "/home_care_service" },
     { name: "WellWheels", path: "/well-wheels" },
     { name: "Careers", path: "/career" },
-    { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/contact" },
   ];
 
@@ -59,30 +59,18 @@ export const Navbar = () => {
             >
               <div className="offcanvas-body gap-xl-4">
                 <ul className="navbar-nav justify-content-center grow">
-                  {router.pathname !== "/" && (
-                    <li className="nav-item">
-                      <Link
-                        className={`nav-link ${router.pathname === "/" ? "active" : ""}`}
-                        href="/"
-                      >
-                        Home
-                      </Link>
-                    </li>
-                  )}
-                  {routes
-                    .filter((route) => route.path !== "/")
-                    .map((route) => (
-                      <>
-                        <li className="nav-item" key={route.path}>
-                          <Link
-                            className={`nav-link ${router.pathname === route.path ? "active" : ""}`}
-                            href={route.path}
-                          >
-                            {route.name}
-                          </Link>
-                        </li>
-                      </>
-                    ))}
+                  {routes.map((route) => (
+                    <>
+                      <li className="nav-item" key={route.path}>
+                        <Link
+                          className={`nav-link ${router.pathname === route.path ? "active" : ""}`}
+                          href={route.path}
+                        >
+                          {route.name}
+                        </Link>
+                      </li>
+                    </>
+                  ))}
                 </ul>
               </div>
             </div>

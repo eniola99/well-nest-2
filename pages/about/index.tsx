@@ -61,12 +61,12 @@ const index = () => {
                             data-animation="fadeInLeft"
                             data-delay=".75s"
                           >
-                            Redefining home support in Hamilton, Haldimand, and
-                            Niagara through culturally- attuned care and
-                            integrated mobility.
+                            Supporting individuals at home and in the community
+                            across Hamilton, Haldimand, and Niagara through
+                            compassionate care and integrated mobility services.
                           </p>
                           <div className="hero-btn">
-                            <Link href="/about" className="theme-btn">
+                            <Link href="/contact" className="theme-btn">
                               Book a free Consultation
                               <i className="fas fa-arrow-right"></i>
                             </Link>

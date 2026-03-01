@@ -16,28 +16,47 @@ export const WellWheelsContent = () => {
                 </h3>
                 <div className="align-items-center">
                   <p
-                    className="text-secondary p-3"
-                    style={{ fontStyle: "italic" }}
+                    className=" p-3"
+                    // style={{ fontStyle: "italic" }}
                   >
-                    Standard transit often leaves seniors at the curb. We
-                    believe mobility should be dignified and stress-free.
+                    At WellWheels, we believe transportation should feel safe,
+                    supportive, and stress-free from start to finish.
+                    <br /> We go beyond transportation by assisting clients from
+                    their home to their destination and safely back again —
+                    helping reduce anxiety for both clients and families.
                     <ul className="mx-4 mt-2" style={{ listStyle: "none" }}>
                       <li>
-                        <i className="fas fa-check-circle me-2"></i>
-                        Trained with Empathy: Our drivers are trained in the
-                        same cultural respect and empathy as our caregivers,
-                        ensuring you never feel rushed.
+                        <div className="d-flex align-items-center">
+                          <i className="fas fa-check-circle me-2"></i>
+                          <p>Care-Focused Drivers</p>
+                        </div>
+                        <p className="">
+                          Our drivers are trained to provide patient, respectful
+                          assistance, ensuring every client feels comfortable,
+                          unhurried, and supported throughout their journey.
+                        </p>
+                      </li>
+                      <li style={{ padding: "10px 0px" }}>
+                        <div className="d-flex align-items-center">
+                          <i className="fas fa-check-circle me-2"></i>
+                          <p>Safe & Dependable Service</p>
+                        </div>
+                        <p className="">
+                          Every trip is thoughtfully coordinated to provide
+                          consistent, reliable service you can count on for
+                          medical appointments, errands, or community outings.
+                        </p>
                       </li>
                       <li>
-                        <i className="fas fa-check-circle me-2"></i>
-                        Cultural Nuance: We understand the &quot;language of
-                        your home&quot; and bring that respect into every trip.
-                      </li>
-                      <li>
-                        <i className="fas fa-check-circle me-2"></i>
-                        Safe &amp; Reliable: We provide a seamless transition,
-                        ensuring you are supported from your front door to your
-                        final destination.
+                        <div className="d-flex align-items-center">
+                          <i className="fas fa-check-circle me-2"></i>
+                          <p>Comfort & Peace of Mind</p>
+                        </div>
+                        <p className="">
+                          We build relationships with our clients, so each ride
+                          feels familiar, reassuring, and centered on individual
+                          needs — not just schedules.
+                        </p>
                       </li>
                     </ul>
                   </p>
@@ -49,7 +68,7 @@ export const WellWheelsContent = () => {
               <div className="">
                 <Image
                   className="wellwheels-image"
-                  src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/wellwheels_heropage_efqdyu.jpg`}
+                  src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hand_to_hand_nrockc.jpg`}
                   width={450}
                   height={280}
                   alt="img"
@@ -70,22 +89,22 @@ export const WellWheelsContent = () => {
                 <thead>
                   <tr>
                     <th className="p-3">Service Type</th>
-                    <th className="p-3">What’s Included</th>
+                    <th className="p-3">Included but not limited to</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="p-3">Non-Emergency Medical Transport</td>
                     <td className="p-3">
-                      Safe travel to doctor appointments, dialysis, or therapy
-                      sessions.
+                      Safe travel to Medical appointments, Community, Social
+                      trips and Post hospitalization transport.
                     </td>
                   </tr>
                   <tr>
                     <td className="p-3">Health and Wellness Support</td>
                     <td className="p-3">
-                      Transportation to fitness centers, social clubs, or
-                      wellness programs.
+                      Transportation to Grocery Runs, Medication Delivery, Lab
+                      Sample Pick up / Delivery and Medical Equipment Delivery.
                     </td>
                   </tr>
                   <tr>
@@ -153,14 +172,17 @@ export const WellWheelsContent = () => {
                   <thead>
                     <tr>
                       <th className="p-3">Region</th>
-                      <th className="p-3">Communities Served</th>
+                      <th className="p-3">
+                        Communities we serve include but not limited to
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="p-3">Hamilton</td>
                       <td className="p-3">
-                        Ancaster, Dundas, Stoney Creek, Waterdown, Glanbrook
+                        Ancaster, Hamilton Mountain, Hamilton Downtown, Dundas,
+                        Stoney Creek, Waterdown, Glanbrook
                       </td>
                     </tr>
                     <tr>

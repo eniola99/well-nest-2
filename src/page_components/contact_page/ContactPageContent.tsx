@@ -131,9 +131,9 @@ export const ContactPageContent = () => {
             <div className="hero-section">
               <div className="hero-slider">
                 <div
-                  className="about-hero-single"
+                  className="hero-single"
                   style={{
-                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/contact_us_2_moygnp.jpg')`,
+                    backgroundImage: `url('${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/old-man-talking-phone_blatko.jpg')`,
                     minHeight: "700px",
                   }}
                 >
@@ -141,20 +141,7 @@ export const ContactPageContent = () => {
                     <div className="row align-items-center">
                       <div className="col-md-12 col-lg-6">
                         <div className="hero-content">
-                          <h1 className="hero-title text-white">
-                            <strong>Not Sure What You Need?</strong> That’s
-                            completely okay
-                          </h1>
-                          <p className="text-white mb-5 mt-3">
-                            Care planning can feel complicated — but you don’t
-                            have to figure it out alone.
-                          </p>
-                          {/* <div className="hero-btn">
-                            <Link href="/about" className="theme-btn">
-                              Book a free Consultation
-                              <i className="fas fa-arrow-right"></i>
-                            </Link>
-                          </div> */}
+                          <h1 className="hero-title">Contact Us</h1>
                         </div>
                       </div>
                     </div>
@@ -186,7 +173,7 @@ export const ContactPageContent = () => {
                 </div>
                 <div className="content">
                   <h5>Call Us</h5>
-                  <p>+2.....</p>
+                  <p>(+289)-523-0738</p>
                 </div>
               </div>
             </div>
@@ -197,7 +184,7 @@ export const ContactPageContent = () => {
                 </div>
                 <div className="content">
                   <h5>Email Us</h5>
-                  <p>support@wellnestgroup.org</p>
+                  <p>care@wellnestgroup.org</p>
                 </div>
               </div>
             </div>
@@ -390,6 +377,8 @@ export const ContactPageContent = () => {
                       <div className="form-group">
                         <FormGroup check inline>
                           <Input
+                            className=""
+                            style={{ border: "2px solid black" }}
                             type="checkbox"
                             checked={isChecked}
                             onChange={() => setIsChecked(!isChecked)}
@@ -418,14 +407,15 @@ export const ContactPageContent = () => {
               className="contact-form-wrap"
               style={{ minHeight: "760px", paddingTop: "40px" }}
             >
-              <h4>Our Community Roots:</h4>
+              <h4>Communities We Serve Include but are not limited to:</h4>
               <div className="pt-4">
                 <Table bordered hover responsive size="sm">
                   <tbody>
                     <tr>
                       <td className="p-3">Hamilton</td>
                       <td className="p-3">
-                        Ancaster, Dundas, Stoney Creek, Waterdown, Glanbrook
+                        Ancaster, Hamilton Mountain, Hamilton Downtown, Dundas,
+                        Stoney Creek, Waterdown, Glanbrook
                       </td>
                     </tr>
                     <tr>

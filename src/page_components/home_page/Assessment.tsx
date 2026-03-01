@@ -6,7 +6,7 @@ export const Assessment = () => {
   return (
     <>
       <div className="service-section-our  mt-5 pb-50">
-        <h2 className="text-center pt-5">Our Service</h2>
+        <h2 className="text-center pt-5">Our Services</h2>
 
         <div className="container mt-5">
           <div className="row g-3">
@@ -117,11 +117,12 @@ export const Assessment = () => {
                     </div>
                   </div>
                   <p>
-                    We provide a seamless transition from home to community.
-                    Unlike standard transit, WellWheels offers &quot;Hand-to-
-                    Hand&quot; support. Our drivers are trained in the same
-                    empathy and cultural respect as our caregivers, ensuring you
-                    never feel rushed or unsupported.
+                    We support safe and comfortable transitions from home to
+                    community. Unlike standard transit services, WellWheels
+                    provides door-to-door assistance, with drivers trained to
+                    offer the same empathy, professionalism, and cultural
+                    awareness reflected across our care team — so clients feel
+                    supported every step of the way.
                   </p>
                   <div className="service-img mt-3 mb-4">
                     <Image
@@ -210,7 +211,7 @@ export const Assessment = () => {
                       </div>
                     </div>
                     <div className="hero-btn mb-3">
-                      <Link href="/about" className="theme-btn">
+                      <Link href="/contact" className="theme-btn">
                         Book A Free consultation
                         <i className="fas fa-arrow-right"></i>
                       </Link>

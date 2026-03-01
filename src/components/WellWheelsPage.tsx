@@ -68,7 +68,7 @@ export const WellWheelsPage = () => {
                           data-animation="fadeInUp"
                           data-delay="1s"
                         >
-                          <Link href="/about" className="theme-btn">
+                          <Link href="/contact" className="theme-btn">
                             Book a Ride
                             <i className="fas fa-arrow-right"></i>
                           </Link>
