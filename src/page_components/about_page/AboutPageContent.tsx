@@ -99,7 +99,7 @@ export const AboutPageContent = () => {
                   <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
-                        src="/assets/img/wellnest-comp.jpg"
+                        src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/support_1_ba7rxy.jpg`}
                         width={600}
                         height={600}
                         alt=""
@@ -126,7 +126,7 @@ export const AboutPageContent = () => {
                   <div className="service-item" style={{ minHeight: "500px" }}>
                     <div className="service-img">
                       <Image
-                        src="/assets/img/homecare-image.jpg"
+                        src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/homecare-image_dm53mj.jpg`}
                         width={600}
                         height={600}
                         alt=""
@@ -140,10 +140,11 @@ export const AboutPageContent = () => {
                           </a>
                         </h4>
                         <p className="service-text">
-                          We prioritize language- matching and inclusive values.
-                          By pairing clients with caregivers who respect their
-                          cultural preferences, we ensure care remains
-                          reassuring and deeply personal.
+                          We value inclusive, person-centered care and
+                          thoughtfully consider communication needs, cultural
+                          preferences, and personal values when assigning
+                          caregivers — helping care feel familiar, respectful,
+                          and reassuring for clients and families.
                         </p>
                       </div>
                     </div>

@@ -9,7 +9,7 @@ export const Footer = () => {
     { name: "WellNest Home Care", path: "/home_care_service/help_home" },
     { name: "WellWheels", path: "/well-wheels" },
     { name: "Careers", path: "/career" },
-    { name: "Contact Us Care", path: "/contact" },
+    { name: "Contact Us", path: "/contact" },
   ];
   return (
     <>
@@ -40,7 +40,9 @@ export const Footer = () => {
                           </div>
                           <div className="content">
                             <h6>Our Address</h6>
-                            <p>25/AB Milford Road, New York, USA</p>
+                            <p>
+                              23, Richard William Drive, Caledonia, ON N3W 0C5
+                            </p>
                           </div>
                         </li>
                         <li>
@@ -58,8 +60,8 @@ export const Footer = () => {
                           </div>
                           <div className="content">
                             <h6>Email Us</h6>
-                            <Link href="mailto:support@wellnestgroup.org">
-                              support@wellnestgroup.org
+                            <Link href="mailto:care@wellnestgroup.org">
+                              care@wellnestgroup.org
                             </Link>
                           </div>
                         </li>

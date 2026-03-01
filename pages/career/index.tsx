@@ -6,9 +6,8 @@ import { CareerPageContent } from "@/src/page_components/career_page";
 const index = () => {
   return (
     <>
-      <>
-        <Navbar />
-      </>
+      <Navbar />
+
       <CareerPageContent />
     </>
   );

@@ -8,6 +8,9 @@ export const CareerPageDisclaimer = () => {
       <div className="terms-area py-120">
         <div className="container">
           <div className="mb-5">
+            <div className="">
+              <CareerJobListing />
+            </div>
             <h3 className="text-center">Why work with us</h3>
             <p className="text-center mt-3">
               We believe that to provide the best care for our community, we
@@ -15,9 +18,6 @@ export const CareerPageDisclaimer = () => {
             </p>
             <div className="container mt-4 mb-5">
               <CareerBenefits />
-            </div>
-            <div className="">
-              <CareerJobListing />
             </div>
             <div className="row">
               <div className="col-lg-6">
@@ -30,9 +30,8 @@ export const CareerPageDisclaimer = () => {
                       <ul className="list-unstyled ">
                         <li className="mb-2">
                           <strong>Step 1: </strong>
-                          Application – Submit your resume to
-                          hr@wellnestgroup.org. Please include the position of
-                          interest in your subject title.
+                          Application – Submit your resume. Please include the
+                          position of interest in your subject title.
                         </li>
                         <li className="mb-2">
                           <strong>Step 2: </strong>

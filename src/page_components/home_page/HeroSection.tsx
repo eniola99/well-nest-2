@@ -43,6 +43,7 @@ export const HeroSection = () => {
                 className="hero-single"
                 style={{
                   backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-1_ooagwq.jpg)`,
+                  minHeight: "700px",
                 }}
               >
                 <div className="container">
@@ -53,12 +54,12 @@ export const HeroSection = () => {
                           Care That Understands. Support That Empowers.
                         </h1>
                         <p>
-                          At WellNest Health Group, we provide more than a
-                          service—we provide a circle of support grounded in
-                          cultural respect and lived experience.
+                          At WellNest Health Group, care goes beyond service. We
+                          create a circle of support shaped by respect,
+                          understanding, and shared human experience.
                         </p>
                         <div className="hero-btn">
-                          <Link href="/about" className="theme-btn">
+                          <Link href="/contact" className="theme-btn">
                             Book a free Consultation
                             <i className="fas fa-arrow-right"></i>
                           </Link>
@@ -78,31 +79,22 @@ export const HeroSection = () => {
                 className="hero-single"
                 style={{
                   backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-2_hnnhh7.jpg)`,
+                  minHeight: "700px",
                 }}
               >
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h1
-                          className="hero-title"
-                          data-animation="fadeInRight"
-                          data-delay=".50s"
-                        >
-                          Our Mission
-                        </h1>
-                        <p data-animation="fadeInLeft" data-delay=".75s">
-                          To transform the aging experience in Ontario by
-                          providing integrated, culturally-attuned care that
-                          honors individual heritage, fosters belonging, and
-                          empowers seniors to live with dignity on their own
-                          terms.
+                        <h1 className="hero-title">Our Mission</h1>
+                        <p>
+                          To transform the aging experience in Ontario through
+                          integrated, compassionate care that respects
+                          individual backgrounds, fosters belonging, and
+                          supports people to live with dignity at home and in
+                          their communities.
                         </p>
-                        <div
-                          className="hero-btn"
-                          data-animation="fadeInUp"
-                          data-delay="1s"
-                        >
+                        <div className="hero-btn">
                           <Link href="/about" className="theme-btn">
                             learn more about our story
                             <i className="fas fa-arrow-right"></i>
@@ -123,6 +115,7 @@ export const HeroSection = () => {
                 className="hero-single"
                 style={{
                   backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hero-slider-3_pzcfxv.jpg)`,
+                  minHeight: "700px",
                 }}
               >
                 <div className="container">

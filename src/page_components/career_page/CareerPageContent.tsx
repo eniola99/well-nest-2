@@ -38,7 +38,7 @@ export const CareerPageContent = () => {
           <div className="hero-section">
             <div className="hero-slider">
               <div
-                className="about-hero-single"
+                className="hero-single"
                 style={{
                   backgroundImage: `url(${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/career_hero_page_sdmjkx.jpg)`,
                   minHeight: "700px",
@@ -48,14 +48,8 @@ export const CareerPageContent = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h1
-                          className="hero-title text-white"
-                          data-animation="fadeInRight"
-                          data-delay=".50s"
-                        >
-                          Careers
-                        </h1>
-                        <p
+                        <h1 className="hero-title">Careers</h1>
+                        {/* <p
                           className="text-white mb-5 mt-3"
                           data-animation="fadeInLeft"
                           data-delay=".75s"
@@ -63,7 +57,7 @@ export const CareerPageContent = () => {
                           A diverse group of compassionate healthcare
                           professionals collaborating in a supportive
                           environment.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>
