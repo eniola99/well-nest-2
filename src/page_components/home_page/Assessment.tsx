@@ -5,14 +5,17 @@ import Image from "next/image";
 export const Assessment = () => {
   return (
     <>
-      <div className="center-image-background mt-5 pb-50">
+      <div className="service-section-our  mt-5 pb-50">
         <h2 className="text-center pt-5">Our Service</h2>
 
         <div className="container mt-5">
           <div className="row g-3">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="service-area2">
-                <div className="service-item">
+                <div
+                  className="service-item"
+                  style={{ border: "2px solid var(--theme-color)" }}
+                >
                   <div className="service-info">
                     <div className="service-content">
                       <h4 className=" mb-3">WellNest Home Care</h4>
@@ -104,7 +107,10 @@ export const Assessment = () => {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="service-area2">
-                <div className="service-item">
+                <div
+                  className="service-item"
+                  style={{ border: "2px solid var(--color-dark)" }}
+                >
                   <div className="service-info">
                     <div className="service-content">
                       <h4 className="mb-3">Wellwheels</h4>
@@ -149,7 +155,7 @@ export const Assessment = () => {
                   </div>
                   <div className="hero-btn mb-4">
                     <Link href="/well-wheels" className="theme-btn">
-                      Book Your Journey
+                      Learn More
                       <i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>

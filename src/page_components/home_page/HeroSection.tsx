@@ -49,24 +49,15 @@ export const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
-                        <h1
-                          className="hero-title"
-                          data-animation="fadeInRight"
-                          data-delay=".50s"
-                        >
-                          Care That <span>Understands. Support</span> That
-                          Empowers.
+                        <h1 className="hero-title">
+                          Care That Understands. Support That Empowers.
                         </h1>
-                        <p data-animation="fadeInLeft" data-delay=".75s">
+                        <p>
                           At WellNest Health Group, we provide more than a
                           service—we provide a circle of support grounded in
                           cultural respect and lived experience.
                         </p>
-                        <div
-                          className="hero-btn"
-                          data-animation="fadeInUp"
-                          data-delay="1s"
-                        >
+                        <div className="hero-btn">
                           <Link href="/about" className="theme-btn">
                             Book a free Consultation
                             <i className="fas fa-arrow-right"></i>

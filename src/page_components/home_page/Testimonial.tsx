@@ -3,90 +3,93 @@ import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <div className="container pt-5">
-      <h2 className="text-center mt-5">
-        Our Value Statement (The CARE Standard){" "}
-      </h2>
+    <div className="container pt-3">
+      <h2 className="text-center">Our Value Statement (The CARE Standard) </h2>
 
       <div className="feature-area pt-5">
         <div className="container">
           <div className="feature-wrapper">
             <div className="row g-4">
               <div className="col-md-6 col-lg-3">
-                <div
-                  className="feature-item bg-1 wow fadeInUp"
-                  data-wow-delay=".25s"
-                >
-                  {/* <span className="count">01</span> */}
-                  <div className="feature-icon">
-                    <Image
-                      src="/assets/img/icon/nurse.svg"
-                      width={50}
-                      height={50}
-                      alt="nurse icon"
-                    />
+                <div className="feature-item bg-1">
+                  <div className="d-flex align-items-center justify-content-center">
+                    <div className="feature-icon">
+                      <i
+                        className="fa-solid fa-heart"
+                        style={{
+                          fontSize: "30px",
+                          marginLeft: "6px",
+                          marginTop: "20px",
+                          color: "black",
+                        }}
+                      ></i>
+                    </div>
+                    <h4 className="mx-4">Compassion</h4>
                   </div>
                   <div className="feature-content">
-                    <h4>Compassion</h4>
                     <p>We lead with kindness and empathy.</p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-3">
-                <div
-                  className="feature-item bg-2 wow fadeInUp"
-                  data-wow-delay=".50s"
-                >
-                  {/* <span className="count">02</span> */}
-                  <div className="feature-icon">
-                    <Image
-                      src="/assets/img/icon/institute.svg"
-                      width={50}
-                      height={50}
-                      alt="institute icon"
-                    />
+                <div className="feature-item bg-2 ">
+                  <div className="d-flex align-items-center justify-content-center">
+                    <div className="feature-icon">
+                      <i
+                        className="fa-solid fa-scale-balanced"
+                        style={{
+                          fontSize: "30px",
+                          marginLeft: "6px",
+                          marginTop: "20px",
+                          color: "black",
+                        }}
+                      ></i>
+                    </div>
+                    <h4 className="mx-4">Accountability</h4>
                   </div>
                   <div className="feature-content">
-                    <h4>Accountability</h4>
                     <p>We act with honesty and integrity</p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-3">
-                <div
-                  className="feature-item bg-3 wow fadeInUp"
-                  data-wow-delay=".75s"
-                >
-                  {/* <span className="count">03</span> */}
-                  <div className="feature-icon">
-                    <Image
-                      src="/assets/img/icon/support.svg"
-                      width={50}
-                      height={50}
-                      alt="support icon"
-                    />
+                <div className="feature-item bg-3">
+                  <div className="d-flex align-items-center justify-content-center">
+                    <div className="feature-icon">
+                      <i
+                        className="fa-solid fa-heart-pulse"
+                        style={{
+                          fontSize: "30px",
+                          marginLeft: "6px",
+                          marginTop: "20px",
+                          color: "black",
+                        }}
+                      ></i>
+                    </div>
+                    <h4 className="mx-4">Respect</h4>
                   </div>
                   <div className="feature-content">
-                    <h4>Respect</h4>
                     <p>We honor dignity, diversity, and independence.</p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-3">
-                <div
-                  className="feature-item bg-4 wow fadeInUp"
-                  data-wow-delay="1s"
-                >
-                  <div className="feature-icon">
-                    <Image
-                      src="/assets/img/icon/support.svg"
-                      width={50}
-                      height={50}
-                      alt="support icon"
-                    />
+                <div className="feature-item bg-4">
+                  <div className="d-flex align-items-center justify-content-center">
+                    <div className="feature-icon">
+                      <i
+                        className="fa-solid fa-heart-circle-check"
+                        style={{
+                          fontSize: "30px",
+                          marginLeft: "6px",
+                          marginTop: "20px",
+                          color: "black",
+                        }}
+                      ></i>
+                    </div>
+                    <h4 className="mx-4">Excellence</h4>
                   </div>
                   <div className="feature-content">
-                    <h4>Excellence</h4>
                     <p>We strive for quality and continuous improvement.</p>
                   </div>
                 </div>
