@@ -12,7 +12,7 @@ export const AboutPageContent = () => {
               <h3 className="title-about-story">Our Story</h3>
               <div className="align-items-center">
                 <p
-                  className="text-secondary pb-100"
+                  className="text-secondary pb-50"
                   style={{ fontSize: "16px" }}
                 >
                   <p className="pb-3">
@@ -152,7 +152,7 @@ export const AboutPageContent = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-100">
+            <div className="pt-50">
               <h4 className="text-center site-title">Community Impact</h4>
               <h3 className="mt-5">Strengthening Our Region</h3>
               <div className="row">

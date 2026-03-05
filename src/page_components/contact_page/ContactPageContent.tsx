@@ -173,7 +173,10 @@ export const ContactPageContent = () => {
                 </div>
                 <div className="content">
                   <h5>Call Us</h5>
-                  <p>(+289)-523-0738</p>
+                  <p>
+                    <Link href="tel:+(+289)-523-0738">(+289)-523-0738</Link>
+                  </p>
+                  {/* <p>(+289)-523-0738</p> */}
                 </div>
               </div>
             </div>

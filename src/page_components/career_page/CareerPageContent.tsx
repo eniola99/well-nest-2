@@ -49,15 +49,6 @@ export const CareerPageContent = () => {
                     <div className="col-md-12 col-lg-6">
                       <div className="hero-content">
                         <h1 className="hero-title">Careers</h1>
-                        {/* <p
-                          className="text-white mb-5 mt-3"
-                          data-animation="fadeInLeft"
-                          data-delay=".75s"
-                        >
-                          A diverse group of compassionate healthcare
-                          professionals collaborating in a supportive
-                          environment.
-                        </p> */}
                       </div>
                     </div>
                   </div>

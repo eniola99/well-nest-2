@@ -36,7 +36,7 @@ export const PricingPackages = ({
     <>
       <div className="home-care-packages">
         <div className="d-flex justify-content-center align-items-center flex-column mb-50">
-          <h3 className="">{title}</h3>
+          <h2 className="site-title">{title}</h2>
         </div>
         <div className="row g-4">
           <div className="col-lg-4">

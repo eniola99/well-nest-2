@@ -14,6 +14,7 @@ import "react-multi-carousel/lib/styles.css";
 // import "@/styles/magnific-popup.min.css";
 // import "@/styles/animate.min.css";
 import type { AppProps } from "next/app";
+import { NavSection } from "@/src/components/common";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
+        <NavSection />
         <Component {...pageProps} />
       </PersistGate>
     </Provider>

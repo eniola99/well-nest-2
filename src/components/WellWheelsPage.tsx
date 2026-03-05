@@ -27,7 +27,6 @@ export const WellWheelsPage = () => {
   };
   return (
     <>
-      <NavSection />
       <Carousel
         responsive={responsive}
         containerClass="carousel-container"

@@ -3258,12 +3258,12 @@ label {
   background-size: cover;
 }
 
-/* .service-single-wrap {
+.service-single-wrap {
   background-image: url(../public/assets/img/shape/02.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-} */
+}
 
 .pricing-item {
   background: var(--color-white);
@@ -6688,7 +6688,7 @@ label {
 }
 
 .home-care-packages {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .benefit-card {

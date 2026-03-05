@@ -44,13 +44,13 @@ export const CareerJobListing = () => {
           We are currently seeking passionate individuals for the following
           role:
         </p>
-        <div className=" mt-5">
+        <div className=" mt-2 mb-5">
           <div className="container">
             <div className="row">
               {jobList &&
                 jobList.map((item, index) => (
                   <>
-                    <div className="col-lg-6 mt-5" key={index}>
+                    <div className="col-lg-6" key={index}>
                       <div className="contact-form-wrap">
                         <div className="d-flex">
                           <h4 className="">

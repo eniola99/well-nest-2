@@ -6,7 +6,7 @@ import { Table } from "reactstrap";
 export const WellWheelsContent = () => {
   return (
     <>
-      <div className="event-single py-120">
+      <div className="event-single py-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -15,10 +15,7 @@ export const WellWheelsContent = () => {
                   The WellWheels Difference: &quot;Hand-to-Hand&quot; Support
                 </h3>
                 <div className="align-items-center">
-                  <p
-                    className=" p-3"
-                    // style={{ fontStyle: "italic" }}
-                  >
+                  <p className=" p-3">
                     At WellWheels, we believe transportation should feel safe,
                     supportive, and stress-free from start to finish.
                     <br /> We go beyond transportation by assisting clients from
@@ -69,14 +66,14 @@ export const WellWheelsContent = () => {
                 <Image
                   className="wellwheels-image"
                   src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/hand_to_hand_nrockc.jpg`}
-                  width={450}
-                  height={280}
+                  width={650}
+                  height={680}
                   alt="img"
                 />
               </div>
             </div>
           </div>
-          <div className="py-80">
+          <div className="mt-5 mb-5">
             <h3 className="text-center">
               Our Specialized Transportation Services
             </h3>

@@ -11,13 +11,13 @@ export const WellNestHomeCareContent = () => {
   return (
     <>
       <div className="service-single py-80">
-        <div className="container">
+        <div className="">
           <div className="container">
             <h3 className="text-center mb-5">Our Philosophy</h3>
             <div className="row">
               <div className="col-lg-6">
                 <div className="align-items-center">
-                  <p className=" pb-80">
+                  <p className=" pb-40">
                     We’ve been in the rooms where support was needed --- but not
                     found. <br />
                     WellNest Home Care was built to be different. We create a
@@ -39,18 +39,19 @@ export const WellNestHomeCareContent = () => {
               </div>
             </div>
           </div>
-          <div className="service-single-wrap">
+          {/* <div className="service-single-wrap mt-3 mb-3"> */}
+          <div className="container">
             <div className="text-center">
-              <h3>Our Home Care Services</h3>
+              <h2 className="site-title">Our Home Care Services</h2>
               <p className="mb-30 mt-3">
                 Support designed around your life — not a rigid checklist.
               </p>
             </div>
 
-            <div className="row g-3">
+            <div className="row g-4">
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/personal_care_n45cog.jpg`}
@@ -89,7 +90,7 @@ export const WellNestHomeCareContent = () => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/respite_eb4dzx.jpg`}
@@ -128,7 +129,7 @@ export const WellNestHomeCareContent = () => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/companionship_ndun3f.jpg`}
@@ -171,7 +172,7 @@ export const WellNestHomeCareContent = () => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/housekeeping_pjqyb2.jpg`}
@@ -209,7 +210,7 @@ export const WellNestHomeCareContent = () => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/meal_preparation_t5vr7t.jpg`}
@@ -247,7 +248,7 @@ export const WellNestHomeCareContent = () => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="service-area2">
-                  <div className="service-item" style={{ minHeight: "500px" }}>
+                  <div className="service-item" style={{ minHeight: "580px" }}>
                     <div className="service-img">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_CLOUDINARY_URI}/seasonal_support_oweaty.jpg`}
@@ -283,82 +284,82 @@ export const WellNestHomeCareContent = () => {
               </div>
             </div>
           </div>
-          <PricingPackages
-            packages={homeCarePackages}
-            title="Our CARE Packages"
-            subTitle="Need help deciding what is right for you?"
-            actionText={[
-              { essential: "Ideal for light, consistent support" },
-              { enhanced: "For ongoing daily assistance" },
-              { comprehensive: "For complex or evolving needs" },
-            ]}
-          />
-          <div className=" py-100">
-            <div className="site-heading text-center wow fadeInDown">
-              <h2 className="site-title">
-                Serving Our Local <br />
-                <span>Communities</span>
-              </h2>
+          {/* </div> */}
+          <div className="container">
+            <PricingPackages
+              packages={homeCarePackages}
+              title="Our CARE Packages"
+              subTitle="Need help deciding what is right for you?"
+              actionText={[
+                { essential: "Ideal for light, consistent support" },
+                { enhanced: "For ongoing daily assistance" },
+                { comprehensive: "For complex or evolving needs" },
+              ]}
+            />
+            <div className=" py-80">
+              <div className="site-heading text-center wow fadeInDown">
+                <h2 className="site-title">Serving Our Local Communities</h2>
+              </div>
+              <div className="mt-4 text-center">
+                <p>
+                  We are a local business invested in the resilience of our
+                  region, serving:
+                </p>
+              </div>
+              <div className="mt-5">
+                <Table bordered hover responsive size="sm">
+                  <thead>
+                    <tr>
+                      <th className="p-3">Region</th>
+                      <th className="p-3">
+                        {" "}
+                        Communities we serve include but not limited to
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="p-3">Hamilton</td>
+                      <td className="p-3">
+                        Ancaster, Hamilton Mountain, Hamilton Downtown, Dundas,
+                        Stoney Creek, Waterdown, Glanbrook
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-3">Haldimand</td>
+                      <td className="p-3">
+                        Caledonia, Cayuga, Dunnville, Hagersville, Jarvis
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-3">Niagara</td>
+                      <td className="p-3">
+                        Grimsby, Smithville, St. Catharines, Welland, Niagara
+                        Falls
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </div>
             </div>
-            <div className="mt-4 text-center">
-              <p>
-                We are a local business invested in the resilience of our
-                region, serving:
-              </p>
-            </div>
-            <div className="mt-5">
-              <Table bordered hover responsive size="sm">
-                <thead>
-                  <tr>
-                    <th className="p-3">Region</th>
-                    <th className="p-3">
-                      {" "}
-                      Communities we serve include but not limited to
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-3">Hamilton</td>
-                    <td className="p-3">
-                      Ancaster, Hamilton Mountain, Hamilton Downtown, Dundas,
-                      Stoney Creek, Waterdown, Glanbrook
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-3">Haldimand</td>
-                    <td className="p-3">
-                      Caledonia, Cayuga, Dunnville, Hagersville, Jarvis
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-3">Niagara</td>
-                    <td className="p-3">
-                      Grimsby, Smithville, St. Catharines, Welland, Niagara
-                      Falls
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </div>
-          </div>
-          <div className="cta-area">
-            <div className="container">
-              <div className="cta-wrap rounded-5 w-100">
-                <div className="col-lg-7 mx-auto">
-                  <div className="cta-content">
-                    <h1>
-                      Ready to Discuss a <br />
-                      <span>Plan?</span>
-                    </h1>
-                    <p>
-                      Navigating care can be complex, but you don&#39;t have to
-                      do it alone. Contact our local team today to discuss a
-                      plan that works for you or your family.
-                    </p>
-                    <Link href="/contact" className="theme-btn">
-                      Contact Us Today
-                    </Link>
+            <div className="cta-area">
+              <div className="container">
+                <div className="cta-wrap rounded-5 w-100">
+                  <div className="col-lg-7 mx-auto">
+                    <div className="cta-content">
+                      <h1>
+                        Ready to Discuss a <br />
+                        <span>Plan?</span>
+                      </h1>
+                      <p>
+                        Navigating care can be complex, but you don&#39;t have
+                        to do it alone. Contact our local team today to discuss
+                        a plan that works for you or your family.
+                      </p>
+                      <Link href="/contact" className="theme-btn">
+                        Contact Us Today
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
