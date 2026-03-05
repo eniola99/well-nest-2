@@ -7,7 +7,7 @@ export const AboutPageContent = () => {
     <>
       <div className="service-single py-80">
         <div className="container">
-          <div className="service-single-wrap">
+          <div className="">
             <div className="container">
               <h3 className="title-about-story">Our Story</h3>
               <div className="align-items-center">

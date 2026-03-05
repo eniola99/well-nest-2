@@ -14,7 +14,7 @@ export const ApplicationPage = () => {
     <>
       <ApplicationHero title={role.title!} />
       <div className="container mt-5 mb-5">
-        <p className="mt-5 mb-5">
+        {/* <p className="mt-5 mb-5">
           At WellWheels, we do more than drive — we care. As the transportation
           arm of WellNest Health Group, our focus is helping clients get where
           they need to go safely, comfortably, and with dignity. We provide
@@ -22,7 +22,7 @@ export const ApplicationPage = () => {
           disabilities, and individuals needing support for appointments,
           errands, or community outings. We’re looking for Driver Companions who
           take pride in providing safe, reliable, and compassionate service.
-        </p>
+        </p> */}
         <h4 className="mb-2">
           {role.title} - {role.type}
         </h4>
