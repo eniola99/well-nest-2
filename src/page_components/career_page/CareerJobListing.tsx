@@ -40,11 +40,7 @@ export const CareerJobListing = () => {
     <div className="terms-area">
       <div className="">
         <h4 className="text-center career-opennings">Current Opportunities</h4>
-        <p className="text-center mt-5">
-          We are currently seeking passionate individuals for the following
-          role:
-        </p>
-        <div className=" mt-2 mb-5">
+        <div className=" mt-5 mb-5">
           <div className="container">
             <div className="row">
               {jobList &&
