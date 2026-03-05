@@ -51,7 +51,9 @@ export const Footer = () => {
                           </div>
                           <div className="content">
                             <h6>Call Us</h6>
-                            <Link href="tel:+21236547898">+2 123 654 7898</Link>
+                            <Link href="tel:+(+289)-523-0738">
+                              (+289)-523-0738
+                            </Link>
                           </div>
                         </li>
                         <li>
@@ -69,7 +71,7 @@ export const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-lg-2"></div>
                 <div className="col-lg-3">
                   <div className="footer-widget-box">
                     <h4 className="footer-widget-title">Quick Links</h4>
@@ -83,6 +85,19 @@ export const Footer = () => {
                         </Link>
                       </li>
                     ))}
+                  </ul>
+                </div>
+                <div className="col-lg-2">
+                  <div className="footer-widget-box">
+                    <h4 className="footer-widget-title">Our Policies</h4>
+                  </div>
+                  <ul className="footer-list" style={{ listStyle: "none" }}>
+                    <li>
+                      <Link href="/privacy-policy">
+                        <i className="fa-solid fa-caret-right"></i>
+                        Privacy Policy
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>

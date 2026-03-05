@@ -11,7 +11,6 @@ import { Footer, NavSection } from "./common";
 export const Homepage = () => {
   return (
     <div className="home-2">
-      <NavSection />
       <HeroSection />
       <About />
       <Testimonial />

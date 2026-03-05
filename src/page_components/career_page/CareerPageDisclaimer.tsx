@@ -5,7 +5,7 @@ import { CareerBenefits } from "./CareerBenefits";
 export const CareerPageDisclaimer = () => {
   return (
     <>
-      <div className="terms-area py-120">
+      <div className="terms-area py-80">
         <div className="container">
           <div className="mb-5">
             <div className="">

@@ -9,3 +9,4 @@ export * from "./HealthWellnessSupport";
 export * from "./DailyLivingSupport";
 export * from "./RespiteGroupTransport";
 export * from "./BookRide";
+export * from "./PrivacyContent";

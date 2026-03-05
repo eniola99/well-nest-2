@@ -27,7 +27,6 @@ const index = () => {
   };
   return (
     <>
-      <NavSection />
       <Carousel
         responsive={responsive}
         containerClass="carousel-container"
