@@ -8,8 +8,11 @@ export const Footer = () => {
     { name: "About Us", path: "/about" },
     { name: "WellNest Home Care", path: "/home_care_service/help_home" },
     { name: "WellWheels", path: "/well-wheels" },
+  ];
+  const linkSectionGroup = [
     { name: "Careers", path: "/career" },
     { name: "Contact Us", path: "/contact" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
   ];
   return (
     <>
@@ -20,7 +23,7 @@ export const Footer = () => {
         ></div>
         <div className="footer-widget">
           <div className="container">
-            <div className="footer-widget-wrap pt-100 pb-80">
+            <div className="footer-widget-wrap">
               <div className="row g-4">
                 <div className="col-lg-5">
                   <div className="footer-widget-box about-us">
@@ -39,9 +42,9 @@ export const Footer = () => {
                             <i className="fa-solid fa-location-dot"></i>
                           </div>
                           <div className="content">
-                            <h6>Our Address</h6>
+                            <h6>Address</h6>
                             <p>
-                              23, Richard William Drive, Caledonia, ON N3W 0C5
+                              23 Richard William Drive, Caledonia, ON N3W 0C5
                             </p>
                           </div>
                         </li>
@@ -50,9 +53,9 @@ export const Footer = () => {
                             <i className="fa-solid fa-phone"></i>
                           </div>
                           <div className="content">
-                            <h6>Call Us</h6>
+                            <h6>Call</h6>
                             <Link href="tel:+(+289)-523-0738">
-                              (+289)-523-0738
+                              +289-523-0738
                             </Link>
                           </div>
                         </li>
@@ -61,7 +64,7 @@ export const Footer = () => {
                             <i className="fa-solid fa-envelope"></i>
                           </div>
                           <div className="content">
-                            <h6>Email Us</h6>
+                            <h6>Email</h6>
                             <Link href="mailto:care@wellnestgroup.org">
                               care@wellnestgroup.org
                             </Link>
@@ -88,17 +91,21 @@ export const Footer = () => {
                   </ul>
                 </div>
                 <div className="col-lg-2">
-                  <div className="footer-widget-box">
-                    <h4 className="footer-widget-title">Our Policies</h4>
+                  {/* <div className="footer-widget-box">
+                    <h4 className="footer-widget-title">Policies</h4>
+                  </div> */}
+                  <div className="mt-5">
+                    <ul className="footer-list" style={{ listStyle: "none" }}>
+                      {linkSectionGroup.map((link) => (
+                        <li key={link.path}>
+                          <Link href={link.path}>
+                            <i className="fa-solid fa-caret-right"></i>
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <ul className="footer-list" style={{ listStyle: "none" }}>
-                    <li>
-                      <Link href="/privacy-policy">
-                        <i className="fa-solid fa-caret-right"></i>
-                        Privacy Policy
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -116,18 +123,26 @@ export const Footer = () => {
               <div className="col-md-6 align-self-center">
                 <ul className="footer-social">
                   <li>
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/share/17EkQSCp1b/">
                       <i className="fab fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      <i className="fab fa-x-twitter"></i>
+                    <Link
+                      href="https://www.linkedin.com/company/wellnest-health-group"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-linkedin-in"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      <i className="fab fa-linkedin-in"></i>
+                    <Link
+                      href="https://wa.me/+12895230738"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-whatsapp"></i>
                     </Link>
                   </li>
                 </ul>
