@@ -244,17 +244,17 @@ export const PrivacyContent = () => {
             <li>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:admin@wellnestgroup.org"
+                href="mailto:care@wellnestgroup.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "underline" }}
               >
-                admin@wellnestgroup.org
+                care@wellnestgroup.org
               </a>
             </li>
             <li>
               <strong>Phone Number:</strong>{" "}
-              <Link href="tel:+(+289)-523-0738">(+289)-523-0738</Link>
+              <Link href="tel:+(+289)-523-0738">+289-523-0738</Link>
             </li>
           </ul>
         </div>

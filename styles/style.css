@@ -6127,6 +6127,7 @@ label {
   background: var(--footer-bg);
   position: relative;
   z-index: 1;
+  /* max-height: 500px; */
 }
 
 .footer-shape {
