@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { FormGroup, Input, Label, Table, Spinner } from "reactstrap";
+import { FormGroup, Input, Label, Table, Spinner, Alert } from "reactstrap";
 import Carousel from "react-multi-carousel";
 
 import { toast } from "react-toastify";
@@ -31,6 +31,7 @@ export const ContactPageContent = () => {
   const [errors, setErrors] = useState<IFormData>(initialFormData);
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [isLoading, setIsloading] = useState<boolean>(false);
+  const [showAlert, setShowAlert] = useState<boolean>(false);
 
   const serviceOptions = ["Wellnest Homecare", "WellWheels", "General"];
 
@@ -77,6 +78,7 @@ export const ContactPageContent = () => {
     const initData = await response.json();
     console.log({ initData });
     if (initData.status === 200) {
+      setShowAlert(true);
       toast.success(initData.message);
       setIsloading(false);
       setFormData(initialFormData);
@@ -88,6 +90,15 @@ export const ContactPageContent = () => {
       setIsChecked(false);
     }
   }, []);
+
+  useEffect(() => {
+    if (showAlert) {
+      const timer = setTimeout(() => {
+        setShowAlert(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showAlert]);
 
   useEffect(() => {
     if (
@@ -174,7 +185,7 @@ export const ContactPageContent = () => {
                 <div className="content">
                   <h5>Call Us</h5>
                   <p>
-                    <Link href="tel:+(+289)-523-0738">+289-523-0738</Link>
+                    <Link href="tel:289-523-0738">289-523-0738</Link>
                   </p>
                 </div>
               </div>
@@ -204,6 +215,14 @@ export const ContactPageContent = () => {
           </div>
         </div>
         <div className="row g-4 mb-5">
+          <div className="">
+            {showAlert && (
+              <Alert>
+                We have received your message. We will reach out to you within
+                24 hours.
+              </Alert>
+            )}
+          </div>
           <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="g-4">
