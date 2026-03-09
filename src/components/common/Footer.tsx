@@ -54,9 +54,7 @@ export const Footer = () => {
                           </div>
                           <div className="content">
                             <h6>Call</h6>
-                            <Link href="tel:+(+289)-523-0738">
-                              +289-523-0738
-                            </Link>
+                            <Link href="tel:289-523-0738">289-523-0738</Link>
                           </div>
                         </li>
                         <li>
@@ -134,6 +132,15 @@ export const Footer = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="fab fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://www.instagram.com/wellnesthealthgroup?utm_source=qr&igsh=MTBtbXM0cnV4b29qaQ=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
                     </Link>
                   </li>
                   <li>

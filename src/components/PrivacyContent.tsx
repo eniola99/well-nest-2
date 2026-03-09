@@ -254,7 +254,7 @@ export const PrivacyContent = () => {
             </li>
             <li>
               <strong>Phone Number:</strong>{" "}
-              <Link href="tel:+(+289)-523-0738">+289-523-0738</Link>
+              <Link href="tel:289-523-0738">289-523-0738</Link>
             </li>
           </ul>
         </div>

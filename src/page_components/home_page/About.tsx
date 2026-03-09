@@ -34,7 +34,7 @@ export const About = () => {
                 }}
               >
                 <i className="fa-solid fa-phone-volume mx-2"></i>
-                <strong>+289-523-0738</strong>
+                <strong>289-523-0738</strong>
               </p>
               <p
                 className="text-center text-white mt-3"
